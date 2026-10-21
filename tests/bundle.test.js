@@ -9,5 +9,6 @@ const html = fs.readFileSync(dist, 'utf8');
 let fail = 0;
 if (/<script\s+[^>]*src=/i.test(html)) { console.error('bundle still has <script src>'); fail = 1; }
 if (!/id="screen"/.test(html)) { console.error('bundle lacks the #screen canvas'); fail = 1; }
+if (!/window\.F117_ASSETS = \{"fonts\.json"/.test(html) || !/"sound\/ASOUND\.117":/.test(html)) { console.error('bundle lacks the inline assets'); fail = 1; }
 if (!fail) console.log('bundle ok (' + html.length + ' bytes)');
 process.exit(fail);

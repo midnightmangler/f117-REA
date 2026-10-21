@@ -13,11 +13,8 @@
   }
 
   function loadPic(name, palName) {
-    return Promise.all([
-      fetch('assets/pic/' + name + '.png').then(function (r) { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); }),
-      fetch('assets/palettes.json').then(function (r) { return r.json(); })
-    ]).then(function (res) {
-      return F.png.decodeIndexedPng(new Uint8Array(res[0])).then(function (img) {
+    return Promise.all([F.assets.bytes('pic/' + name + '.png'), F.assets.json('palettes.json')]).then(function (res) {
+      return F.png.decodeIndexedPng(res[0]).then(function (img) {
         fb.setPalette(res[1].palettes[palName]);
         fb.putImage(0, img);
       });
@@ -34,7 +31,7 @@
   F.timer.startLoop(ticker);
 
   // Task 1.4 demo: each tap plays the next sound (songs, effects, speech).
-  var bin = function (p) { return fetch('assets/sound/' + p).then(function (r) { return r.arrayBuffer(); }).then(function (b) { return new Uint8Array(b); }); };
+  var bin = function (p) { return F.assets.bytes('sound/' + p); };
   var keys = ['41', '42', '43a', '43b', '44', '45'];
   Promise.all([bin('ASOUND.117')].concat(keys.map(function (k) { return bin('speech/speech_' + k + '.wav'); }))).then(function (r) {
     var wavs = {};

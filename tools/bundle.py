@@ -9,6 +9,7 @@ f117-rea-YYYY-MM-DD.html and latest.html (the file the iPad opens).
 usage: py -3 tools/bundle.py [--no-dropbox]
 Standard library only. Exit 1 if a referenced file is missing.
 """
+import base64
 import datetime
 import json
 import os
@@ -24,6 +25,7 @@ SRC = ROOT / "index.src.html"
 DIST = ROOT / "dist" / f"{SLUG}.html"
 
 SCRIPT_RE = re.compile(r'<script\s+[^>]*src="([^"]+)"[^>]*>\s*</script>', re.I)
+ASSETS_RE = re.compile(r'<!-- ASSETS:[^>]*-->')
 LINK_RE = re.compile(r'<link\s+[^>]*rel="stylesheet"[^>]*href="([^"]+)"[^>]*>', re.I)
 
 
@@ -44,7 +46,17 @@ def bundle(html):
 
     html = SCRIPT_RE.sub(script, html)
     html = LINK_RE.sub(link, html)
+    html = ASSETS_RE.sub(lambda m: assets_script(), html, count=1)
     return html
+
+
+def assets_script():
+    """Every file under assets/ as base64 in window.F117_ASSETS (inline delivery, decision 2026-10-21)."""
+    files = {}
+    for p in sorted((ROOT / "assets").rglob("*")):
+        if p.is_file():
+            files[p.relative_to(ROOT / "assets").as_posix()] = base64.b64encode(p.read_bytes()).decode("ascii")
+    return "<script>\nwindow.F117_ASSETS = " + json.dumps(files, separators=(",", ":")) + ";\n</script>"
 
 
 def dropbox_root():
