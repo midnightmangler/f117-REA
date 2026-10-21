@@ -44,12 +44,14 @@ integer scaler in device px, fullscreen/landscape), timer.js (70 Hz frame tick, 
 pause when hidden); src/main.js demo draws ADV.png (needs assets/ served next to the page); tests/platform.test.js (all 52 PIC
 PNGs equal pic.py output via tests/golden/pic/pic_sha1.json). 4 tests pass locally; demo checked in the browser pane.
 Task 1.2 done (2026-10-21): src/platform/gfx*.js = every MGRAPHIC entry with a call site (pages/draw seg/origin, text #1-10 with clip rules, char_width, sprite grab/draw with scale+mirror+clip, line, spans incl. shade, blits, recolor, present, flicker/shake, tick tape, dissolve, blank); tests/gfx.test.js (glyphs of all 7 fonts vs golden, clip = masked picture, spans, lines, sprites). 5 tests pass locally; no pixel golden from the original (no DOSBox), derived from the listing. API: gfx.textDraw/textDrawClip/..(vp,str), spriteDraw(vp,x,y,w,h,data,off), fillSpans(ytop,ybot,left[],right[],mode), blit(...), blitTranspClip(bs).
+Task 1.3 done (2026-10-21): src/platform/pan.js (lzUnpack = PLAYER 0BE2, runSkipDump = 1006, createPanPlayer(bytes).step() applies one cel to a 64 KB screen, exposes rate/ticksPerFrame/palette(6-bit)/table), ss.js (parseSs, drawSprite(series,i,screen64000), dac[] with base+i palette), world.js (loadWorld(code, readJson), JSON loader only); tests/decoders.test.js: every PAN cel screen = golden sha1 (all 6 files, 1666 cels), cel sizes = table, SS 82 cumulative screens + final, world JSON keys. 6 test files pass (run individually; run_tests.py needs git on PATH).
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed).
 
 ## Next up
-1. 1.3 decoders (PAN/SS/world in JS; PIC decoder dropped, see Decisions), 1.4 sound (Opus), 1.5 input, Phase 2.
-2. Open: ds:263F vsync-measure path in resync 1D01 (measures the real retrace period; the port uses a fixed 70 Hz).
-3. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
+1. 1.4 sound (Opus), 1.5 input, Phase 2.
+2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
+3. Decided: assets reach the iPad either inline in the single HTML (size is no concern; user has an 8 MB inline-data HTML elsewhere) or as a folder, since the iPad HTML viewer supports multiple HTML files in folders. Pick one in bundle.py and test it.
+4. HEARTBEAT 14900ks: user wants it tested; NOTES says it already PASSED (4/0) - re-run to confirm.
 
 ## Tests
 `py -3 tools/run_tests.py` â€” bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
