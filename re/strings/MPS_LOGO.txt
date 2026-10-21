@@ -1,0 +1,50 @@
+﻿001ACB SQPS3
+001B7D PSQPS
+001BCB PSQPS3
+001FAE <\rto\n
+001FC1 <\rt\\n
+001FC7 tX<"t$<\t
+001FF2 <\rt+\n
+001FF8 t'<"t
+002064 <\rt|\n
+00207B <\rtb\n
+002081 t^<"t'<\t
+0020AF <\rt.\n
+0020B5 t*<"t
+002417 ,atI,
+0026A5 , <Xw
+0027DE <st'<ntQ<pt`<Et
+0032E4 s6BSQ
+003478 UWVQS3
+00348E X[Y^_]
+003558 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+0035A9 MADSS1
+0035B0 SPRITES.C
+0035BA ser->scaled==no
+0035DC Allocated 1Mb of space????$MS-DOS lied to us about how much memory was available$Filename not found$Not enough memory to load file$Overlay load failed for some reason$Overlay has overrun allocated memory$Unable to shrink overlay memory allocation$Error releasing overlay memory$
+00372C _C_FILE_INFO=
+003788 Assertion failed: %s, file %s, line %d\n
+003935   0PX
+00393D 000WP
+00394D ``````
+003955 ppxxxx
+00396D (null)
+0039DD LABS.EXE Version %s\n
+0039F2 ERROR: %s\n
+0039FD 01 Specify sound driver (R/A/T/I/N)
+003A21 rsound.log
+003A2C asound.log
+003A37 isound.log
+003A42 tsound.log
+003A4D 02 Specify sound driver (R/A/T/I/N)
+003A71 03 Bad ovrload
+003A80 labslogo
+003A89 04 bad series load
+003A9C <<NMSG>>
+003AA6 R6000\r\n- stack overflow\r\n
+003AC2 R6003\r\n- integer divide by 0\r\n
+003AE3 R6009\r\n- not enough space for environment\r\n
+003B16 run-time error 
+003B28 R6002\r\n- floating-point support not loaded\r\n
+003B57 R6001\r\n- null pointer assignment\r\n
+003B7C \r\nabnormal program termination\r\n

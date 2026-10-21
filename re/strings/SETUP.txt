@@ -1,0 +1,77 @@
+﻿0006C6 ?\rt.&
+0006F8 9F\nw%
+000707 ?\rt &
+000959 RPRPWV
+0010FE PSQRVWU
+001148 ]_^ZY[X
+001156 ]_^ZY[X
+00143A VWPSQR
+001492 ZY[X_^
+001AB4 <\rto\n
+001AC7 <\rt\\n
+001ACD tX<"t$<\t
+001AF8 <\rt+\n
+001AFE t'<"t
+001B6A <\rt|\n
+001B81 <\rtb\n
+001B87 t^<"t'<\t
+001BB5 <\rt.\n
+001BBB t*<"t
+001D9A s6BSQ
+001EC3 VWSQR
+001EE2 u,Z[6
+001FE0  !"#$%&'()*+,-./0123456789:;<=>?@
+002184 hO6kB
+002201 abcdefghijklmnopqrstuvwxyz{|}~
+002234 T>3.X
+0022B4 <8;:54761032
+002302 bcdefghijklmnopqrstuvwxyz{|}~
+002335 U=2!Y
+0023C0 kd{#pj&dgg~bbxk/>?<34
+0023DA :;<=>?
+00247C PSQRVWU+
+0024BC ]_^ZY[X
+002578 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+0025B2 Isound.117
+0025BD Asound.117
+0025C8 Rsound.117
+0025D3 Nsound.117
+0025DE                                                                              \r\n$
+00262F misc.exe
+00268E                                                                             
+0026DF            Night Hawk F-117A Stealth Fighter 2.0 - Version 473.03           
+002730                                                                             
+002781     Program & Audio-visual Copyright (C) 1991 by MicroProse Software,Inc.,  
+0027D2                             All Rights Reserved.                            
+002823                                                                             
+0028C5 *** NOTE ***
+0028D2 F117A works best if played from a hard disk.
+0028FF It can be played from 1.2 Mb floppies,
+002926 but we recommend you use backup disks.
+00294D The game CANNOT be played from 720Kb floppy disks;
+002980 it must be installed on to your hard drive.
+0029AC Instructions for game installation can be found in the Technical Supplement.
+0029F9 You cannot play F117A off of 720K floppy disks!!
+002A2C                          Do you have a joystick (Y/N) ?  
+002A68                    Center joystick, then press fire button 1 
+002AA6          Move joystick to upper left corner, then press fire button 1 
+002AED        Now move joystick to lower right corner, then press fire button 2 
+002B37 Mgraphic.exe
+002B46                            Select Sound Driver:                              
+002B94                         1) IBM Sound                                          
+002BE3                         2) Ad Lib Sound Board                                 
+002C32                         3) Roland Sound Board                                 
+002C81                         4) No Sound                                           
+002CD0 One Moment Please...
+002CFF Allocated 1Mb of space????$MS-DOS lied to us about how much memory was available$Filename not found$Not enough memory to load file$Overlay load failed for some reason$Overlay has overrun allocated memory$Unable to shrink overlay memory allocation$Error releasing overlay memory$
+00303E F117B-SF
+00304F ???????????
+0032F8 :File not found$:No file buffers available$:Open error $File closing error$Read error$Write error$
+0033D2 _C_FILE_INFO=
+00344C <<NMSG>>
+003456 R6000\r\n- stack overflow\r\n
+003472 R6003\r\n- integer divide by 0\r\n
+003493 R6009\r\n- not enough space for environment\r\n
+0034C6 run-time error 
+0034D8 R6002\r\n- floating-point support not loaded\r\n
+003507 R6001\r\n- null pointer assignment\r\n

@@ -1,0 +1,327 @@
+﻿00054A RRRRR
+0005B9 RRRRRV
+000604 PPVPP
+000692 U&9G.s
+000A90 RRRRR
+000BE6 \t/\t6\t
+0017DD QRPRP
+001BB7 PPPPP
+001F94 ^'[\tF
+001F9F S'[\tF
+0024A3 PPPPP
+00281A &;G0w)
+002853 &;G0w)
+00288C &;G0w(
+0028BD $\ts6&
+0028CB &;G0w&
+002A63 QWPQV
+002D87 U&9G 
+002DA0 &;G2w
+003436 <^@t\t
+00362F <^@t!
+0039C9 <^$?<
+003ED1 U@@RP
+004164 PPPPP
+004625 PSQRVWU+
+004664 #]_^ZY[X
+004A95 ?r\rSQR
+004B90 ?} ;6
+004B96 ?r\rSQR
+004E40 PSQRVWU
+004E8A ]_^ZY[X
+004E98 ]_^ZY[X
+0051C1 1Q@Ky
+005400 <%t\n<&t
+0058BD V!WMWUW~W
+0058F7 R, <Xw
+005A31 <st'<ntQ<pt`<Et
+005FE4 1Q@t\n
+006176 s6BSQ
+0061F8 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+006232 libya.pic
+00623C persian.pic
+006248 n_cape.pic
+006253 c_europe.pic
+006260 vietnam.pic
+00626C mid_east.pic
+006279 kuwait.pic
+006284 cuba.pic
+00628D korea.pic
+006297 breficon.pic
+0062A4 brefscrn.pic
+0062B1 brefscrn.pal
+0062D0 PRIMARY OBJECTIVE
+0062E2 SECONDARY OBJECTIVE
+0062F6 %s damaged
+006301 %s at %s destroyed
+006314 %s destroyed
+006321 %s %s shot down
+006331 PRIMARY OBJECTIVE destroyed
+00634D SECONDARY OBJECTIVE destroyed
+00636B %s damaged
+006376 %s destroyed
+006383 Cargo delivered
+006393 , PRIMARY OBJECTIVE achieved
+0063B0 , SECONDARY OBJECTIVE achieved
+0063CF %s at %s photographed
+0063E5 %s photographed
+0063F5 Hit by %s missile
+006407 %s %s Track
+006413 %s Radar Track
+006422 %s %s Visual ID
+006432 %s released
+00643E Takeoff point: %s
+006450 Mission end: 
+00645E Crashed
+006466 Good Bailout
+006473 Captured
+00647C Bailed & Died
+00648A Good Landing
+006497 TIME: %s
+0064A0 SCORE:  %d
+0064AB In Flight
+0064B5 00:00:00
+0064BE %s.pic
+0064C5 %s.pal
+0064CC Press Selector to continue
+0064E8 PURPLE HEART for being wounded in combat operations
+00651C AIRMAN's MEDAL for exceptional mission performance
+00654F DISTINGUISHED FLYING CROSS for valor in the line of duty
+006588 SILVER STAR for heroism while flying a combat mission
+0065BE AIR FORCE CROSS for valor and heroism on a combat mission
+0065F8 CONGRESSIONAL MEDAL OF HONOR, America's highest military honor, for heroism above and beyond the call of duty
+006667 Airman's Medal
+006676 Distinguished Flying Cross
+006691 Silver Star
+00669D Air Force Cross
+0066AD Congressional Medal of Honor
+0066CA OverSeas Short Tour Ribbon
+0066E5 OverSeas Long Tour Ribbon
+0066FF Longevity Service Ribbon
+006718 Longevity Service Ribbon with Gold Cluster
+006743 First Lieutenant
+006754 Captain
+00675C Major
+006762 Lieutenant Colonel
+006775 full Colonel
+006782 Brigadier General
+006794 medals.pic
+006808 awards
+00680F posthumously 
+00681E %s was %sawarded the %s.
+006837 %s is awarded the Combat Readiness Ribbon for successfully completing this training mission.
+006894 %s is also awarded the %s for flying %d missions.
+0068C6 %s is awarded the %s for flying %d missions.
+0068F4 posthumously 
+006902 %s remained at his present rank.
+006924 Insufficient system memory - AllocBuffer$
+00694E Buffer dealloc error$
+006965 secondary objective 
+00697A primary objective 
+00698D primary and secondary objectives 
+0069AF flag.pic
+0069B8 flag.pal
+0069C1 the %s successfully accomplished.  
+0069E5 both objectives unaccomplished.  
+006A07 If this had been an actual combat mission, %s would now be dead, with %s
+006A50 %s was killed in action after accomplishing his mission.  
+006A8B %s died in the line of duty, mission incomplete.  
+006ABE Accomplishing the %s helped calm the squadron commander.
+006AF7 The squadron commander was not pleased that the assigned objectives remain unaccomplished.  
+006B54 After an embarrassing international incident, %s returned to his squadron.  %s
+006BA3 %s survived ejection after successfully accomplishing the %s.
+006BE1 %s survived ejection but failed to accomplish either of the assigned objectives.  
+006C34 %s landed safely after accomplishing the %s!
+006C61 %s landed safely but failed to accomplish either assigned objective.  
+006CAB , but will not be recorded as this was a training flight.
+006CE5 The performance rating for this mission was %d%s.\n\n
+006D19 %d enemy aircraft were shot down.\n\n
+006D3D In an impressive display of dogfighting skills, %d enemy aircraft were shot down!\n\n
+006D91 One enemy plane was shot down.\n\n
+006DB2 One enemy ground target was destroyed.\n\n
+006DDB %d enemy ground installations were destroyed.\n\n
+006E0B %d civilian and %d unauthorized military
+006E34 %d unauthorized military 
+006E4E %d civilian 
+006E5B In violation of your Rules Of Engagement, %s
+006E88 targets were destroyed.\n\n
+006EA2 target was destroyed.\n\n
+006EBA In violation of your Rules Of Engagement, %d civilian 
+006EF1 targets were destroyed.\n\n
+006F0B target was destroyed\n\n
+006F22 Friendly forces are outraged by the attack and destruction of their 
+006F67 aircraft and installations.
+006F83 aircraft.
+006F8D installations.
+007080 Your plane crashed spectacularly into the ground.
+0070B2 Your plane exploded as it slammed into a hill.
+0070E1 Your main tanks ran out of fuel and you went down.
+007114 Destroyed by enemy missiles, your plane crashed before you ejected.
+007158 Your plane crashed onto the runway, cartwheeled and exploded.
+007196 Your prudent attempt to eject from the aircraft failed.
+0071CE cemetary
+0071D7 landed2.pic
+0071E3 landed3.pic
+0071EF landed4.pic
+0071FB landed1
+007208 endhangr
+007211 flight
+007218 requestr.pic
+00724A Your bail-out was successful. An SAR aircraft homes on your
+007286  beacon and lifts you to safety.
+0072A7 rescue
+0072B4 requestr.pic
+0072C1 adv.pic
+0072C9 adv.pal
+0072E1 SA-8B
+0072E7 SA-10
+0072ED SA-11
+0072F3 SA-12
+0072F9 SA-13
+0072FF SA-N-4
+007306 SA-N-5
+00730D SA-N-6
+007314 SA-N-7
+007320 Rapier
+007327 Tiger
+00732D Seacat
+00734D AA-10
+007353 AIM120
+00735A AIM-9
+007365 Penguin
+00736E AGM-65
+007378 AIM-7W
+00737F AIM-9W
+007386 SA-14
+00739B AA-10
+0073A1 2nd Lt. 
+0073AA 1st Lt. 
+0073B3 Capt. 
+0073BA Major 
+0073C1 Lt. Col. 
+0073CB Col. 
+0073D1 Brig. Gen. 
+0073DD AIM-9M Sidewinder
+0073EF AIM-120A AMRAAM
+0073FF AGM-88A HARM
+00740C Penguin-3 ASM
+00741A AGM-84A Harpoon
+00742A AGM-650 Maverick
+00743B GBU-12 Paveway
+00744A MK 20 Rockeye
+007458 Durandal Bomb
+007466 MK 82-0 Slick
+007474 MK 82-1 Snakeye
+007484 MK 20 Rockeye II
+007495 MK 122 Fireye
+0074A3 CBU-72 FAE
+0074AE MK 35 IN Cluster
+0074BF ISCB-1 Minelets
+0074CF 135MM/IR Camera
+0074DF 1900 lbs. Fuel
+0074EE Special Equip
+00750C ???2+?
+007514 9<;>)
+007526 333123023.24-14,15*15)05'06&06$/6#/7!/7 .8
+00756C *<\r)<\n)<\t(=
+00798E MIG-23
+007995  Flogger
+0079AE MIG-25
+0079B5  Foxbat
+0079CE MIG-29
+0079D5  Fulcrum
+0079EE MIG-31
+0079F5  Foxhound
+007A0E Su-27
+007A15  Flanker
+007A2E IL-76
+007A35  Mainstay
+007A55  Phantom
+007A75  Tomcat
+007A95  Hornet
+007AAE An-72
+007AB5  Coaler
+007AD5  Hornet
+007AEE MIG-23
+007AF5  Flogger
+007B15  Tomcat
+007B35  Phantom
+007B4E Yak-38
+007B55  Forger
+007B6E Tu-95
+007B75  Bear
+007B8E Mi-24
+007B95  Hind
+007BB5  Tiger
+007BD5  Boeing
+007BEE MIG-17
+007BF5  Fresco
+007C15  Mirage
+007C35  Eagle
+007C55  Falcon
+007C6E UH-60
+007C75  Blackhawk
+007C95  Intruder
+007CAE MIG-21
+007CB5  Fishbed
+007CCE EF-111
+007CD5  Aardvark
+007CF5  Galaxy
+007D15  Tbolt II
+007DC1 ???????????
+008067 :File not found$:No file buffers available$:Open error $File closing error$Read error$Write error$
+008807 Error releasing overlay memory$
+00A701 EKEqE
+00A70D FLooks like I zigged when I should've zagged.
+00A73B Well, guess I'd better learn Russian.
+00A761 At least I got my picture in the paper
+00A788 At least Tass spelled my name right.
+00A7AD I can't believe they used that photo.
+00A7D3 This is not going to look good on my resume.
+00A800 What would Mom say if she saw that... home town boy gone Bad?
+00A847 GfH- You made it back...!\n- Yep, just barely.\n- No way man, you kicked 'em.
+00A893 - That's another notch in your gunbelt.\n- Aw, it was nothing, really.\n- Yea, yea, sure Pal.
+00A8EF - Way to go, man!\n- There may not be any bad guys left, when he's done.\n- Hey, man, business as usual, just business as usual
+00A96D - You think you did enough tonight?\n- Maybe enough for one night, but there's always tomorrow.\n- Mr. Modesty strikes again.
+00A9E9 - Was it Hot out there, or what?.\n- Maybe a little... warm...\n- Wait til you meet some real fighters, buddy.
+00AA56 - Ever wish you'd joined the Army?\n- hmmm, maybe once - when I was very young.\n- I know what you mean bro, I know what you mean.
+00AAD8 H%IEIqI
+00AAE4 J&JWhat happened to the part about piece a cake?
+00AB15 Time for more simulator action.
+00AB35 Hmmm, now where's that operations manual...
+00AB61 The Colonel never told me the part about them shooting back...
+00ABA0 Those MiGs are a lot better than those simulators.
+00ABD3 Working on a promo to wing weenie...
+00ABF8 I can't believe those guys...
+00AC16 Mom said there'd be days like this.
+00AC41 J- General, At Last!\n- Off we go into the wild blue General's Office.\n- Now I'll leave the fighting to them.\n- When in doubt, get a lieuteneant to do it.
+00ACDC J>KuK
+00ACE4 K- Gonna slouch yer way to 99, eh?\n- Naw, he just needs his beauty sleep.
+00AD2E - Smooth mission, huh?\n- Hey, this man's name is Silk.
+00AD65 - Heard you had a quiet time up there.\n- Catching some ZZs?
+00ADA1 - Too bad it was so quiet up there.\n- Pretty country, though, huh?.
+00ADE5 - Hear you had a milk run today.\n- Did you spill some of it?
+00AE2B M- It's party time!\n- Now boys, let's wait til we get to the club.\n- Do we have to...?\n- Well...
+00AE8C - You toasted 'em tonight, huh!\n- You bet!\n- Here's to Mikoyan-Gurevich...\n- The great designer himself...
+00AEF7 - I don't think they ever even knew I was there.\n- They do now, though.
+00AF3F - Think we ought'a salute him?\n- Nah, his head's big ehough already.\n- Be even bigger tomorrow morning!\n- Yeah, but he's got the 48 hour pass.
+00AFCE - Those guys never knew what hit 'em.\n- They probably still don't.\n- They know they got hit, though.\n- I heard that!
+00B04A N- Wow, 99 missions!\n- Now I go to that nice, quiet airline job, flying to Hawaii?\n- Maybe I'll write a book, like Schwarzkoff.\n- The lecture circuit sounds nice and cushy...
+00B100 OPPIf this had been a real mission you'd be getting the %s.
+00B13C Because your capture exposed our stealth technology, the squadron commander will not recommend you for the %s.
+00B1AB The capture and public trial of %s will delay his promotion to %s.
+00B1EE For demonstrated skill and daring achievment, %s was %spromoted to the rank of %s
+00B240 Congratulations on the successful completion of your 99th mission and retirement from the Air Force.
+00B2F6 _C_FILE_INFO=
+00B4CB   0PX
+00B4D3 000WP
+00B4E3 ``````
+00B4EB ppxxxx
+00B503 (null)
+00B545 \<<NMSG>>
+00B550 R6000\r\n- stack overflow\r\n
+00B56C R6003\r\n- integer divide by 0\r\n
+00B58D R6009\r\n- not enough space for environment\r\n
+00B5C0 run-time error 
+00B5D2 R6002\r\n- floating-point support not loaded\r\n
+00B601 R6001\r\n- null pointer assignment\r\n

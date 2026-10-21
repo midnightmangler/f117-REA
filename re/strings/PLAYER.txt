@@ -1,0 +1,64 @@
+﻿0005E0 PQRSTUVW
+0005FA _^][[ZYX
+001460 <%t\n<&t
+0016D0 <\rto\n
+0016E3 <\rt\\n
+0016E9 tX<"t$<\t
+001714 <\rt+\n
+00171A t'<"t
+001786 <\rt|\n
+00179D <\rtb\n
+0017A3 t^<"t'<\t
+0017D1 <\rt.\n
+0017D7 t*<"t
+001B2E , <Xw
+001C67 <st'<ntQ<pt`<Et
+0024FA s6BSQ
+002679 UWVQS3
+00268F X[Y^_]
+002AB8 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+002AF2 usage: player pan_file(s)\n
+002B0D player.c
+002B16 _dos_allocmem ( -1, &size) == 8
+002B36 player.c
+002B3F _dos_allocmem (size, &mseg) == 0
+002B60 player.c
+002B69 size >= 0x2000
+002B78 player.c
+002B81 _dos_freemem(mseg) == 0
+002BA0 player.c
+002BA9 cels <= 1024
+002BB6 player.c
+002BBF FAB_close()
+002BCB player.c
+002BD4 cel[0] == 'B'
+002BE2 player.c
+002BEB cel[1] == 0
+002BF7 player.c
+002C00 cel[2] == 1
+002C0C player.c
+002C15 cel[3] == 0
+002C2D 'time:
+002C34  cels:
+002C3B  full:
+002C42  tail:
+002C49  head:
+002C50  size:
+002C57  skip:
+002C5E       
+004495 Error releasing overlay memory$
+0044EE _C_FILE_INFO=
+004542 Assertion failed: %s, file %s, line %d\n
+0046EB   0PX
+0046F3 000WP
+004703 ``````
+00470B ppxxxx
+004723 (null)
+004782 <<NMSG>>
+00478C R6000\r\n- stack overflow\r\n
+0047A8 R6003\r\n- integer divide by 0\r\n
+0047C9 R6009\r\n- not enough space for environment\r\n
+0047FC run-time error 
+00480E R6002\r\n- floating-point support not loaded\r\n
+00483D R6001\r\n- null pointer assignment\r\n
+004862 \r\nabnormal program termination\r\n

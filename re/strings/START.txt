@@ -1,0 +1,507 @@
+﻿000587 Ht Ht%
+000606 &+GB@@
+0009FD PPPPP
+000C69 )5[[^_
+00162A RRRRR
+0016FE PPPPP
+00179A PPPPP
+001EAA t7,\tA
+002537 PPPPP
+002773 PPPPP
+0027B6 PPPPP
+002B61 &`'}'
+003334 QRPRP
+003979 PPPPP
+004C0A .\n[[+F
+004CEB M\t[[+F
+005155 NPN$NPN$N$N
+005C78 Y$Y=YBYGYLYQY
+006061 &;D8u
+0061C0 &;D8t
+006237 &;G8t
+006345 QQPVW
+00744E QVVPW
+0079A0 PPPPP
+007E79 Ht5Ht^
+008779 PSQRVWU+
+0087B8 i]_^ZY[X
+008BB6 r\rSQR
+008CB1 } ;6l
+008CB7 r\rSQR
+00901C PSQRVWU
+009066 ]_^ZY[X
+009074 ]_^ZY[X
+0095E2 SQPS3
+009691 PSQPS
+0096C3 t\rSQV
+0096DD PSQPS3
+009842 <%t\n<&t
+009DC1 ,atI,
+00A046 , <Xw
+00A17F <st'<ntQ<pt`<Et
+00ABE6 s6BSQ
+00AC68 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+00ACA2 temp.wld
+00ADBA Correct. Security clearance confirmed.
+00ADE1 Incorrect.  Your security clearance level is now reduced.
+00AE1C %d lbs.
+00AE56 The Special Equipment container is needed for this sortie!
+00AEBA %d lbs.
+00AEC2 libya.pic
+00AECC persian.pic
+00AED8 n_cape.pic
+00AEE3 c_europe.pic
+00AEF0 vietnam.pic
+00AEFC mid_east.pic
+00AF09 kuwait.pic
+00AF14 cuba.pic
+00AF1D korea.pic
+00AF3A Decoding mission orders.
+00AF53 Depart from %s at %s hours.
+00AF6F Land at %s.
+00AF87 Press Selector to view ranges of selected radar sites.
+00AFBE Press Selector to view ranges of selected SAM sites.
+00AFF3 Press Selector to view written decription of mission.
+00B029 Press Selector to view hostile force concentrations.
+00B05E Press Selector to view ranges of all radar or missile sites.
+00B09B Press Selector to erase ranges of all radar and missile sites.
+00B0DA Press Selector to review and change your plane's armaments.
+00B116 Press Selector to receive a different mission.
+00B145 Hostile forces have concentrated in the indicated areas.
+00B17E No special activity on the part of the enemy has been reported.
+00B1BE Press Escape button to return to Ready Room.
+00B1EB AIRBASE DATA:\n
+00B1FA LOC: %s\n
+00B203 STATUS: Neutral\n
+00B214 STATUS: Friendly\n
+00B226 STATUS: Hostile\n
+00B237 FGTR TYPE: %s\n
+00B246 SQDRNS: %d\n
+00B254 RADAR DATA:\n
+00B261 LOC: %s\n
+00B26A STATUS: Neutral\n
+00B27B Doppler
+00B283 Pulse
+00B289 TYPE: %s, %s\n
+00B297 (max)
+00B29D (avg)
+00B2A3 RDR RNG: %dkm %s\n
+00B2B5 MSL RNG: %dkm (max)\n
+00B2CA NOTE: Believed to be\nunder repair
+00B2EC NOTE: Occasionally is\noff the air
+00B30E inexperienced
+00B31C regular
+00B324 veteran
+00B32C elite
+00B332 416th Tactical Fighter Squadron
+00B352 Air Combat Mission Orders
+00B36C Ground Strike Mission Orders
+00B389 Air Training Orders
+00B39D Ground Strike Training Orders
+00B3BB Pilot: %s%s.
+00B3C8 %s - 
+00B3CE FLIGHT PLAN:
+00B3DB Depart from %s at %s hours.
+00B3F7 Land at %s.
+00B403 RULES OF ENGAGEMENT:
+00B418 SUGGESTED ARMAMENT:
+00B42C Est. Fuel required: %d lbs.
+00B450 PRIMARY TARGET INTELLIGENCE SUMMARY:
+00B475 SECONDARY TARGET INTELLIGENCE SUMMARY:
+00B49C OBJECTIVE:
+00B4D8 %s %d, %d
+00B52F Photograph
+00B53A Destroy
+00B542 %s the %s at %s
+00B552 %s the %s
+00B55C  before %s hours, while the cargo is still being unloaded.
+00B597  before %s hours.
+00B5AB Reach the beacon at ONC %s and drop the supplies before %s hours.
+00B5ED  The beacon will be on ONLY during this period.
+00B61D Reach the secret airstrip at ONC %s before %s hours.
+00B652  The airstrip will be lighted ONLY during this period.
+00B689 Destroy the AN-72 Coaler leaving %s airbase at %s hours and arriving at %s airbase at %s hours.
+00B6E9 Intercept and destroy the AN-72 Coaler leaving %s airbase, at %s hours.  Destination unknown.
+00B747 Intercept and destroy the Tu-95, last seen at ONC %s at %s hours. It is probably heading for %s airbase, and will arrive at %s hours.
+00B7CD  fighter patrol
+00B7DE Intercept and destroy the %s%s at ONC %s.
+00B808 air_id
+00B80F armsscrn
+00B818 brefscrn
+00B821 folder1
+00B829 hangscrn
+00B832 homescrn
+00B83B ordrscrn
+00B844 rostscrn
+00B84D breficon
+00B856 folder2
+00B85E ordrsprt
+00B867 requestr
+00B870 rostsprt
+00B879 weapons1
+00B882 weapons2
+00B88B weapons3
+00B894 libya
+00B89A persian
+00B8A2 n_cape
+00B8A9 c_europe
+00B8B2 vietnam
+00B8BA mid_east
+00B8C3 kuwait
+00B8CF korea
+00B8D5 planes1
+00B8DD planes2
+00B8E5 planes3
+00B8ED planes4
+00B8F5 planes5
+00B8FD hangsprt
+00B90A climbin
+00B912 %s.pic
+00B95C Insufficient system memory - AllocBuffer$
+00B986 Buffer dealloc error$
+00B9CA <\r?\rB\rE\rH\rK\rN\rQ\rT\r00:00
+00B9E2 00:00
+00B9E8 00:00
+00BA32 00:00
+00BA68 Active
+00BA6F Retired
+00BA7B Press 'Delete' key to erase a pilot
+00BAAB Best Mission: %d
+00BABC Last Mission: %d
+00BACD CMH:%d
+00BAD4 DFC:%d
+00BADB AFC:%d
+00BAE2 SS:%d
+00BAE8 AM:%d
+00BAEE PH:%d
+00BB09 (([[RRRRR
+00BB13 !+!+CLUnxrb
+00BB1F Roster.Fil
+00BB2D Roster.Fil
+00BB38 palettes.pal
+00BB45 adv.pal
+00BB4D Not enough memory!
+00BCEE 2nd Lt 
+00BCF6 1st Lt 
+00BCFE Capt 
+00BD04 Major 
+00BD0B Lt Col 
+00BD18 B Gen 
+00BE1C ???2+?
+00BE24 9<;>)
+00C250 SA-8B
+00C25E SA-10
+00C26C SA-11
+00C27A SA-12
+00C288 SA-13
+00C296 SA-N-4
+00C2A4 SA-N-5
+00C2B2 SA-N-6
+00C2C0 SA-N-7
+00C2DC Rapier
+00C2EA Tiger
+00C2F8 Seacat
+00C368 MIG-23
+00C36F  Flogger
+00C388 MIG-25
+00C38F  Foxbat
+00C3A8 MIG-29
+00C3AF  Fulcrum
+00C3C8 MIG-31
+00C3CF  Foxhound
+00C3E8 Su-27
+00C3EF  Flanker
+00C408 IL-76
+00C40F  Mainstay
+00C42F  Phantom
+00C44F  Tomcat
+00C46F  Hornet
+00C488 An-72
+00C48F  Coaler
+00C4AF  Hornet
+00C4C8 MIG-23
+00C4CF  Flogger
+00C4EF  Tomcat
+00C50F  Phantom
+00C528 Yak-38
+00C52F  Forger
+00C548 Tu-95
+00C54F  Bear
+00C568 Mi-24
+00C56F  Hind
+00C58F  Tiger
+00C5AF  Boeing
+00C5C8 MIG-17
+00C5CF  Fresco
+00C5EF  Mirage
+00C60F  Eagle
+00C62F  Falcon
+00C648 UH-60
+00C64F  Blackhawk
+00C66F  Intruder
+00C688 MIG-21
+00C68F  Fishbed
+00C6A8 EF-111
+00C6AF  Aardvark
+00C6CF  Galaxy
+00C6EF  Tbolt II
+00C73E SA-8B
+00C750 SA-10
+00C762 SA-11
+00C774 SA-12
+00C786 SA-13
+00C798 SA-N-4
+00C7AA SA-N-5
+00C7BC SA-N-6
+00C7CE SA-N-7
+00C7F2 Rapier
+00C804 Tiger
+00C816 Seacat
+00C882 AA-10
+00C894 AIM120
+00C8A6 AIM-9
+00C8CA Penguin
+00C8DC Harpoon
+00C8EE AGM-65
+00C900 LGBOMB
+00C912 RTBOMB
+00C924 FFBOMB
+00C936 AIM-7W
+00C948 AIM-9W
+00C95A SA-14
+00C9A2 AA-10
+00C9B4 Equip.
+00CBA3 *~+G,
+00CBCB 7D8\r9
+00CBDB >a?2@
+00CBEF EgF]G8H
+00CC01 MUN*O.P
+00CC0D RuSAT
+00CC23 \0_L^Our agents have captured enemy equipment of great importance to national security. You will fly to a secret airstrip and load this equipment aboard. One bay will be allocated for this equipment. Other bays may be used for normal ordnance as usual.\r
+00CD21 Guerilla freedom fighters need Stinger missiles for upcoming operations. You will land them at a secret airstrip. The other bays may be used for normal ordnance, selected at your discretion.\r
+00CDE1 A group of covert agents involved in a hostage rescue operation lost their arms and equipment. To save this operation from failure, you must airdrop replacement equipment. The drop point is designated by an on-ground radio beacon.\r
+00CEC9 A guerilla group needs weapons and explosives to strike a decisive blow against an enemy HQ. You will take this equipment to their hideout and drop it onto their radio beacon.\r
+00CF7A An experimental search and tracking radar system is being installed at an enemy SAM site. Sources indicate it may already be operational. Detailed, low-altitude photos are required as soon as possible.\r
+00D045 An upcoming operation requires a corridor through enemy air defenses. Your role is to eliminate the search and tracking radar of a key SAM battery in the enemy defense network.\r
+00D0F7 Enemy mobile SAM batteries have inflicted unacceptable losses on our tactical air attacks. Air support of ground operations cannot resume until these vehicles are destroyed.\r
+00D1A6 A new Soviet over-the-horizon radar system has nearly been completed. Due to space-launch delays no KH-11 satellite overflights are available at the moment. You must overfly the site and bring back detailed photos.\r
+00D27E The new Soviet Over-The-Horizon radar system must be destroyed immediately. As long as it is operational, the enemy receives long-range advance warning of all our sea and air movements.\r
+00D339 The new Soviet long-range phased array radar for their ABM system may violate some arms agreements. A closeup photo overflight is needed to confirm satellite data.  Delicate negotiations are about to begin.\r
+00D409 Washington needs to send a strong political signal. Destruction of an LPAR in their ABM system should persuade the enemy to negotiate more faithfully.\r
+00D4A1 Pentagon strategic planners need a detailed update on an enemy oil refinery complex. As usual, our spies are committed elsewhere, so you will fly over the target area and get the necessary photos.\r
+00D567 We intend to strike the enemy's fuel resources before he can place them on a more efficient war footing. Destruction of these facilities could ruin the enemy economy for years.\r
+00D619 A strike is planned against a large oil storage facility. To make sure the attack is correctly planned, you must overfly it and get up-to-date photos. Computer-aided structural analysis and infrared views will show whether the tanks are full.\r
+00D70D High command has decided to destroy a major enemy oil storage facility to temporarily reduce his exports, and ruin his capacity to resupply his army. This action could even bring him to the bargaining table.\r
+00D7DE Recent information indicates that Soviet stealth-technology bombers have been moved into the region. You will make a recon overflight to determine if this is true, and if so, photograph the aircraft.\r
+00D8A7 The new Russian stealth bomber has deployed to forward airfields in the region. We must destroy this plane before it inflicts crippling damage on our forces.\r
+00D946 Intelligence reports a new squadron of enemy aircraft entering the region. Washington requires an immediate reconnaissance of the base and photographs of the aircraft there.\r
+00D9F5 To protect a forthcoming bombing raid from interception, you must knock out an enemy fighter squadron. In-place agents indicate that an immediate attack on the MiGs' base will catch them on the ground.\r
+00DAC0 Intelligence reports a Soviet An-72 entering the region with a secret cargo. Washington wants photos of this plane and its cargo before it leaves the base.\r
+00DB5D A Soviet An-72 carrying a nuclear device should have been intercepted three hours ago... but wasn't. You must rectify the situation by destroying the cargo while it is being unloaded.\r
+00DC16 Intelligence sources indicate that the enemy has organized a new terrorist training camp. As usual, the KH-11 is out of position and malfunctioning, so you must perform a photo overflight of the area.\r
+00DCE0 Key terrorist leaders have gathered for a planning meeting at one of their training camps. A well-timed retaliatory strike will disrupt their operations and deter future violent acts. This opportunity may not occur again.\r
+00DDBF A Soviet nuclear aircraft carrier is in the area and may be used for aggressive action. Washington requires photo close-ups of this powerful warship.\r
+00DE56 A Soviet carrier task force has sailed from Murmansk. Intelligence believes it is part of a raid into the Norwegian Sea. It is unlikely that you will be able to sink her, but setting her afire with multiple hits will ruin the flight deck and weapons systems, making the ship useless.\r
+00DF73 Intelligence sources report that enemy naval units are deploying for a sudden attack against our forces. To verify the accuracy of these reports, Washington requires a recon overflight immediately.\r
+00E03A A US Special Forces raid will begin late tonight. To protect their insertion and subsequent withdrawal, enemy missile patrol boats must be eliminated. Remember, this is a combined arms operation, so timing is essential.\r
+00E117 Enemy missile boats now at sea have attacked friendly ships. A quick counterattack is desired. Destroy these boats before they do more damage.\r
+00E1A7 Satellite photos indicate the presence of new enemy surface-to-surface missiles. Washington needs photographic evidence to confirm this information. You will fly to the target and get the photos.\r
+00E26C The enemy has placed a large battery of surface-to-surface missiles in range of some of our important ground facilities. These SSMs must be destroyed as quickly as possible.\r
+00E31B Washington has learned of an enemy military base on an offshore oil platform. A detailed, low-level photo reconnaissance is required. Remember, Washington insists that the enemy remain unaware of your presence.\r
+00E3EF The enemy is using an offshore oil platform as a base for speedboat attacks on friendly ships. You must eliminate this problem and the fanatics in a single quick, surgical strike.\r
+00E4A4 A European consortium, in violation of treaties, is helping the enemy build a plutonium breeder reactor. The project must be kept under constant observation, and weather has blocked satellite photos.\r
+00E56D The enemy is ready to bring a nuclear power plant on line. Although officially for civilian purposes, it could produce material for nuclear weapons. You will launch a strike to eliminate this plant immediately.\r
+00E641 A new Soviet submarine base was finished this week. Washington wants a full evaluation of this new weaponand you're elected to provide it. Watch out for elements of the Northern Fleet cruising offshore. Good luck.\r
+00E718 Destruction of the new Soviet submarine base on the Kola coastline will cripple the Red Banner Northern Fleet by eliminating a major refueling and repair center.  The area is too well-defended for a major air raid, but Washington hopes your stealth plane will be successful.\r
+00E82C Local intelligence sources report that a Soviet merchant ship has arrived with a super-secret cargo. Washington suspects the cargo, which is deck-loaded, is a new type of nuclear weapon. Photos of the ship and its cargo are therefore very important.\r
+00E927 A merchant ship controlled by a terrorist group is carrying a large nuclear device. Washington is afraid this weapon will be used for political demands or attacks. The ship and cargo must be destroyed before it finishes unloading.\r
+00EA0F Satellite photos reveal that a new Typhoon class ballistic missile sub has suffered minor damage and must run on the surface. Washington is eager to exploit the situation by getting plenty of close-up photos of this new vessel.\r
+00EAF4 A Typhoon-class ballistic missile sub has been spotted undergoing hurried resupply and missile replenishment at a naval port complex. This naval threat should be eliminated before it returns to the deep.\r
+00EBC1 Intelligence sources report suspicious activity at a hostile army depot. Washington is worried that this could be preparations for a surprise attack. They want an immediate photo reconnaissance of the depot.\r
+00EC92 Intelligence has confirmed enemy preparations for a a surprise attack. To forestall this attack, you will destroy the main military depot that holds their supplies and ammunition.\r
+00ED47 Washington is planning a raid on an enemy HQ. You will make a last minute photo reconnaissance of the headquarters, to give the raid force up-to-date information on the target area.\r
+00EDFE Despite repeated warnings and an air raid, the enemy persists in supporting international terrorism. The time has come to deal with this outlaw dictator. Due to the strong air defenses around his HQ, your stealth aircraft has the best chance of success.\r
+00EEFD Our ground troops are launching a new offensive. Washington hopes a well-timed raid on an enemy headquarters complex will cripple the enemy command and control apparatus and leave their combat forces unable to respond to the attack.\r
+00EFE7 A big bridge-busting raid is being planned. The F-111 squadron commander has requested last-minute photos of the target area. You will make a photo overflight to get the goods for him.\r
+00F0A1 Repeated major air raids have failed against this well-defended and strongly built bridge. Headquarters has decided the only chance of success is a sneak attack with a stealth fighter.\r
+00F15B Intelligence reports the military genius behind recent enemy operations is travelling with his staff to a new headquarters. He is worth ten thousand troops. You must ambush and destroy his plane.\r
+00F220 Intelligence reports that a terrorist leader, the mastermind behind recent incidents, is traveling by plane. This plane must not be allowed to reach its destination.\r
+00F2C7 Intelligence has learned that enemy SPETSNAZ commandos will soon strike a blow. Their transport will be surrounded by a strong fighter escort. Fight your way through these defenses and destroy this plane before the commandos reach their target.\r
+00F3BD Friendly agents report a group of well-known international terrorists are travelling by transport plane to an unknown destination. Washington wants you to find and eliminate this plane before further mischief is done.\r
+00F498 Intelligence reports a terrorist plot to fly an An-72 transport plane full of explosives into a friendly nation and explode it at the airport. You must intercept this "flying bomb" before it arrives.\r
+00F561 A Soviet Tu-95D Bear recon plane has discovered one of our super-secret operations in a chance overflight. The Bear must be destroyed before returning to base. The destruction must be clandestine to avoid an international incident.\r
+00F64A The Russians have just escalated the danger of nuclear war by putting their Tu-95H cruise missile bombers into the air, orbiting deep behind their lines. We must eliminate this new nuclear threat. A conventional fighter attack could never sneak up on them, but we hope your stealth fighter can do it. Good luck!\r
+00F783 Soviet Il-76 Mainstay AWACS planes have been efficient at watching our aircraft movements and vectoring Russian fighters into intercepts. Washington hopes that your stealth fighter can surprise and destroy one. Good hunting!\r
+00F865 An upcoming raid requires a clear shot directly through the enemy defenses. Unfortunately, the enemy has a fighter patrol blocking this route. You must eliminate this fighter patrol to clear the route.\r
+00F930 Central Command is considering a direct attack on the presidential palace of Saddam Hussein. You will make a photo reconnaissance of the palace to give CentCom up-to-date information. You must avoid detection.\r
+00FA03 Central Command has ordered an attack on the presidential palace of Saddam Hussein and the Baath party. AAA and SAM missiles in the target area should not present any problems.\r
+00FAB5 In the event of expansion of the Gulf War, Central Command is planning to destroy all enemy chemical weapons facilities to stop Iraqi production of such weapons. CentCom needs current photos of these facilities.\r
+00FB8A Central Command has ordered the destruction of a chemical weapons manufacturing facility that is producing mustard gas and phosgene. Destruction of this plant will seriously damage the ability of Saddam Hussein and the Iraqi military to produce such weapons.\r
+00FC8E Intelligence has learned the location of several mobile Scud launchers. These must be photograhped to determine their operational capabilities. \r
+00FD20 Intelligence has learned the location of several mobile Scud launchers. These must be destroyed to prevent terror strikes on Israel and friendly Arab allies. We must strike quickly before the launchers are moved out of the area.\r
+00FE06 Intelligence suspects that enemy aircraft, capable of delivering non-conventional weapons, are being housed in hardened bunkers. Photos are needed to determine proper munitions for penetration and destruction of these hangars.\r
+00FEEA Central Command has ordered the destruction of hardened shelters used to protect the enemy's Air Force. Aircraft inside these shelters may be capable of delivering biological or chemical weapons and must be destroyed by a direct hit.\r
+00FFD5 Central Command has information that the Iraqi military is operating a new biological/chemical weapons plant. You are to photograph this facility to confirm the existence of non-conventional munitions. \r
+0100A1 CentCom has ordered the destruction of a biological weapons production facility. If accomplished, your mission will substantially reduce enemy biological weapons production capacity.\r
+010159 Soviet made OSA-II guided missile boats have been spotted and pose a significant threat to U.S. and Allied naval operations in the Persian Gulf. Central Command has ordered the destruction of these boats.\r
+010227 Iraqi forces have sabatoged a Kuwaiti offshore oil pumping station. Crude oil is being dumped into the Persian Gulf in alarming quantities, causing untold ecological and environmental damage. Saudi experts believe a direct hit on the oil pumping manifold will stem the flow of crude into the Gulf.\r
+010352 Central Command has learned the location of several fixed Scud launchers in the area. These weapons are capable of delivering conventional or chemical warheads and must be destroyed to prevent Saddam Hussein from launching terror strikes against Israel and friendly Arab allies.\r
+01046A As tensions escalate in the Gulf, Central Command is preparing for offensive operations. It will be necessary to knock out the Iraqi Air Force and establish air superiority as soon as possible. CentCom needs up-to-date photos of the Iraqi Air Defense Command Center.\r
+010576 Central Command has ordered the destruction of the Iraqi Air Defense Command Center. Destroying this command and control center will aid the Allied effort to destroy the Iraqi Air Force and establish air superiority over the theater of operations.\r
+01066F Intelligence reports that the Cubans have fitted out fishing boats with sophisticated surveilance equipment and are using them for covert missions against US forces. You must photograph one of these trawlers so that analyst can determine the extent of the risk to national security.\r
+01078B Several Cuban surveilance boats have been operating in US waters. With the current state of tensions, Washington has approved a plan of demonstration in retaliation. You will destroy one of these craft as an example.\r
+010865 Intelligence reports a new shipment of Soviet shoulder launched SAMs at a supply center, probably earmarked for distribution to various guerilla organizations in Central America. You must get good clean photos of this installation so the experts can determine the veracity of the the report.\r
+01098A A Cuban supply and replinishmet center reportedly will be shipping a cargo of Soviet missiles and launchers to communist guerillas in Central America. To warn the enemy of grave consequences for such actions in the Western hemisphere, you will proceed to the depot and destroy it at once.\r
+010AAC Intelligence reports large concentrations of Republican Guard Units near the Kuwait border. To determine the threat to our ground forces, and the strength of their air defenses, you must get clear, clean photos of these units.\r
+010B90 Saddam's Elite Republican Guards are known to be the primary threat to our ground forces when the ground war begins. Accordingly, CENTCOM has ordered the destruction of these units by our air forces to commence immediately.\r
+010C71 Satellite photos indicate the presence of new enemy surface-to-air missiles. Washington needs photographic evidence to confirm this information. You will fly to the target and get the photos.\r
+010D32 The enemy has placed a large battery of surface-to-air missiles in range of some of our important air facilities. These SAMs must be destroyed as quickly as possible.\r
+010DDE F117A-SF
+010DEF ???????????
+011095 :File not found$:No file buffers available$:Open error $File closing error$Read error$Write error$
+011D28 Changing pilot orders will cancel your scheduled mission.
+011D65 No Way!
+011D8B Changing pilots will cancel your scheduled mission.
+011DD5 U.S. Air Force regulations prohibit deceased officers from flying multi-million dollar aircraft.  Please choose again or erase this entry.
+011E76 You need to receive a mission briefing first.
+011EBA This officer has retired. Please choose again or erase this entry.
+011F13 Original disk in drive. Roster file will not be saved.
+011F60 Disk is write protected. Roster file will not be saved.
+011FAE Your security clearance does not authorize you to conduct air operations in this theatre.
+012026 Are you ready for your mission?
+01204A Not yet
+012061 Error releasing overlay memory$
+013F62 Green
+013F68 Regular
+013F70 Veteran
+013F78 Elite
+013F86 Green Opponents
+013F96 Regular Opponents
+013FA8 Veteran Opponents
+013FBA Elite Opponents
+013FF2 F-14D Tomcat
+013FFF F-15C Eagle
+01400B F-16G Falcon
+014018 F/A-18A Hornet
+014027 AV-8B Harrier
+014035 EF-111A Raven
+014043 A-6E Intruder
+014051 A-10 Thunderbolt
+014062 B-1B Bomber
+01406E E-3C Sentry
+01407A Su-24 Fencer
+014087 Yak-38 Forger
+014095 Mig-21 Fishbed
+0140A4 Mig-23 Flogger
+0140B3 Mig-25 Foxbat
+0140C1 Mig-29 Fulcrum
+0140D0 Mig-31 Foxhound
+0140E0 Su-27 Flanker
+0140EE Tu-26 Backfire
+0140FD Il-76 Mainstay
+014110 MicroProse F117A
+014121 Lockheed F117A
+014136 No Crashes
+014146 Realistic
+014156 No Crashes
+014161 Easy Landings
+01416F Realistic Landings
+01418A Air Missions
+014197 Strike Missions
+0141A7 Air Training
+0141B4 Strike Training
+0141CC Air to Air Missions:\nYour target will be important, well-defended enemy aircraft that cannot be intercepted and destroyed by normal means.
+014257 Ground Strike Missions:\nFrequent strike and occasional photo-recon missions are required against various ground installations.
+0142D6 Air to Air Training:\nThis training exercise will test your ability to deal with air interception missions. Your plane cannot be damaged.
+01435F Ground Strike Training:\nThis exercise allows you to practice your ground target attack procedures.  Your plane cannot be damaged.
+0143E7 This mission is clandestine.  Avoid detection, especially visual identification by military aircraft.  You may fire upon targets authorized for elimination, enemies who attack you, or enemy military aircraft or installations that detect you.
+0144D9 All military targets may be attacked freely.  After achieving your objectives, you are expected to cause maximum damage to enemy aircraft and ground installations. Avoid detection if possible.  You 
+0145A5  avoid damage to civilian personnel and property at all costs.  Remember, this is a LIMITED war situation.
+014610 A full state of war exists.  Any and all targets within enemy territory may be attacked.  After achieving your objectives, you may attack any target of military value.  Targets that most help the war effort are enemy combat forces, including aircraft and missile sites.
+014730 Libya
+014736 Persian Gulf
+014743 North Cape
+01474E Central Europe
+01475D Vietnam
+014765 Middle East
+014771 Desert Storm
+014783 Korea
+01479B Libya:  1986.\nFrom an aircraft carrier and land bases in the Mediterranean, you will fly missions against Qaddafi's Libya, a modestly armed Third World nation.
+01483B Persian Gulf:  1984.\nYou'll be flying from bases in friendly Arab states on the south side of the Gulf. Your mission objectives are in Khomeini's Iran, the world's foremost supporter of international terrorism.
+01490E North Cape:  1985.\nStealth missions will be staged from bases in northern Norway.  Your targets will be in the USSR's Kola Peninsula, a huge land, sea and air military complex.
+0149BF Central Europe:  1986.\nNATO bases in Western Europe will support your missions against the world's largest military force: the Warsaw Pact in Eastern Europe.
+014A5D Vietnam: 1994.\nFrom friendly southeastern Asia air bases and US Navy aircraft carriers, you will pilot stealth missions against the People's Republic of Vietnam.
+014AFF Middle East:  1989.\nFrom Mediterranean bases and carriers you will fly strike and reconnaissance missions over Lebanon and Syria, keeping a wary eye for MIGs and SAMs.
+014BA7 Desert Storm:  1991.\nFrom an aircraft carrier and land bases in the Persian Gulf, you will fly missions against Iraq which has the fourth largest army in the world.
+014C4C Cuba:  1995.\nFrom friendly bases and aircraft carriers in the Caribbean, you will pilot missions against Castro's Cuba, the last bastion of communism in the West.
+014CEF Korea: 1997.\nFrom friendly South Korean air bases and US Navy aircraft carriers, you will fly stealth missions against North Korea, the USSR, and China.
+014D96 Moderate
+014DA4 Extreme
+014DAC Ultimate
+014DBB Cold War
+014DC4 Limited War
+014DD0 Conventional War
+014DE7 Cold War:\nHard-line diplomacy and international terrorism have increased world tension.  However, military forces remain on peacetime alert.
+014E74 Limited War:\nThe diplomatic situation has deteriorated to the point where nations are using limited military action in this region.  Opposing military forces are now on alert.
+014F24 Conventional War:\nFull scale conventional (non-nuclear) war has begun in this region.  Enemy military forces are ready for battle, or are already in action.
+014FC3 Your onboard INS system has been preset to the takeoff, primary and secondary targets, and landing positions.  You may adjust the waypoints after boarding the plane.
+01508F 4X AIM-9M SIDEWINDER
+0150A4 3X AIM-120A AMRAAM
+0150B7 1X AGM-88A HARM
+0150C7 2X PENGUIN-3 ASM
+0150D8 1X AGM-84A HARPOON
+0150EB 2X AGM-650 MAVERICK
+0150FF 2X GBU-12 PAVEWAY
+015111 2X MK 20 ROCKEYE
+015122 2X DURANDAL BOMB
+015133 3X MK 82-0 SLICK
+015144 3X MK 82-1 SNAKEYE
+015157 2X MK 20 ROCKEYE II
+01516B 2X MK 122 FIREYE
+01517C 2X CBU-72 FAE
+01518A 2X MK 35 IN CLUSTER
+01519E 1X ISCB-1 MINELETS
+0151B1 1X 135MM/IR CAMERA
+0151C4 1X 1900 LBS. FUEL
+0151D6 1X SPECIAL EQUIP
+01520D GUIDED MISSILE:\nShort-range IR air-to-air weapon.\nEffective range: 17km
+015255 GUIDED MISSILE:\nMedium-range air-to-air weapon.\nEffective range: 32km
+01529B GUIDED MISSILE:\nHomes on enemy radar.\nEffective range: 20km
+0152D7 GUIDED MISSILE:\nDirect flight anti-ship weapon.\nEffective range: 32km
+01531D GUIDED MISSILE:\nSea-skimming anti-ship weapon.\nEffective range: 60km
+015362 GUIDED MISSILE:\nOptical and IR tracking, fire-and-forget.\nEffective range: 32km
+0153B2 LASER-GUIDED GLIDE BOMB:\nEffective on buildings, bunkers, bridges.\nToss bomb or drop above 1,000'.
+015415 RETARDED-FALL CLUSTER BOMB:\nEffective against against soft buildings, oil equipment, missiles.  Drop above 500'.
+015486 RETARDED-FALL BOMB:\nParachute deployed.  Designed to destroy runways.  Drop above 500'.
+0154DE FREE-FALL BOMB:\nEffective against some buildings, ships, missiles, most oil equip.  Drop above 3000'.
+015544 RETARDED-FALL BOMB:\nEffective against unprotected large area targets such as a depot.  Drop above 500'.
+0155AC LASER-GUIDED CLUSTER BOMB:\nEffective on buildings, oil equip., missiles, radars.  Toss bomb or drop above 1,000'.
+01561E FREE-FALL INCENDIARY:\nEffective against soft buildings, ships, missiles, most oil equip.  Drop above 3,000'.
+01568B LASER-GUIDED FUEL-AIR EXPLOSIVE:\nSuperb against sub pens, bunkers, and buildings.  Toss bomb or drop above 1,000'.
+0156FE RETARDED-FALL INCENDIARY:\nSuperb against depots, missiles, oil equipment.\nDrop above 500'.
+015759 RETARDED-FALL MINE CLUSTER:\nVery good against runways.\nDrop above 500'.
+0157A1 RECON PALLET:\n135mm visual/infrared photo-recon package.\nUse at close range.
+0157EE FUEL TANK:\n350 gallon fuel tank increases range by 20%.
+015826 SPECIAL EQUIPMENT:\nSupplies to be delivered.
+01586E $"(%'(
+0158A7 hnj$l
+0158B7 uBvlw
+0158BF y}z]{*|
+0158EB |*|]{}z
+0158F5 xlwBv
+015905 m$lnj
+01593D +'((%$"
+015A96 _C_FILE_INFO=
+015C6F   0PX
+015C77 000WP
+015C87 ``````
+015C8F ppxxxx
+015CA7 (null)
+015CB1          (((((                  H
+015DEE <<NMSG>>
+015DF8 R6000\r\n- stack overflow\r\n
+015E14 R6003\r\n- integer divide by 0\r\n
+015E35 R6009\r\n- not enough space for environment\r\n
+015E68 run-time error 
+015E7A R6002\r\n- floating-point support not loaded\r\n
+015EA9 R6001\r\n- null pointer assignment\r\n

@@ -1,0 +1,2 @@
+﻿000200 MISCOVR.EXE 05-11-88
+000230 Copyright (C) 1988 by MicroProse Software, All Rights Reserved.

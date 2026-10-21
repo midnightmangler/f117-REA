@@ -1,0 +1,12 @@
+﻿0003F5 Alloc 1Mb?$DOS lied about mem avail$ - Filename not found$Not enough mem to load file$Overlay load failed error - 11$Overrun alloc mem$Can't shrink alloc$Error releasing overlay mem$
+0004AD SETUP.EXE
+0004B7 MPS_LOGO.EXE
+0004C4 PLAYER.EXE
+0004CF START.EXE
+0004D9 VGAME.EXE
+0004E3 END.EXE
+0004EB DSWAP.EXE
+000502 MISC.EXE
+0005A2 - title-1 title-2 title-3a credit c-pit bunker\r
+0005D3  title-2\r
+0005FA stack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\tstack\t

@@ -1,0 +1,48 @@
+﻿00039D PPPPP
+000B9E ;6r$r\rSQR
+000BA9 p$ZY[
+000C9B z$} ;6r$r\rSQR
+000CAA p$ZY[
+0010BE <%t\n<&t
+00127C <\rto\n
+00128F <\rt\\n
+001295 tX<"t$<\t
+0012C0 <\rt+\n
+0012C6 t'<"t
+001332 <\rt|\n
+001349 <\rtb\n
+00134F t^<"t'<\t
+00137D <\rt.\n
+001383 t*<"t
+0015E5 ,atI,
+0017A4 X(, <Xw
+0018DF <st'<ntQ<pt`<Et
+001C59 96P(r
+001DE6 96P(r
+002210 s6BSQ
+002308 MS Run-Time Library - Copyright (c) 1990, Microsoft Corp
+002342 start.exe
+00234C vgame.exe
+002356 end.exe
+002360 %s:\%s
+002376 swap.pic
+00237F swap.pal
+002388 Insufficient system memory - AllocBuffer$
+0023B2 Buffer dealloc error$
+0023E1 ???????????
+002687 :File not found$:No file buffers available$:Open error $File closing error$Read error$Write error$
+002E07 Error releasing overlay memory$
+0049A6 _C_FILE_INFO=
+004B79   0PX
+004B81 000WP
+004B91 ``````
+004B99 ppxxxx
+004BB1 (null)
+004BDA 5\r5\r5\r
+004BF6 <<NMSG>>
+004C00 R6000\r\n- stack overflow\r\n
+004C1C R6003\r\n- integer divide by 0\r\n
+004C3D R6009\r\n- not enough space for environment\r\n
+004C70 run-time error 
+004C82 R6002\r\n- floating-point support not loaded\r\n
+004CB1 R6001\r\n- null pointer assignment\r\n

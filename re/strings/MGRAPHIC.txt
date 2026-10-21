@@ -1,0 +1,13 @@
+﻿000200 MGRAPHIC.EXE03-20-91
+00038B flf68
+000448 n<|>|<0<|8
+000613 flf6@
+0006D0 n<|>|<0<|8
+000C4B p p (
+000C5B pxp@x
+000F55 ``@``
+000F73 `@` (
+00179B ``@@`
+00191B ```@ 
+001A0E Insufficient memory for MCGA graphics$MCGA is not supported on your machine$
+001B84 Copyright (C) 1988 by MicroProse Software, All Rights Reserved.
