@@ -1,0 +1,131 @@
+WLD  side shapes 0x4A 0x58  h2=20 h3=33  objects=37 units=11  stringpool=521 bytes
+
+# world objects (16 bytes): idx name | x y (WLD units; world = x<<5, z = (0x8000-y)<<5) | w6 w8 wA wC | shape (bank:obj) type-name
+  0 -                  0     0  0000 0000 0000 0000  0:00 
+  1 -                  0     0  0000 0000 0000 0000  0:00 
+  2 -                  0     0  0000 0000 0000 0000  0:00 
+  3 Tripoli         4288 13888  0002 0000 0000 0000  1:31 SAM Radar
+  4 Port Brega     22720 22080  0001 0000 0000 0000  1:31 SAM Radar
+  5 Misratah       11072 16064  0001 0000 0000 0000  1:31 SAM Radar
+  6 Sirt           14656 20160  0002 0000 0000 0000  1:31 SAM Radar
+  7 Ras Lanuf      20800 22208  0001 0000 0000 0000  1:31 SAM Radar
+  8 Benghazi       25792 15424  0002 0000 0000 0000  1:31 SAM Radar
+  9 Sabha           6592 30912  0002 0000 0000 0000  1:31 SAM Radar
+ 10 Al Bayda       28864 13888  0001 0000 0000 0000  1:31 SAM Radar
+ 11 Maradah        26432 24768  0002 0000 0000 0000  1:31 SAM Radar
+ 12 -              25280 20800  0009 0008 0000 0000  1:36 Missile Boat
+ 13 -              15040 15680  0008 0008 0000 0000  1:36 Missile Boat
+ 14 -              21184 15680  0009 0008 0000 0000  1:36 Missile Boat
+ 15 -               4800 11584  0008 0008 0000 0000  1:36 Missile Boat
+ 16 -               8896 11584  0009 0008 0000 0000  1:36 Missile Boat
+ 17 -              27328 12608  0009 0008 0000 0000  1:36 Missile Boat
+ 18 -              31424 11584  0008 0008 0000 0000  1:36 Missile Boat
+ 19 -              19136 18752  0008 0008 0000 0000  1:36 Missile Boat
+ 20 Tripoli         4160 13888  0000 0001 0000 0000  1:1E Airbase
+ 21 Port Brega     22592 22080  0000 0001 0000 0000  1:1E Airbase
+ 22 Benghazi       25664 15424  0000 0001 0000 0000  1:1E Airbase
+ 23 Sabha           6336 30912  0000 0001 0000 0000  1:1E Airbase
+ 24 Al Bayda       28736 13888  0000 0001 0000 0000  1:1E Airbase
+ 25 Yafran          5376 19712  0000 0901 0000 0000  1:54 Airstrip
+ 26 Al Mukhayli    29952 19712  0000 0901 0000 0000  1:54 Airstrip
+ 27 Beda           25920 29376  0000 0000 0000 0000  1:27 Village
+ 28 Sarir          32064 29376  0000 0000 0000 0000  1:27 Village
+ 29 Gialo          30016 27328  0000 0000 0000 0000  1:27 Village
+ 30 Raguba         21824 25280  0000 0000 0000 0000  1:27 Village
+ 31 Amal           27968 25280  0000 0000 0000 0000  1:27 Village
+ 32 Jalo Oasis     30016 25280  0000 0000 0000 0000  1:27 Village
+ 33 Sigonella       9792  1600  0000 0401 0000 0000  1:1E Airbase
+ 34 Suda Bay       30784  7744  0000 0101 0000 0000  1:1E Airbase
+ 35 Halfar          8256  4160  0000 0101 0000 0000  1:1E Airbase
+ 36 USS America    19200  9472  0000 0601 0000 0000  1:57 
+
+# mobile units (36 bytes; +2 x, +4 y)
+ 0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 81 00 00 00 00 00 12 00 00 00 00 00
+ 2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 01 00 00 00 00 10 00 00 00 00 00
+ 3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 81 00 00 00 00 00 25 00 00 00 00 00
+ 4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 81 00 00 00 00 00 22 00 00 00 00 00
+ 5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 10 00 00 00 00 00
+ 6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 01 00 00 00 00 25 00 00 00 00 00
+ 7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 01 00 00 00 00 00 00 00 00 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 01 00 00 00 00 00 00 00 00 00 00 00
+
+# typeflags (128 bytes, indexed by shape & 0x7F)
+17:8D 1E:81 23:8A 27:86 28:05 29:8A 2C:07 31:08 32:83 33:80 35:8A 36:0C 39:83 3F:4D 45:4D 4B:07 4C:07 4D:0E 50:02 51:85 52:03 56:8A 57:4D 58:0C 62:07
+
+# tab2 (128 bytes, indexed by shape & 0x7F)
+
+
+# tab3 (128 bytes, indexed by shape & 0x7F)
+1E:15 23:0E 28:09 29:07 2C:0D 31:02 33:08 35:06 36:0C 4C:03 50:16 51:0F 52:17 56:06 62:25
+
+# 16x16 sector grid (cell = WLD coord >> 11), row = y
+0E 0E 0E 0E 07 07 0E 0E 0E 0E 0E 0E 0E 0E 07 07
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 07
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0B
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+1C 0C 1C 0C 0E 0E 0E 0E 0E 0E 0E 0E 0E 08 18 18
+08 18 08 08 08 18 0E 0E 0E 0E 0E 0E 14 04 04 14
+08 08 08 08 08 08 0A 0A 0A 0A 0A 0A 08 08 08 08
+08 08 08 08 08 08 08 18 08 0A 0A 0A 08 08 08 08
+08 08 08 08 08 08 08 08 08 08 18 18 08 08 18 08
+08 08 08 08 08 08 08 08 08 08 08 08 18 08 08 08
+08 08 08 08 08 08 08 08 08 08 08 08 08 08 18 08
+08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08
+08 08 08 08 08 08 08 08 08 08 08 08 08 08 08 08
+08 08 08 08 18 08 08 08 08 08 08 08 08 08 08 08
+
+# string pool (index = name index; also object-type name for shape index)
+  1 0x01 Tripoli
+  2 0x02 Port Brega
+  3 0x03 Misratah
+  4 0x04 Sirt
+  5 0x05 Ras Lanuf
+  6 0x06 Benghazi
+  7 0x07 Sabha
+  8 0x08 Crete
+  9 0x09 Sicily
+ 10 0x0A Malta
+ 11 0x0B Sigonella
+ 12 0x0C Suda Bay
+ 13 0x0D Halfar
+ 15 0x0F Al Bayda
+ 16 0x10 Yafran
+ 17 0x11 Al Mukhayli
+ 18 0x12 Beda
+ 19 0x13 Sarir
+ 20 0x14 Gialo
+ 21 0x15 Raguba
+ 22 0x16 Amal
+ 23 0x17 Oil Tanker
+ 24 0x18 Jalo Oasis
+ 25 0x19 Maradah
+ 30 0x1E Airbase
+ 34 0x22 USS America
+ 35 0x23 Oil Rig
+ 39 0x27 Village
+ 40 0x28 Headquarters
+ 41 0x29 Tank Farm
+ 44 0x2C SA Missile
+ 49 0x31 SAM Radar
+ 50 0x32 Tower
+ 51 0x33 Hangar
+ 53 0x35 Refinery
+ 54 0x36 Missile Boat
+ 57 0x39 Pump Station
+ 69 0x45 Destroyer
+ 75 0x4B Missile
+ 76 0x4C Mobile SAM
+ 77 0x4D Tank
+ 80 0x50 Airplane
+ 81 0x51 Nuclear Plant
+ 82 0x52 Camp
+ 84 0x54 Airstrip
+ 86 0x56 Refinery
+ 89 0x59 Special Object 1
+ 90 0x5A Special Object 2
+ 98 0x62 SS Missile

@@ -1,0 +1,199 @@
+WLD  side shapes 0x49 0x5B  h2=29 h3=54  objects=75 units=13  stringpool=726 bytes
+
+# world objects (16 bytes): idx name | x y (WLD units; world = x<<5, z = (0x8000-y)<<5) | w6 w8 wA wC | shape (bank:obj) type-name
+  0 -                  0     0  0000 0000 0000 0000  0:00 
+  1 -                  0     0  0000 0000 0000 0000  0:00 
+  2 -                  0     0  0000 0000 0000 0000  0:00 
+  3 Budejovice     16064 27456  0007 0000 0000 0000  1:26 SAM Radar
+  4 Carlsbad       14016 23360  0005 0000 0000 0000  1:26 SAM Radar
+  5 Dessau          9920 19264  0007 0000 0000 0000  1:26 SAM Radar
+  6 Cottbus        14016 15168  0005 0000 0000 0000  1:26 SAM Radar
+  7 Wittenburg      9920 13120  0007 0000 0000 0000  1:26 SAM Radar
+  8 Katowice       25280 21312  0007 0000 0000 0000  1:26 SAM Radar
+  9 Liberec        17088 21312  0005 0000 0000 0000  1:26 SAM Radar
+ 10 Lukow          29376 15168  0005 0000 0000 0000  1:26 SAM Radar
+ 11 Konmarno       25664 29376  0004 0000 0000 0000  1:26 SAM Radar
+ 12 Tabor          17472 27328  0006 0000 0000 0000  1:26 SAM Radar
+ 13 Grossenhaim    11328 21184  0004 0000 0000 0000  1:26 SAM Radar
+ 14 Mittenwalde    11328 19136  0002 0000 0000 0000  1:26 SAM Radar
+ 15 Radom          25664 19136  0004 0000 0000 0000  1:26 SAM Radar
+ 16 Wittstock      11328 12992  0006 0000 0000 0000  1:26 SAM Radar
+ 17 Klaipeda       27712  4800  0004 0000 0000 0000  1:26 SAM Radar
+ 18 Stupsk         19520 10944  0006 0000 0000 0000  1:26 SAM Radar
+ 19 Kolobrzeg      16448 11456  0002 0000 0000 0000  1:26 SAM Radar
+ 20 Sovetsk        29504  9408  0015 0000 0000 0000  1:44 OTH Radar
+ 21 Sovetsk        29376  9280  0006 0000 0000 0000  1:26 SAM Radar
+ 22 -               8896  9536  000B 0008 0000 0000  1:35 Patrol Boat
+ 23 -               9024  9408  0009 0008 0000 0000  1:35 Patrol Boat
+ 24 -              12992  9536  000B 0008 0000 0000  1:35 Patrol Boat
+ 25 -              13120  9408  0009 0008 0000 0000  1:35 Patrol Boat
+ 26 -              21184  7488  000B 0008 0000 0000  1:35 Patrol Boat
+ 27 -              21312  7360  0009 0008 0000 0000  1:35 Patrol Boat
+ 28 -              21184  3392  000B 0008 0000 0000  1:35 Patrol Boat
+ 29 Konmarno       25920 29376  0000 0001 0000 0000  1:15 Airbase
+ 30 Tabor          17728 27328  0000 0001 0000 0000  1:15 Airbase
+ 31 Grossenhaim    11584 21184  0000 0001 0000 0000  1:15 Airbase
+ 32 Mittenwalde    11584 19136  0000 0001 0000 0000  1:15 Airbase
+ 33 Radom          25920 19136  0000 0001 0000 0000  1:15 Airbase
+ 34 Wittstock      11584 12992  0000 0001 0000 0000  1:15 Airbase
+ 35 Klaipeda       27968  4800  0000 0001 0000 0000  1:15 Airbase
+ 36 Stupsk         19776 10944  0000 0001 0000 0000  1:15 Airbase
+ 37 Kolobrzeg      16704 11456  0000 0001 0000 0000  1:15 Airbase
+ 38 Berlin         11456 15168  0000 0000 0000 0000  1:3E Buildings
+ 39 Gdansk         21696 11072  0000 0000 0000 0000  1:3E Buildings
+ 40 Poznam         19648 15168  0000 0000 0000 0000  1:3E Buildings
+ 41 Kaliningrad    25792  9024  0000 0000 0000 0000  1:3E Buildings
+ 42 Warsaw         27840 15168  0000 0000 0000 0000  1:3E Buildings
+ 43 Magdeburg       9408 17216  0000 0000 0000 0000  1:3E Buildings
+ 44 Dresden        13504 19264  0000 0000 0000 0000  1:3E Buildings
+ 45 Leipzig         9408 21312  0000 0000 0000 0000  1:3E Buildings
+ 46 Prague         17600 23360  0000 0000 0000 0000  1:3E Buildings
+ 47 Wroclaw        21696 19264  0000 0000 0000 0000  1:3E Buildings
+ 48 Lodz           25792 17216  0000 0000 0000 0000  1:3E Buildings
+ 49 Lublin         29888 19264  0000 0000 0000 0000  1:3E Buildings
+ 50 Krakow         27840 23360  0000 0000 0000 0000  1:3E Buildings
+ 51 Pilsen         13504 25408  0000 0000 0000 0000  1:3E Buildings
+ 52 Bruno          19648 27456  0000 0000 0000 0000  1:3E Buildings
+ 53 Budapest       25792 31552  0000 0000 0000 0000  1:3E Buildings
+ 54 Vienna         17600 29504  0000 0100 0000 0000  1:3E Buildings
+ 55 Copenhagen      9408  5440  0000 0400 0000 0000  1:3E Buildings
+ 56 Kiel            4800  9536  0000 0400 0000 0000  1:3E Buildings
+ 57 Lubeck          6848 11584  0000 0400 0000 0000  1:3E Buildings
+ 58 Hamburg         5312 13120  0000 0400 0000 0000  1:3E Buildings
+ 59 Dortmund        1216 17216  0000 0400 0000 0000  1:3E Buildings
+ 60 Hanover         5312 17216  0000 0400 0000 0000  1:3E Buildings
+ 61 Kaiserlautern   1216 23360  0000 0400 0000 0000  1:3E Buildings
+ 62 Karlsruhe       3264 25408  0000 0400 0000 0000  1:3E Buildings
+ 63 Strassburg      1216 27456  0000 0400 0000 0000  1:3E Buildings
+ 64 Nurnberg        7360 27456  0000 0400 0000 0000  1:3E Buildings
+ 65 Munich          9408 29504  0000 0400 0000 0000  1:3E Buildings
+ 66 Vandel          3904  4800  0000 0401 0000 0000  1:15 Airbase
+ 67 Leck            3904  8896  0000 0401 0000 0000  1:15 Airbase
+ 68 Ahlhorn         1344 12992  0000 0401 0000 0000  1:15 Airbase
+ 69 Gutersloh       3392 19136  0000 0401 0000 0000  1:15 Airbase
+ 70 Rhein-Main      3392 21184  0000 0401 0000 0000  1:15 Airbase
+ 71 Ramstein        3392 23232  0000 0401 0000 0000  1:15 Airbase
+ 72 Neuberg         5440 27328  0000 0401 0000 0000  1:15 Airbase
+ 73 Memmingen       5440 31424  0000 0401 0000 0000  1:15 Airbase
+ 74 Leipheim        3392 29376  0000 0401 0000 0000  1:15 Airbase
+
+# mobile units (36 bytes; +2 x, +4 y)
+ 0 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 11 00 00 00 00 00
+ 2 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 81 00 00 00 00 00 25 00 00 00 00 00
+ 3 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 81 00 00 00 00 00 15 00 00 00 00 00
+ 4 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 00 c1 00 00 00 00 00 15 00 00 00 00 00
+ 5 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 81 00 00 00 00 00 14 00 00 00 00 00
+ 6 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 01 00 00 00 00 12 00 00 00 00 00
+ 7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 01 01 00 00 00 00 25 00 00 00 00 00
+ 8 02 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 00 00 00 00 00 22 00 00 00 00 00
+ 9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+
+# typeflags (128 bytes, indexed by shape & 0x7F)
+15:81 1C:06 1D:05 1E:8A 21:07 26:08 27:83 28:90 31:84 35:0C 3E:93 41:83 44:08 46:84 4C:07 4D:0E 54:12 55:03 56:07 5B:0C
+
+# tab2 (128 bytes, indexed by shape & 0x7F)
+
+
+# tab3 (128 bytes, indexed by shape & 0x7F)
+15:15 1D:09 1E:07 21:0D 26:02 28:08 31:14 35:0C 44:04 46:14 4C:03 54:16 55:17 56:25
+
+# 16x16 sector grid (cell = WLD coord >> 11), row = y
+0A 0A 0B 0B 0B 0B 0B 0B 0B 0A 0B 0A 0A 08 08 08
+0A 0B 0B 0B 0A 0B 0B 0B 0B 0A 0A 0A 0A 08 08 08
+0A 0B 0B 0B 0B 0B 0B 0B 0A 0A 0A 0A 0A 08 08 08
+0A 0B 0B 0B 0B 0A 0A 0A 0A 0A 0A 0A 08 08 08 08
+0A 0B 0B 0A 0A 0A 0A 0A 0A 08 08 08 08 08 08 08
+0A 0B 0B 0B 18 08 08 08 08 08 08 08 08 08 08 08
+0B 0B 0B 0B 18 08 08 08 08 08 08 08 08 08 08 08
+0B 0B 0B 0B 08 08 08 08 08 08 08 08 08 08 08 08
+0B 0B 0B 0B 18 08 08 08 08 08 08 08 08 08 08 08
+0B 0B 0B 0B 18 08 08 08 08 08 08 08 08 08 08 08
+0B 0B 07 14 08 08 04 08 00 00 08 08 08 08 08 08
+0B 0B 0B 10 00 00 08 08 08 08 04 08 08 08 08 08
+0B 0B 0B 0B 0B 10 08 08 08 08 08 00 00 04 00 00
+0B 0B 0B 0B 0B 0B 00 18 08 08 08 08 04 04 00 08
+0B 0B 0B 0B 0B 0B 0B 0B 0B 08 08 08 08 08 08 08
+0B 07 0B 07 0B 07 0B 0B 0B 08 08 08 08 08 08 08
+
+# string pool (index = name index; also object-type name for shape index)
+  1 0x01 Klaipeda
+  2 0x02 Stupsk
+  3 0x03 Kolobrzeg
+  4 0x04 Wittstock
+  5 0x05 Mittenwalde
+  6 0x06 Radom
+  7 0x07 Grossenhaim
+  8 0x08 Tabor
+  9 0x09 Konmarno
+ 10 0x0A Vandel
+ 11 0x0B Leck
+ 12 0x0C Ahlhorn
+ 13 0x0D Gutersloh
+ 14 0x0E Rhein-Main
+ 15 0x0F Ramstein
+ 16 0x10 Neuberg
+ 17 0x11 Memmingen
+ 18 0x12 Leipheim
+ 19 0x13 Copenhagen
+ 20 0x14 Army HQ
+ 21 0x15 Airbase
+ 22 0x16 Kiel
+ 23 0x17 Lubeck
+ 24 0x18 Hamburg
+ 25 0x19 Berlin
+ 26 0x1A Gdansk
+ 27 0x1B Poznam
+ 28 0x1C Depot
+ 29 0x1D Headquarters
+ 30 0x1E Tank Farm
+ 31 0x1F Kaliningrad
+ 32 0x20 Warsaw
+ 33 0x21 SA Missile
+ 34 0x22 Dortmund
+ 35 0x23 Hanover
+ 36 0x24 Kaiserlautern
+ 37 0x25 Magdeburg
+ 38 0x26 SAM Radar
+ 39 0x27 Tower
+ 40 0x28 Hangar
+ 41 0x29 Dresden
+ 42 0x2A Leipzig
+ 43 0x2B Prague
+ 44 0x2C Wroclaw
+ 45 0x2D Lodz
+ 46 0x2E Lublin
+ 47 0x2F Krakow
+ 48 0x30 Karlsruhe
+ 49 0x31 Bridge
+ 50 0x32 Strassburg
+ 51 0x33 Nurnberg
+ 52 0x34 Pilsen
+ 53 0x35 Patrol Boat
+ 54 0x36 Sovetsk
+ 55 0x37 Budejovice
+ 56 0x38 Carlsbad
+ 57 0x39 Dessau
+ 58 0x3A Cottbus
+ 59 0x3B Wittenburg
+ 60 0x3C Katowice
+ 61 0x3D Liberec
+ 62 0x3E Buildings
+ 63 0x3F Munich
+ 64 0x40 Bruno
+ 65 0x41 Windmill
+ 66 0x42 Vienna
+ 67 0x43 Budapest
+ 68 0x44 OTH Radar
+ 69 0x45 Lukow
+ 70 0x46 Bridge
+ 76 0x4C Mobile SAM
+ 77 0x4D Tank
+ 84 0x54 Airplane
+ 85 0x55 POW Camp
+ 86 0x56 SS Missile
+ 92 0x5C Special Object 1
+ 93 0x5D Special Object 2

@@ -1,0 +1,200 @@
+   0 @     0 size=26557 table=26557 OK  dump=18478 run=45522 skip=0 Z rate=10 (ticks/frame=6) cels=200 palette@404
+   1 @ 26557 size=   23 table=   23 OK  dump=5 run=0 skip=60406 
+   2 @ 26580 size=   28 table=   28 OK  dump=6 run=0 skip=60403 
+   3 @ 26608 size=   29 table=   29 OK  dump=7 run=0 skip=60400 
+   4 @ 26637 size=   35 table=   35 OK  dump=9 run=0 skip=60396 
+   5 @ 26672 size=   40 table=   40 OK  dump=10 run=0 skip=60393 
+   6 @ 26712 size=   46 table=   46 OK  dump=12 run=0 skip=60389 
+   7 @ 26758 size=   56 table=   56 OK  dump=16 run=0 skip=60383 
+   8 @ 26814 size=  104 table=  104 OK  dump=22 run=32 skip=60344 
+   9 @ 26918 size=  136 table=  136 OK  dump=52 run=0 skip=60342 
+  10 @ 27054 size=  164 table=  164 OK  dump=68 run=0 skip=60324 
+  11 @ 27218 size=  187 table=  187 OK  dump=79 run=0 skip=60311 
+  12 @ 27405 size=  224 table=  224 OK  dump=96 run=0 skip=60292 
+  13 @ 27629 size=  290 table=  290 OK  dump=130 run=0 skip=60256 
+  14 @ 27919 size=  351 table=  351 OK  dump=175 run=0 skip=60236 
+  15 @ 28270 size=  394 table=  394 OK  dump=216 run=0 skip=60195 
+  16 @ 28664 size=  419 table=  419 OK  dump=237 run=0 skip=60173 
+  17 @ 29083 size=  444 table=  444 OK  dump=250 run=0 skip=60158 
+  18 @ 29527 size=  490 table=  490 OK  dump=274 run=0 skip=60132 
+  19 @ 30017 size=  524 table=  524 OK  dump=294 run=0 skip=60110 
+  20 @ 30541 size=  562 table=  562 OK  dump=326 run=0 skip=60076 
+  21 @ 31103 size=  578 table=  578 OK  dump=340 run=0 skip=60060 
+  22 @ 31681 size=  589 table=  589 OK  dump=345 run=0 skip=60053 
+  23 @ 32270 size=  612 table=  612 OK  dump=356 run=0 skip=60040 
+  24 @ 32882 size=  618 table=  618 OK  dump=360 run=0 skip=60034 
+  25 @ 33500 size=  630 table=  630 OK  dump=368 run=0 skip=60024 
+  26 @ 34130 size=  637 table=  637 OK  dump=373 run=0 skip=60017 
+  27 @ 34767 size=  642 table=  642 OK  dump=374 run=0 skip=60014 
+  28 @ 35409 size=  655 table=  655 OK  dump=377 run=0 skip=60009 
+  29 @ 36064 size=  668 table=  668 OK  dump=390 run=0 skip=59994 
+  30 @ 36732 size=  709 table=  709 OK  dump=411 run=0 skip=60000 
+  31 @ 37441 size=  740 table=  740 OK  dump=434 run=0 skip=59976 
+  32 @ 38181 size=  765 table=  765 OK  dump=458 run=0 skip=59953 
+  33 @ 38946 size=  791 table=  791 OK  dump=474 run=0 skip=59935 
+  34 @ 39737 size=  800 table=  800 OK  dump=482 run=0 skip=59925 
+  35 @ 40537 size=  809 table=  809 OK  dump=488 run=0 skip=59917 
+  36 @ 41346 size=  814 table=  814 OK  dump=491 run=0 skip=59912 
+  37 @ 42160 size=  827 table=  827 OK  dump=495 run=0 skip=59906 
+  38 @ 42987 size=  838 table=  838 OK  dump=505 run=0 skip=59894 
+  39 @ 43825 size=  849 table=  849 OK  dump=511 run=0 skip=59886 
+  40 @ 44674 size=  857 table=  857 OK  dump=515 run=0 skip=59880 
+  41 @ 45531 size=  856 table=  856 OK  dump=514 run=0 skip=59879 
+  42 @ 46387 size=  851 table=  851 OK  dump=511 run=0 skip=59880 
+  43 @ 47238 size=  854 table=  854 OK  dump=512 run=0 skip=59877 
+  44 @ 48092 size=  861 table=  861 OK  dump=518 run=0 skip=59869 
+  45 @ 48953 size=  864 table=  864 OK  dump=519 run=0 skip=59892 
+  46 @ 49817 size=  863 table=  863 OK  dump=518 run=0 skip=59892 
+  47 @ 50680 size=  869 table=  869 OK  dump=523 run=0 skip=59885 
+  48 @ 51549 size=  868 table=  868 OK  dump=522 run=0 skip=59884 
+  49 @ 52417 size=  868 table=  868 OK  dump=522 run=0 skip=59882 
+  50 @ 53285 size=  868 table=  868 OK  dump=522 run=0 skip=59880 
+  51 @ 54153 size=  868 table=  868 OK  dump=522 run=0 skip=59878 
+  52 @ 55021 size=  864 table=  864 OK  dump=518 run=0 skip=59880 
+  53 @ 55885 size=  868 table=  868 OK  dump=522 run=0 skip=59874 
+  54 @ 56753 size=  868 table=  868 OK  dump=522 run=0 skip=59872 
+  55 @ 57621 size=  869 table=  869 OK  dump=523 run=0 skip=59869 
+  56 @ 58490 size=  869 table=  869 OK  dump=523 run=0 skip=59867 
+  57 @ 59359 size=  868 table=  868 OK  dump=522 run=0 skip=59866 
+  58 @ 60227 size=  868 table=  868 OK  dump=522 run=0 skip=59864 
+  59 @ 61095 size=  868 table=  868 OK  dump=522 run=0 skip=59862 
+  60 @ 61963 size=  868 table=  868 OK  dump=522 run=0 skip=59860 
+  61 @ 62831 size=  867 table=  867 OK  dump=521 run=0 skip=59859 
+  62 @ 63698 size=  867 table=  867 OK  dump=521 run=0 skip=59857 
+  63 @ 64565 size=  864 table=  864 OK  dump=520 run=0 skip=59856 
+  64 @ 65429 size=  865 table=  865 OK  dump=521 run=0 skip=59853 
+  65 @ 66294 size=  864 table=  864 OK  dump=520 run=0 skip=59852 
+  66 @ 67158 size=  868 table=  868 OK  dump=522 run=0 skip=59848 
+  67 @ 68026 size=  865 table=  865 OK  dump=521 run=0 skip=59847 
+  68 @ 68891 size=  868 table=  868 OK  dump=522 run=0 skip=59844 
+  69 @ 69759 size=  869 table=  869 OK  dump=523 run=0 skip=59841 
+  70 @ 70628 size=  869 table=  869 OK  dump=523 run=0 skip=59839 
+  71 @ 71497 size=  869 table=  869 OK  dump=523 run=0 skip=59837 
+  72 @ 72366 size=  869 table=  869 OK  dump=523 run=0 skip=59835 
+  73 @ 73235 size=  869 table=  869 OK  dump=523 run=0 skip=59833 
+  74 @ 74104 size=  869 table=  869 OK  dump=523 run=0 skip=59831 
+  75 @ 74973 size=  869 table=  869 OK  dump=523 run=0 skip=59829 
+  76 @ 75842 size=  869 table=  869 OK  dump=523 run=0 skip=59827 
+  77 @ 76711 size=  868 table=  868 OK  dump=522 run=0 skip=59826 
+  78 @ 77579 size=  868 table=  868 OK  dump=522 run=0 skip=59824 
+  79 @ 78447 size=  865 table=  865 OK  dump=521 run=0 skip=59823 
+  80 @ 79312 size=  865 table=  865 OK  dump=521 run=0 skip=59821 
+  81 @ 80177 size=  869 table=  869 OK  dump=523 run=0 skip=59817 
+  82 @ 81046 size=  868 table=  868 OK  dump=522 run=0 skip=59816 
+  83 @ 81914 size=  869 table=  869 OK  dump=523 run=0 skip=59813 
+  84 @ 82783 size=  869 table=  869 OK  dump=523 run=0 skip=59811 
+  85 @ 83652 size=  869 table=  869 OK  dump=523 run=0 skip=59809 
+  86 @ 84521 size=  869 table=  869 OK  dump=523 run=0 skip=59807 
+  87 @ 85390 size=  868 table=  868 OK  dump=522 run=0 skip=59806 
+  88 @ 86258 size=  868 table=  868 OK  dump=522 run=0 skip=59804 
+  89 @ 87126 size=  869 table=  869 OK  dump=523 run=0 skip=59801 
+  90 @ 87995 size=  869 table=  869 OK  dump=523 run=0 skip=59799 
+  91 @ 88864 size=  869 table=  869 OK  dump=523 run=0 skip=59797 
+  92 @ 89733 size=  869 table=  869 OK  dump=523 run=0 skip=59795 
+  93 @ 90602 size=  869 table=  869 OK  dump=523 run=0 skip=59793 
+  94 @ 91471 size=  869 table=  869 OK  dump=523 run=0 skip=59791 
+  95 @ 92340 size=  869 table=  869 OK  dump=523 run=0 skip=59789 
+  96 @ 93209 size=  868 table=  868 OK  dump=522 run=0 skip=59788 
+  97 @ 94077 size=  868 table=  868 OK  dump=522 run=0 skip=59786 
+  98 @ 94945 size=  867 table=  867 OK  dump=521 run=0 skip=59785 
+  99 @ 95812 size=  868 table=  868 OK  dump=522 run=0 skip=59782 
+ 100 @ 96680 size=  868 table=  868 OK  dump=522 run=0 skip=59780 
+ 101 @ 97548 size=  868 table=  868 OK  dump=522 run=0 skip=59778 
+ 102 @ 98416 size=  869 table=  869 OK  dump=523 run=0 skip=59775 
+ 103 @ 99285 size=  869 table=  869 OK  dump=523 run=0 skip=59773 
+ 104 @100154 size=  869 table=  869 OK  dump=523 run=0 skip=59771 
+ 105 @101023 size=  869 table=  869 OK  dump=523 run=0 skip=59769 
+ 106 @101892 size=  869 table=  869 OK  dump=523 run=0 skip=59767 
+ 107 @102761 size=  869 table=  869 OK  dump=523 run=0 skip=59765 
+ 108 @103630 size=  868 table=  868 OK  dump=522 run=0 skip=59764 
+ 109 @104498 size=  865 table=  865 OK  dump=519 run=0 skip=59765 
+ 110 @105363 size=  864 table=  864 OK  dump=518 run=0 skip=59764 
+ 111 @106227 size=  852 table=  852 OK  dump=508 run=0 skip=59772 
+ 112 @107079 size=  855 table=  855 OK  dump=509 run=0 skip=59769 
+ 113 @107934 size=  852 table=  852 OK  dump=508 run=0 skip=59768 
+ 114 @108786 size=  856 table=  856 OK  dump=510 run=0 skip=59764 
+ 115 @109642 size=  856 table=  856 OK  dump=510 run=0 skip=59762 
+ 116 @110498 size=  856 table=  856 OK  dump=510 run=0 skip=59760 
+ 117 @111354 size=  856 table=  856 OK  dump=510 run=0 skip=59758 
+ 118 @112210 size=  856 table=  856 OK  dump=510 run=0 skip=59756 
+ 119 @113066 size=  857 table=  857 OK  dump=511 run=0 skip=59753 
+ 120 @113923 size=  856 table=  856 OK  dump=510 run=0 skip=59752 
+ 121 @114779 size=  856 table=  856 OK  dump=510 run=0 skip=59750 
+ 122 @115635 size=  863 table=  863 OK  dump=517 run=0 skip=59741 
+ 123 @116498 size=  856 table=  856 OK  dump=510 run=0 skip=59746 
+ 124 @117354 size=  856 table=  856 OK  dump=510 run=0 skip=59744 
+ 125 @118210 size=  855 table=  855 OK  dump=508 run=0 skip=59744 
+ 126 @119065 size=  849 table=  849 OK  dump=505 run=0 skip=59745 
+ 127 @119914 size=  847 table=  847 OK  dump=503 run=0 skip=59745 
+ 128 @120761 size=  846 table=  846 OK  dump=503 run=0 skip=59743 
+ 129 @121607 size=  846 table=  846 OK  dump=504 run=0 skip=59740 
+ 130 @122453 size=  845 table=  845 OK  dump=503 run=0 skip=59739 
+ 131 @123298 size=  852 table=  852 OK  dump=511 run=0 skip=59729 
+ 132 @124150 size=  845 table=  845 OK  dump=507 run=0 skip=59731 
+ 133 @124995 size=  835 table=  835 OK  dump=497 run=0 skip=59739 
+ 134 @125830 size=  805 table=  805 OK  dump=479 run=0 skip=59755 
+ 135 @126635 size=  781 table=  781 OK  dump=463 run=0 skip=59769 
+ 136 @127416 size=  752 table=  752 OK  dump=447 run=0 skip=59783 
+ 137 @128168 size=  738 table=  738 OK  dump=435 run=0 skip=59793 
+ 138 @128906 size=  708 table=  708 OK  dump=407 run=0 skip=59819 
+ 139 @129614 size=  645 table=  645 OK  dump=356 run=0 skip=59868 
+ 140 @130259 size=  596 table=  596 OK  dump=318 run=0 skip=59904 
+ 141 @130855 size=  538 table=  538 OK  dump=290 run=0 skip=59930 
+ 142 @131393 size=  521 table=  521 OK  dump=281 run=0 skip=59937 
+ 143 @131914 size=  487 table=  487 OK  dump=261 run=0 skip=59955 
+ 144 @132401 size=  449 table=  449 OK  dump=235 run=0 skip=59979 
+ 145 @132850 size=  413 table=  413 OK  dump=207 run=0 skip=60005 
+ 146 @133263 size=  371 table=  371 OK  dump=187 run=0 skip=60023 
+ 147 @133634 size=  358 table=  358 OK  dump=182 run=0 skip=60026 
+ 148 @133992 size=  339 table=  339 OK  dump=171 run=0 skip=60035 
+ 149 @134331 size=  316 table=  316 OK  dump=160 run=0 skip=60044 
+ 150 @134647 size=  307 table=  307 OK  dump=155 run=0 skip=60047 
+ 151 @134954 size=  299 table=  299 OK  dump=151 run=0 skip=60049 
+ 152 @135253 size=  296 table=  296 OK  dump=150 run=0 skip=60048 
+ 153 @135549 size=  288 table=  288 OK  dump=144 run=0 skip=60052 
+ 154 @135837 size=  277 table=  277 OK  dump=137 run=0 skip=60057 
+ 155 @136114 size=  256 table=  256 OK  dump=122 run=0 skip=60043 
+ 156 @136370 size=  219 table=  219 OK  dump=91 run=0 skip=60072 
+ 157 @136589 size=  195 table=  195 OK  dump=71 run=0 skip=60090 
+ 158 @136784 size=  127 table=  127 OK  dump=47 run=0 skip=56606 
+ 159 @136911 size=  108 table=  108 OK  dump=38 run=0 skip=56613 
+ 160 @137019 size=  100 table=  100 OK  dump=34 run=0 skip=56615 
+ 161 @137119 size=   94 table=   94 OK  dump=30 run=0 skip=56617 
+ 162 @137213 size=   83 table=   83 OK  dump=25 run=0 skip=56620 
+ 163 @137296 size=   67 table=   67 OK  dump=19 run=0 skip=56624 
+ 164 @137363 size=   50 table=   50 OK  dump=12 run=0 skip=56629 
+ 165 @137413 size=   33 table=   33 OK  dump=7 run=0 skip=56322 
+ 166 @137446 size=   22 table=   22 OK  dump=4 run=0 skip=56323 
+ 167 @137468 size=   22 table=   22 OK  dump=4 run=0 skip=56321 
+ 168 @137490 size=   22 table=   22 OK  dump=4 run=0 skip=56319 
+ 169 @137512 size=   21 table=   21 OK  dump=3 run=0 skip=56318 
+ 170 @137533 size=   16 table=   16 OK  dump=2 run=0 skip=56003 
+ 171 @137549 size=   16 table=   16 OK  dump=2 run=0 skip=56001 
+ 172 @137565 size=   15 table=   15 OK  dump=1 run=0 skip=56000 
+ 173 @137580 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 174 @137587 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 175 @137594 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 176 @137601 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 177 @137608 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 178 @137615 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 179 @137622 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 180 @137629 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 181 @137636 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 182 @137643 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 183 @137650 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 184 @137657 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 185 @137664 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 186 @137671 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 187 @137678 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 188 @137685 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 189 @137692 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 190 @137699 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 191 @137706 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 192 @137713 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 193 @137720 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 194 @137727 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 195 @137734 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 196 @137741 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 197 @137748 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 198 @137755 size=    7 table=    7 OK  dump=0 run=0 skip=0 
+ 199 @137762 size=    7 table=    7 OK  dump=0 run=0 skip=0 

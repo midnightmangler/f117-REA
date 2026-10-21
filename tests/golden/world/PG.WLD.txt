@@ -1,0 +1,176 @@
+WLD  side shapes 0x4E 0x58  h2=24 h3=42  objects=64 units=12  stringpool=680 bytes
+
+# world objects (16 bytes): idx name | x y (WLD units; world = x<<5, z = (0x8000-y)<<5) | w6 w8 wA wC | shape (bank:obj) type-name
+  0 -                  0     0  0000 0000 0000 0000  0:00 
+  1 -                  0     0  0000 0000 0000 0000  0:00 
+  2 -                  0     0  0000 0000 0000 0000  0:00 
+  3 Bandar Abbas   27712 19136  000C 0000 0000 0000  1:34 SAM Radar
+  4 Bandar-e Lengeh 25152 20672  000E 0000 0000 0000  1:34 SAM Radar
+  5 Kharg Island   10944 16192  000D 0000 0000 0000  1:34 SAM Radar
+  6 Bushehr        13376 15040  000C 0000 0000 0000  1:34 SAM Radar
+  7 Shiraz         17472 10944  000D 0000 0000 0000  1:34 SAM Radar
+  8 Bandar Khomenyi  7232  8896  000D 0000 0000 0000  1:34 SAM Radar
+  9 Kerman         29760  8896  000C 0000 0000 0000  1:34 SAM Radar
+ 10 Ahvaz           5440  4928  000E 0000 0000 0000  1:34 SAM Radar
+ 11 Masjed Soleyman  7232  4800  000E 0000 0000 0000  1:34 SAM Radar
+ 12 Dezful          5440  2880  000C 0000 0000 0000  1:34 SAM Radar
+ 13 Yazd           21568  2752  000D 0000 0000 0000  1:34 SAM Radar
+ 14 Esfahan        13376   704  000C 0000 0000 0000  1:34 SAM Radar
+ 15 -              26304 22208  000F 0008 0000 0000  1:45 Missile Boat
+ 16 -               6848 10944  000F 0008 0000 0000  1:45 Missile Boat
+ 17 -               8896 12992  000F 0008 0000 0000  1:45 Missile Boat
+ 18 -               8896 17088  000F 0008 0000 0000  1:45 Missile Boat
+ 19 -              15040 19136  000F 0008 0000 0000  1:45 Missile Boat
+ 20 -              19136 21696  000F 0008 0000 0000  1:45 Missile Boat
+ 21 -              29376 23744  000F 0008 0000 0000  1:45 Missile Boat
+ 22 -              11456 15552  000F 0008 0000 0000  1:45 Missile Boat
+ 23 Amarah          1344  2880  000D 0100 0000 0000  1:34 SAM Radar
+ 24 -              10496  3840  0000 0901 0000 0000  1:50 Airstrip
+ 25 -              30976 12032  0000 0901 0000 0000  1:50 Airstrip
+ 26 Bandar Abbas   27840 19136  0000 0001 0000 0000  1:20 Airbase
+ 27 Bandar-e Lengeh 25280 20672  0000 0001 0000 0000  1:20 Airbase
+ 28 Bushehr        13504 15040  0000 0001 0000 0000  1:20 Airbase
+ 29 Shiraz         17600 10944  0000 0001 0000 0000  1:20 Airbase
+ 30 Bandar Khomenyi  7360  8896  0000 0001 0000 0000  1:20 Airbase
+ 31 Kerman         29888  8896  0000 0001 0000 0000  1:20 Airbase
+ 32 Masjed Soleyman  7360  4800  0000 0001 0000 0000  1:20 Airbase
+ 33 Yazd           21696  2752  0000 0001 0000 0000  1:20 Airbase
+ 34 Esfahan        13504   704  0000 0001 0000 0000  1:20 Airbase
+ 35 Bandar-e Rig   13248 13504  0000 0000 0000 0000  1:28 Village
+ 36 Beh Behan       9152  9408  0000 0000 0000 0000  1:28 Village
+ 37 Abadan          4928  9536  0000 0000 0000 0000  1:28 Village
+ 38 Fin            23872 19136  0000 0000 0000 0000  1:28 Village
+ 39 Latiaan        25408 19776  0000 0000 0000 0000  1:28 Village
+ 40 Madevan        21824 17088  0000 0000 0000 0000  1:28 Village
+ 41 Furg           23360 17728  0000 0000 0000 0000  1:28 Village
+ 42 Oaysumah         960 15552  0000 0100 0000 0000  1:28 Village
+ 43 Al Mishab       3008 15552  0000 0100 0000 0000  1:28 Village
+ 44 Nasiriyah       1344  8896  0000 0100 0000 0000  1:28 Village
+ 45 Basra           3392  8896  0000 0100 0000 0000  1:28 Village
+ 46 Diwaniyah        832  7488  0000 0100 0000 0000  1:28 Village
+ 47 Rifai           3392  6848  0000 0100 0000 0000  1:28 Village
+ 48 Qurnah          4928  7488  0000 0100 0000 0000  1:28 Village
+ 49 Kut             1344  4800  0000 0100 0000 0000  1:28 Village
+ 50 Al Ammarah      2880  5440  0000 0100 0000 0000  1:28 Village
+ 51 Ras Saffaniyah  3264 17088  0000 0401 0000 0000  1:20 Airbase
+ 52 As Salamiyah    1216 31424  0000 0401 0000 0000  1:20 Airbase
+ 53 Huffuf          7360 25280  0000 0401 0000 0000  1:20 Airbase
+ 54 Dhahran         9408 25280  0000 0401 0000 0000  1:20 Airbase
+ 55 Bahrain        11072 24128  0000 0401 0000 0000  1:20 Airbase
+ 56 USS Nimitz     29952 27392  0000 0601 0000 0000  1:57 
+ 57 Qatar          12480 23744  0000 0101 0000 0000  1:20 Airbase
+ 58 Kuwait City     2880 11840  0000 0101 0000 0000  1:20 Airbase
+ 59 Dubai          26816 23744  0000 0101 0000 0000  1:20 Airbase
+ 60 Ruweiss        16704 29760  0000 0101 0000 0000  1:20 Airbase
+ 61 Tarif          18752 29760  0000 0101 0000 0000  1:20 Airbase
+ 62 Abu Dhabi      22336 29760  0000 0101 0000 0000  1:20 Airbase
+ 63 Muscat         31936 31424  0000 0101 0000 0000  1:20 Airbase
+
+# mobile units (36 bytes; +2 x, +4 y)
+ 0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 81 00 00 00 00 00 1f 00 00 00 00 00
+ 2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 01 01 00 00 00 00 20 00 00 00 00 00
+ 3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 01 00 00 00 00 00 20 00 00 00 00 00
+ 4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 81 00 00 00 00 00 1f 00 00 00 00 00
+ 5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 81 00 00 00 00 00 20 00 00 00 00 00
+ 6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 01 01 00 00 00 00 20 00 00 00 00 00
+ 7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 07 00 01 00 00 00 00 00 20 00 00 00 00 00
+ 8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 01 00 00 00 00 00 00 00 00 00 00 00
+11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 01 00 00 00 00 00 00 00 00 00 00 00
+
+# typeflags (128 bytes, indexed by shape & 0x7F)
+19:8D 20:81 25:89 26:8A 28:83 2A:86 2B:05 2C:8A 2F:07 34:08 35:83 36:80 3F:84 44:8A 45:0C 49:4D 4C:4D 50:81 54:02 55:85 56:0C 57:4D 58:0C 59:4D 63:07
+
+# tab2 (128 bytes, indexed by shape & 0x7F)
+
+
+# tab3 (128 bytes, indexed by shape & 0x7F)
+20:15 25:0E 2B:09 2C:07 2F:0D 34:02 3F:14 44:06 45:0C 50:01 54:16 55:0F 56:0C 63:25
+
+# 16x16 sector grid (cell = WLD coord >> 11), row = y
+18 18 04 04 04 08 08 08 08 08 08 08 08 08 08 08
+08 18 08 04 04 04 08 08 08 08 08 08 08 08 08 08
+08 18 18 08 04 04 08 08 08 08 08 08 08 08 08 08
+08 18 18 08 08 04 04 08 08 08 08 08 08 08 08 08
+18 18 08 08 08 18 04 04 04 08 08 08 08 04 04 04
+09 09 0C 0C 0C 08 08 08 04 04 04 08 08 04 04 08
+09 0E 0E 0E 0C 0C 08 08 08 04 04 04 08 08 04 04
+0B 0B 0E 0E 1C 0C 08 08 08 08 04 04 08 08 08 18
+0B 0B 0E 0E 0C 0C 0C 18 18 08 04 08 04 08 08 08
+0B 0B 0E 0E 0E 0E 0C 0C 0C 18 08 08 08 08 08 18
+0B 0B 0B 0E 0E 0E 0E 0E 0C 0C 08 08 0C 0C 08 18
+0B 0B 0B 0B 0E 0E 0E 0E 0C 0C 0C 0C 0E 0E 0C 0C
+0B 0B 0B 0B 0B 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0B 0B 0B 0B 0B 0E 0E 0E 0E 0E 0E 0E 0B 0E 0E 0E
+0B 0B 0B 0B 0B 0B 0B 0E 0E 0E 0B 0B 0B 09 0E 0E
+0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 0B 09 09 09 09
+
+# string pool (index = name index; also object-type name for shape index)
+  1 0x01 Bandar Abbas
+  2 0x02 Bandar-e Lengeh
+  3 0x03 Kharg Island
+  4 0x04 Bushehr
+  5 0x05 Shiraz
+  6 0x06 Bandar Khomenyi
+  7 0x07 Kerman
+  8 0x08 Ahvaz
+  9 0x09 Masjed Soleyman
+ 10 0x0A Dezful
+ 11 0x0B Yazd
+ 12 0x0C Esfahan
+ 13 0x0D Ras Saffaniyah
+ 14 0x0E As Salamiyah
+ 15 0x0F Huffuf
+ 16 0x10 Dhahran
+ 17 0x11 Bahrain
+ 18 0x12 Qatar
+ 19 0x13 Kuwait City
+ 20 0x14 Ruweiss
+ 21 0x15 Tarif
+ 22 0x16 Abu Dhabi
+ 23 0x17 Dubai
+ 24 0x18 Muscat
+ 25 0x19 Oil Tanker
+ 26 0x1A USS Nimitz
+ 27 0x1B Amarah
+ 28 0x1C Oaysumah
+ 29 0x1D Al Mishab
+ 30 0x1E Bandar-e Rig
+ 31 0x1F Beh Behan
+ 32 0x20 Airbase
+ 37 0x25 Oil Rig
+ 38 0x26 Oil Well
+ 40 0x28 Village
+ 42 0x2A Depot
+ 43 0x2B Army HQ
+ 44 0x2C Tank Farm
+ 47 0x2F SA Missile
+ 52 0x34 SAM Radar
+ 53 0x35 Tower
+ 54 0x36 Hangar
+ 55 0x37 Nasiriyah
+ 56 0x38 Basra
+ 57 0x39 Abadan
+ 58 0x3A Diwaniyah
+ 59 0x3B Rifai
+ 60 0x3C Qurnah
+ 61 0x3D Kut
+ 62 0x3E Al Ammarah
+ 63 0x3F Bridge
+ 64 0x40 Fin
+ 65 0x41 Latiaan
+ 66 0x42 Madevan
+ 67 0x43 Furg
+ 68 0x44 Refinery
+ 69 0x45 Missile Boat
+ 76 0x4C Destroyer
+ 80 0x50 Airstrip
+ 84 0x54 Airplane
+ 85 0x55 Nuclear Plant
+ 86 0x56 Missile Boat
+ 89 0x59 Aegis Cruiser
+ 91 0x5B Special Object 1
+ 92 0x5C Special Object 2
+ 99 0x63 SS Missile

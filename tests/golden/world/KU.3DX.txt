@@ -1,0 +1,232 @@
+3DX  objects=115  vector-table@FE01 (0 vectors)  data@015D size=65027
+# idx off  attr  LODs (maxdepth->block)  | block: radius parts verts planes edges lists  [WLD name(?)]
+  0 015D  07  inf->0161  
+      @0161 r=2896 parts=1 verts=4 planes=1 edges=4 polys=1 end=01A3 cols=36
+  1 01A3  07  inf->01A7  [Tabuk]
+      @01A7 r=2896 parts=1 verts=9 planes=1 edges=14 polys=6 end=023D cols=31 36
+  2 023D  07  4096->0245 inf->26AE  [Ha'il]
+      @0245 r=2896 parts=1 verts=11 planes=1 edges=18 polys=8 end=02FC cols=31 36
+      @26AE r=2896 parts=1 verts=4 planes=1 edges=4 polys=1 end=26F0 cols=31
+  3 02FC  07  4096->0304 inf->0161  [Buraydah]
+      @0304 r=2896 parts=1 verts=7 planes=1 edges=10 polys=4 end=0378 cols=31 36
+  4 0378  07  4096->0380 inf->0161  [Shagra]
+      @0380 r=1639 parts=1 verts=4 planes=1 edges=4 polys=1 end=03C2 cols=36
+  5 03C2  00  inf->03C6  [Palace]
+      @03C6 r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=03D1 cols=
+  6 03D1  04  inf->03D5  [Dhahran]
+      @03D5 r=256 parts=1 verts=4 planes=1 edges=4 polys=1 end=0417 cols=EE
+  7 0417  05  inf->041B  [Hadithah]
+      @041B r=367 parts=1 verts=4 planes=1 edges=4 polys=1 end=045D cols=EE
+  8 045D  05  inf->0461  [Huffuf]
+      @0461 r=367 parts=1 verts=4 planes=1 edges=4 polys=1 end=04A3 cols=EE
+  9 04A3  A5  1024->04AF 4096->E347 inf->5017  [Chem Wpns Plant]
+      @04AF r=385 parts=1 verts=71 planes=-23 edges=122 polys=41 end=0DA8 cols=0D 91 92 94 B0 B2 B4 B6 B8 D5 D6 DA DC DF E0 E4 E8 EE EF
+      @E347 r=367 parts=1 verts=34 planes=13 edges=49 polys=19 end=E676 cols=0D 91 92 94 B0 B2 B4 B6 B8 D5 DA DF EE EF
+      @5017 r=0 parts=1 verts=1 planes=0 edges=1 polys=0 end=502D cols=BF
+ 10 0DA8  95  512->0DB0 inf->25C6  [Habbaniyah]
+      @0DB0 r=572 parts=1 verts=5 planes=4 edges=8 polys=4 end=0E58 cols=E6 E7 E8 E9 EB EC EE
+      @25C6 r=527 parts=1 verts=4 planes=3 edges=6 polys=3 end=2636 cols=E7 EB EE
+ 11 0E58  94  512->0E60 inf->263A  [Baghdad]
+      @0E60 r=362 parts=1 verts=5 planes=4 edges=8 polys=4 end=0F02 cols=E7 E8 E9 EB EC ED
+      @263A r=362 parts=1 verts=4 planes=3 edges=6 polys=3 end=26AA cols=E8 EC ED
+ 12 0F02  07  inf->0F06  [Amarah]
+      @0F06 r=2048 parts=1 verts=7 planes=0 edges=5 polys=0 end=0F4C cols=EE
+ 13 0F4C  07  inf->0F50  [Basra]
+      @0F50 r=2048 parts=1 verts=7 planes=0 edges=4 polys=0 end=0F93 cols=EE
+ 14 0F93  06  2048->0F9B inf->5017  [Mosul]
+      @0F9B r=1024 parts=1 verts=6 planes=1 edges=6 polys=1 end=0FF1 cols=39
+ 15 0FF1  06  2048->0FF9 inf->5017  [Kirkuk]
+      @0FF9 r=1448 parts=1 verts=6 planes=1 edges=6 polys=1 end=104F cols=39
+ 16 104F  06  inf->1053  [Jalibah]
+      @1053 r=1024 parts=1 verts=6 planes=1 edges=6 polys=1 end=10A9 cols=39
+ 17 10A9  07  1024->10B5 2048->1210 inf->5017  [Irbil]
+      @10B5 r=1619 parts=1 verts=23 planes=1 edges=27 polys=1 end=120C cols=94 EC EE
+      @1210 r=1619 parts=1 verts=12 planes=1 edges=14 polys=1 end=12C2 cols=94 EC EE
+ 18 120C  07  inf->1210  [Salman Pak]
+ 19 12C2  07  inf->12C6  [Baiji]
+      @12C6 r=362 parts=1 verts=4 planes=1 edges=4 polys=1 end=1308 cols=EC
+ 20 1308  83  1024->1314 4096->E67A inf->5017  [Mobile Scud]
+      @1314 r=147 parts=1 verts=45 planes=16 edges=68 polys=29 end=16D3 cols=08 0D 90 91 DA DC DD DE DF E0 E1 E3 E6 E7 EA EC ED EE EF FF
+      @E67A r=139 parts=1 verts=25 planes=10 edges=35 polys=15 end=E888 cols=0D 90 91 DA DC E1 E3 E8 EA EC EF
+ 21 16D3  A3  1024->16DF 4096->E88C inf->4FFD  [Samarra]
+      @16DF r=201 parts=1 verts=33 planes=-22 edges=70 polys=27 end=1E22 cols=0D 92 94 DA DC DF E9 EC EE EF F2 FF
+      @E88C r=201 parts=1 verts=20 planes=-9 edges=34 polys=13 end=EB8A cols=0D 94 DF E9 EF F2 FF
+      @4FFD r=0 parts=1 verts=1 planes=0 edges=1 polys=0 end=5013 cols=DF
+ 22 1E22  04  4096->1E2A inf->7029  [Qaim]
+      @1E2A r=362 parts=1 verts=8 planes=0 edges=8 polys=2 end=1E81 cols=AC E9
+      @7029 r=0 parts=1 verts=1 planes=0 edges=1 polys=0 end=703F cols=AF
+ 23 1E81  04  4096->1E89 inf->7029  [Sea Island]
+      @1E89 r=362 parts=1 verts=8 planes=0 edges=8 polys=2 end=1EE0 cols=AC CB
+ 24 1EE0  04  4096->1EE8 inf->7029  [Riyadh]
+      @1EE8 r=286 parts=1 verts=4 planes=0 edges=4 polys=1 end=1F19 cols=AF
+ 25 1F19  02  1024->1F25 2048->24A5 inf->2556  [Ship]
+      @1F25 r=69 parts=1 verts=39 planes=-21 edges=75 polys=27 end=24A1 cols=06 92 94 AF D7 DC DD DE DF E0 E4 E8 EB EC ED EE EF FF
+      @24A5 r=65 parts=1 verts=10 planes=1 edges=17 polys=3 end=2552 cols=06 92 94 EB EF
+      @2556 r=64 parts=1 verts=2 planes=0 edges=1 polys=0 end=2572 cols=06
+ 26 24A1  02  inf->24A5  [Kuwait City]
+ 27 2552  02  inf->2556  [Safwan]
+ 28 2572  47  inf->2576  [Al Najaf]
+      @2576 r=2560 parts=1 verts=7 planes=0 edges=7 polys=0 end=25C2 cols=EB
+ 29 25C2  95  inf->25C6  [As Samawah]
+ 30 2636  94  inf->263A  
+ 31 26AA  07  inf->26AE  [Ad Diwaniyah]
+ 32 26F0  25  512->2700 1024->33FF 2048->363B inf->36CB  [Airbase]
+      @2700 r=572 parts=1 verts=120 planes=19 edges=167 polys=39 end=33FB cols=92 94 CB E6 E8 E9 EA EB EC ED EE EF
+      @33FF r=513 parts=1 verts=33 planes=3 edges=34 polys=5 end=3637 cols=92 94 E6 EA EE EF
+      @363B r=513 parts=1 verts=9 planes=1 edges=9 polys=1 end=36C7 cols=92 94 EE EF
+      @36CB r=513 parts=1 verts=2 planes=0 edges=3 polys=0 end=36F5 cols=92 EE
+ 33 33FB  05  inf->33FF  [Jubbah]
+ 34 3637  05  inf->363B  [Hafar al Batin]
+ 35 36C7  05  inf->36CB  [Ar'ar]
+ 36 36F5  06  2048->36FD inf->5017  [USS T. Roosevelt]
+      @36FD r=1448 parts=1 verts=6 planes=1 edges=6 polys=1 end=3753 cols=39
+ 37 3753  04  4096->375B inf->5017  [Vanak]
+      @375B r=362 parts=1 verts=4 planes=1 edges=4 polys=1 end=379D cols=E6
+ 38 379D  04  4096->37A5 inf->4FFD  [Rahhaliyah]
+      @37A5 r=286 parts=1 verts=4 planes=1 edges=4 polys=1 end=37E7 cols=CC
+ 39 37E7  04  4096->37EF inf->4FFD  [Al Kumayt]
+      @37EF r=362 parts=1 verts=4 planes=1 edges=4 polys=1 end=3831 cols=DC
+ 40 3831  A4  512->383D 2048->3BC4 inf->EB8E  [Town]
+      @383D r=230 parts=1 verts=25 planes=-17 edges=42 polys=19 end=3BC0 cols=0D 94 B0 B4 B8 E0 E2 E3 E4 E5 E7 E8 EE EF F0 F4 F8
+      @3BC4 r=230 parts=1 verts=16 planes=9 edges=24 polys=11 end=3D86 cols=0D 94 E0 E3 E5 E7 EF F0 F4
+      @EB8E r=230 parts=1 verts=10 planes=1 edges=10 polys=4 end=EC2A cols=0D 94 EF
+ 41 3BC0  84  inf->3BC4  
+ 42 3D86  A3  512->3D92 4096->F837 inf->5031  [Depot]
+      @3D92 r=153 parts=1 verts=33 planes=9 edges=56 polys=24 end=406E cols=0D 90 91 94 96 D4 D8 DA E0 E4 EE EF F2 F6 FA
+      @F837 r=153 parts=1 verts=29 planes=9 edges=43 polys=19 end=FA87 cols=0D 90 96 D8 E0 E4 EE EF F2 F6 FA
+      @5031 r=72 parts=1 verts=4 planes=1 edges=4 polys=1 end=5073 cols=BF
+ 43 406E  A6  512->407A 4096->FA8B inf->5031  [Headquarters]
+      @407A r=738 parts=1 verts=37 planes=24 edges=73 polys=26 end=46B0 cols=0D 92 94 E0 E2 E4 E5 E6 E9 EA EC EF FF
+      @FA8B r=738 parts=1 verts=28 planes=8 edges=46 polys=16 end=FD15 cols=0D 92 94 E0 E2 E4 E6 EF FF
+ 44 46B0  A3  1024->46BC 2048->48D5 inf->5017  [Tank Farm]
+      @46BC r=101 parts=1 verts=16 planes=8 edges=31 polys=9 end=48D1 cols=0D 92 94 B0 B2 B4 B6 B8 D4 D6 D8 EF
+      @48D5 r=101 parts=1 verts=12 planes=2 edges=18 polys=3 end=49B5 cols=0D 92 94 B0 EF
+ 45 48D1  83  inf->48D5  
+ 46 49B5  00  512->49BD inf->12C6  
+      @49BD r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=49C8 cols=
+ 47 49C8  83  1024->49D4 2048->4F9B inf->4FFD  [SA Missile]
+      @49D4 r=94 parts=1 verts=70 planes=-29 edges=90 polys=39 end=4F97 cols=0D D7 D8 E0 E4 E6 E7 E8 E9 EA EB EC EE EF
+      @4F9B r=94 parts=1 verts=3 planes=2 edges=3 polys=2 end=4FF9 cols=E2 EF FF
+ 48 4F97  83  inf->4F9B  
+ 49 4FF9  00  inf->4FFD  
+ 50 5013  00  inf->5017  
+ 51 502D  02  inf->5031  
+ 52 5073  83  1024->507F 4096->7500 inf->5017  [SAM Radar]
+      @507F r=78 parts=2 verts=30 planes=-22 edges=48 polys=24 end=5420 cols=92 D8 DC DF E0 E6 EF
+      @7500 r=72 parts=2 verts=4 planes=2 edges=6 polys=2 end=7572 cols=92 DF E0
+ 53 5420  A3  512->5430 4096->90E1 4096->5031 inf->5017  [Tower]
+      @5430 r=138 parts=1 verts=26 planes=15 edges=48 polys=19 end=5762 cols=0D 90 92 D8 DC DF E2 E5 E8 EE EF FF
+      @90E1 r=138 parts=1 verts=20 planes=10 edges=38 polys=16 end=934C cols=0D 90 92 DC DF E2 E5 E8 EE EF FF
+ 54 5762  A3  512->5772 4096->AFDC 4096->5031 inf->5017  [Hangar]
+      @5772 r=176 parts=1 verts=29 planes=10 edges=39 polys=17 end=5A0F cols=0D 92 94 96 E0 E2 E4 E6 E7 EB ED EE EF
+      @AFDC r=160 parts=1 verts=20 planes=8 edges=25 polys=11 end=B1AD cols=0D 92 96 E0 E2 E5 E7 EB ED
+ 55 5A0F  05  inf->5A13  
+      @5A13 r=724 parts=1 verts=2 planes=0 edges=1 polys=0 end=5A2F cols=FA
+ 56 5A2F  05  inf->5A33  
+      @5A33 r=724 parts=1 verts=2 planes=0 edges=1 polys=0 end=5A4F cols=FA
+ 57 5A4F  05  inf->5A53  
+      @5A53 r=724 parts=1 verts=2 planes=0 edges=1 polys=0 end=5A6F cols=FA
+ 58 5A6F  05  inf->5A73  
+      @5A73 r=724 parts=1 verts=2 planes=0 edges=1 polys=0 end=5A8F cols=FA
+ 59 5A8F  05  inf->5A93  
+      @5A93 r=724 parts=1 verts=5 planes=1 edges=5 polys=1 end=5ADF cols=39
+ 60 5ADF  05  inf->5AE3  
+      @5AE3 r=724 parts=1 verts=4 planes=1 edges=4 polys=1 end=5B25 cols=39
+ 61 5B25  05  inf->5B29  
+      @5B29 r=724 parts=1 verts=3 planes=1 edges=3 polys=1 end=5B61 cols=39
+ 62 5B61  05  inf->5B65  
+      @5B65 r=724 parts=1 verts=4 planes=1 edges=4 polys=1 end=5BA7 cols=39
+ 63 5BA7  A5  inf->5BAB  [Bridge]
+      @5BAB r=512 parts=1 verts=54 planes=22 edges=85 polys=31 end=615E cols=39 92 CB D8 DC DF EB EE EF
+ 64 615E  84  inf->6162  
+      @6162 r=320 parts=1 verts=30 planes=9 edges=40 polys=11 end=6374 cols=92 D8 EA EE
+ 65 6374  83  inf->6378  
+      @6378 r=162 parts=1 verts=6 planes=0 edges=5 polys=0 end=63C4 cols=92 D8 EE
+ 66 63C4  A4  1024->63D0 4096->7043 inf->5017  [Nuclear Plant]
+      @63D0 r=337 parts=1 verts=79 planes=-36 edges=128 polys=49 end=7025 cols=0D 92 94 96 B0 B1 B2 B3 B4 B6 B8 CA CD D7 DB DE E0 E2 E4 E6 E9 EA EE EF F6 FA FE FF
+      @7043 r=324 parts=1 verts=28 planes=11 edges=45 polys=16 end=734D cols=0D 92 94 B0 B1 B2 B3 B6 B7 E9 EE EF
+ 67 7025  00  inf->7029  
+ 68 703F  84  inf->7043  
+ 69 734D  A4  1024->7359 2048->EC2E inf->4FFD  [Burning Oil Rig]
+      @7359 r=195 parts=1 verts=14 planes=-10 edges=18 polys=10 end=74DE cols=0D DF EF FF
+      @EC2E r=195 parts=1 verts=7 planes=3 edges=7 polys=3 end=ECB4 cols=0D EF
+ 70 74DE  00  inf->74E2  
+      @74E2 r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=74ED cols=
+ 71 74ED  00  inf->74F1  
+      @74F1 r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=74FC cols=
+ 72 74FC  83  inf->7500  
+ 73 7572  A5  256->7586 512->B1B1 1024->7E5A 2048->7FB2 inf->5017  
+      @7586 r=514 parts=1 verts=65 planes=-23 edges=116 polys=38 end=7E56 cols=07 13 39 94 CB DF E2 E5 E6 E8 ED EF F8
+      @B1B1 r=514 parts=1 verts=59 planes=-22 edges=104 polys=30 end=B9F8 cols=07 13 39 90 91 92 94 CB DF E0 E5 E6 E7 E8 E9 ED EE EF FF
+      @7E5A r=512 parts=1 verts=19 planes=3 edges=29 polys=4 end=7FAE cols=39 94 B1 E5 ED
+      @7FB2 r=256 parts=1 verts=2 planes=0 edges=3 polys=0 end=7FDC cols=94 E3
+ 74 7E56  85  inf->7E5A  
+ 75 7FAE  04  inf->7FB2  
+ 76 7FDC  A5  1024->7FE8 4096->8E4D inf->5017  [Destroyer]
+      @7FE8 r=384 parts=1 verts=90 planes=-40 edges=165 polys=54 end=8E49 cols=39 92 94 CC E0 E1 E2 E3 E4 E5 E6 EB EC EE EF FF
+      @8E4D r=384 parts=1 verts=12 planes=1 edges=25 polys=5 end=8F2F cols=39 92 94 EB EF
+ 77 8E49  05  inf->8E4D  
+ 78 8F2F  02  2048->8F37 inf->4FFD  
+      @8F37 r=64 parts=1 verts=12 planes=7 edges=18 polys=7 end=9047 cols=0D EF
+ 79 9047  04  inf->904B  
+      @904B r=256 parts=1 verts=9 planes=1 edges=13 polys=1 end=90DD cols=94 DA EF
+ 80 90DD  83  inf->90E1  
+ 81 934C  A5  1024->9358 4096->A5FB inf->5017  [Bio Wpns Plant]
+      @9358 r=394 parts=1 verts=77 planes=-27 edges=120 polys=49 end=9C44 cols=0D 90 91 92 94 96 B2 B4 B6 B9 BC D8 DB DE E6 E7 E8 EA EC ED EE EF FF
+      @A5FB r=389 parts=1 verts=46 planes=16 edges=68 polys=30 end=AA2C cols=0D 90 91 92 96 B2 B4 B6 B9 BC D8 DE E7 E9 EC ED EE EF FF
+ 82 9C44  82  512->9C4C inf->5017  
+      @9C4C r=64 parts=1 verts=57 planes=-27 edges=104 polys=35 end=A56B cols=90 91 92 94 E0 E6 E7 E9 ED EE EF FF
+ 83 A56B  01  512->A573 inf->5017  
+      @A573 r=16 parts=2 verts=4 planes=2 edges=6 polys=2 end=A5F7 cols=92 94 E0 E2 E6 EF
+ 84 A5F7  85  inf->A5FB  
+ 85 AA2C  84  1024->AA38 4096->ECB8 inf->5017  [Mosque]
+      @AA38 r=247 parts=1 verts=67 planes=30 edges=100 polys=41 end=AFD8 cols=96 E0 E1 E2 E3 E4 E5 E6 EA EF
+      @ECB8 r=156 parts=1 verts=46 planes=21 edges=58 polys=22 end=F05E cols=96 E0 E1 E2 E4 E5 E6 EA EF
+ 86 AFD8  83  inf->AFDC  
+ 87 B1AD  A5  inf->B1B1  
+ 88 B9F8  83  2048->BA00 inf->4FFD  
+      @BA00 r=120 parts=1 verts=25 planes=12 edges=43 polys=17 end=BC3B cols=0D 36 E6 EC EF
+ 89 BC3B  84  inf->BC3F  [Offshore Oil Rig]
+      @BC3F r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=BC4A cols=
+ 90 BC4A  04  inf->BC4E  
+      @BC4E r=256 parts=1 verts=4 planes=1 edges=4 polys=1 end=BC90 cols=EE
+ 91 BC90  A4  1024->BC9C 4096->F062 inf->5017  [Oil Refinery]
+      @BC9C r=363 parts=1 verts=75 planes=-28 edges=104 polys=36 end=C4D4 cols=0D 92 94 AF B0 B2 B4 B6 B8 CA CF DB DD DF E6 EF FF
+      @F062 r=362 parts=1 verts=37 planes=17 edges=57 polys=22 end=F430 cols=0D 92 B0 B2 B4 B6 B8 CF E6 EF FF
+ 92 C4D4  84  1024->C4E0 4096->F434 inf->F51D  [Missile Boat]
+      @C4E0 r=256 parts=1 verts=66 planes=-28 edges=113 polys=39 end=CC77 cols=06 39 92 94 C9 CB CC E0 E1 E2 E4 E5 E6 E7 E8 EA EC EF
+      @F434 r=256 parts=1 verts=11 planes=3 edges=16 polys=4 end=F519 cols=39 92 94 CF E4 EC
+      @F51D r=97 parts=1 verts=2 planes=0 edges=1 polys=0 end=F539 cols=E4
+ 93 CC77  A4  1024->CC83 4096->F53D inf->5017  [Pumping Manifold]
+      @CC83 r=363 parts=1 verts=71 planes=-13 edges=90 polys=18 end=D2BD cols=0D 92 94 AC AF B0 B2 B4 B6 BC BF CC CF DC DF E0 E2 E4 E5 E9 EA EB EE EF FF
+      @F53D r=362 parts=1 verts=27 planes=8 edges=38 polys=11 end=F745 cols=0D 92 B0 B2 B4 B6 B8 DF E2 EE
+ 94 D2BD  22  1024->D2C9 4096->F749 inf->5017  [Scud Launcher]
+      @D2C9 r=71 parts=1 verts=28 planes=-9 edges=40 polys=13 end=D536 cols=0D 94 E0 E2 E4 E6 EA EC EE EF FF
+      @F749 r=71 parts=1 verts=18 planes=1 edges=20 polys=6 end=F833 cols=0D E0 E6 EE
+ 95 D536  A4  inf->D53A  [Air Def Command]
+      @D53A r=362 parts=1 verts=52 planes=-11 edges=84 polys=34 end=D9BB cols=0D 90 91 94 96 AF BC E0 E5 EA ED EE EF
+ 96 D9BB  A2  1024->D9C7 4096->E191 inf->7029  [Rep. Guards]
+      @D9C7 r=69 parts=1 verts=55 planes=-23 edges=80 polys=30 end=DE84 cols=0D AA AF EF
+      @E191 r=69 parts=1 verts=26 planes=8 edges=30 polys=9 end=E343 cols=0D AA AF ED
+ 97 DE84  07  inf->DE88  
+      @DE88 r=2896 parts=1 verts=6 planes=1 edges=6 polys=1 end=DEDE cols=EF
+ 98 DEDE  24  1024->DEEA 4096->FD19 inf->7029  
+      @DEEA r=230 parts=1 verts=28 planes=11 edges=40 polys=20 end=E17E cols=96 AA AC AD AF EF
+      @FD19 r=230 parts=1 verts=16 planes=1 edges=16 polys=8 end=FE01 cols=AC EF
+ 99 E17E  04  inf->E182  [SS Missile]
+      @E182 r=0 parts=1 verts=0 planes=0 edges=0 polys=0 end=E18D cols=
+100 E18D  82  inf->E191  
+101 E343  85  inf->E347  
+102 E676  83  inf->E67A  
+103 E888  83  inf->E88C  
+104 EB8A  04  inf->EB8E  
+105 EC2A  84  inf->EC2E  
+106 ECB4  83  inf->ECB8  
+107 F05E  84  inf->F062  
+108 F430  84  inf->F434  
+109 F519  03  inf->F51D  
+110 F539  84  inf->F53D  
+111 F745  02  inf->F749  
+112 F833  83  inf->F837  
+113 FA87  86  inf->FA8B  
+114 FD15  04  inf->FD19  

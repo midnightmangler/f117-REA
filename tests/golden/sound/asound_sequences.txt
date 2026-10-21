@@ -1,0 +1,1884 @@
+seq 0766  (voices 0)
+  0766  FC INSTR     26
+  0768  F4 PAN       50
+  076A  F9 VOLUME    63
+  076C  F5 VOLOFS    63(=-1 mod 64)
+  076E  2B 1E     note blk3 fnum2FF =   290.9 Hz (~D4) dur 30
+  0770  2E 1E     note blk3 fnum390 =   345.9 Hz (~F4) dur 30
+  0772  2D 52     note blk3 fnum35D =   326.6 Hz (~E4) dur 82
+  0774  35 0C     note blk4 fnum2AB =   518.1 Hz (~C5) dur 12
+  0776  37 28     note blk4 fnum2FF =   581.9 Hz (~D5) dur 40
+  0778  3A 06     note blk4 fnum390 =   691.8 Hz (~F5) dur 6
+  077A  F4 PAN       64
+  077C  FC INSTR     28
+  077E  FB GAP       0
+  0780  00 14     rest 20
+  0782  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  0784  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  0786  3C 06     note blk5 fnum200 =   776.8 Hz (~G5) dur 6
+  0788  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  078A  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  078C  3C 06     note blk5 fnum200 =   776.8 Hz (~G5) dur 6
+  078E  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  0790  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0792  30 06     note blk4 fnum200 =   388.4 Hz (~G4) dur 6
+  0794  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0796  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0798  39 06     note blk4 fnum35D =   653.2 Hz (~E5) dur 6
+  079A  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  079C  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  079E  43 05     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 5
+  07A0  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  07A2  FC INSTR     26
+  07A4  F4 PAN       50
+  07A6  37 1E     note blk4 fnum2FF =   581.9 Hz (~D5) dur 30
+  07A8  3A 1E     note blk4 fnum390 =   691.8 Hz (~F5) dur 30
+  07AA  39 50     note blk4 fnum35D =   653.2 Hz (~E5) dur 80
+  07AC  35 0C     note blk4 fnum2AB =   518.1 Hz (~C5) dur 12
+  07AE  37 30     note blk4 fnum2FF =   581.9 Hz (~D5) dur 48
+  07B0  00 78     rest 120
+  07B2  FD LOOP      
+
+seq 07B4  (voices 1)
+  07B4  FC INSTR     13
+  07B6  F8 VOLSWEEP  61 1
+  07B9  F5 VOLOFS    44(=-20 mod 64)
+  07BB  16 50     note blk1 fnum390 =    86.5 Hz (~F2) dur 80
+  07BD  15 50     note blk1 fnum35D =    81.6 Hz (~E2) dur 80
+  07BF  16 50     note blk1 fnum390 =    86.5 Hz (~F2) dur 80
+  07C1  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  07C3  15 50     note blk1 fnum35D =    81.6 Hz (~E2) dur 80
+  07C5  11 50     note blk1 fnum2AB =    64.8 Hz (~C2) dur 80
+  07C7  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  07C9  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  07CB  F5 VOLOFS    52(=-12 mod 64)
+  07CD  FD LOOP      
+
+seq 07CE  (voices 2)
+  07CE  FC INSTR     27
+  07D0  F4 PAN       96
+  07D2  F9 VOLUME    43
+  07D4  00 50     rest 80
+  07D6  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  07D8  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  07DA  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  07DC  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  07DE  00 3C     rest 60
+  07E0  F4 PAN       32
+  07E2  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  07E4  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  07E6  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  07E8  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  07EA  00 8C     rest 140
+  07EC  FD LOOP      
+
+seq 07EE  (voices 3)
+  07EE  FC INSTR     25
+  07F0  F4 PAN       127
+  07F2  F5 VOLOFS    60(=-4 mod 64)
+  07F4  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  07F6  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  07F8  00 14     rest 20
+  07FA  FC INSTR     24
+  07FC  F4 PAN       0
+  07FE  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  0800  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  0802  F5 VOLOFS    63(=-1 mod 64)
+  0804  F8 VOLSWEEP  0 0
+  0807  FC INSTR     33
+  0809  F4 PAN       64
+  080B  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  080D  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  080F  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  0811  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  0813  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  0815  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  0817  FC INSTR     25
+  0819  F4 PAN       127
+  081B  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  081D  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  081F  FC INSTR     33
+  0821  F4 PAN       64
+  0823  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0825  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  0827  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  0829  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  082B  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  082D  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  082F  FD LOOP      
+
+seq 0830  (voices 4)
+  0830  FC INSTR     30
+  0832  F4 PAN       20
+  0834  F9 VOLUME    63
+  0836  F5 VOLOFS    53(=-11 mod 64)
+  0838  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  083A  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  083C  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  083E  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  0840  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  0842  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  0844  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  0846  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  0848  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  084A  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  084C  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  084E  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  0850  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  0852  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  0854  00 64     rest 100
+  0856  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  0858  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  085A  FD LOOP      
+
+seq 085C  (voices 5)
+  085C  F9 VOLUME    63
+  085E  F5 VOLOFS    45(=-19 mod 64)
+  0860  F4 PAN       70
+  0862  FC INSTR     1
+  0864  22 50     note blk2 fnum390 =   173.0 Hz (~F3) dur 80
+  0866  21 50     note blk2 fnum35D =   163.3 Hz (~E3) dur 80
+  0868  22 50     note blk2 fnum390 =   173.0 Hz (~F3) dur 80
+  086A  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  086C  21 50     note blk2 fnum35D =   163.3 Hz (~E3) dur 80
+  086E  1D 50     note blk2 fnum2AB =   129.5 Hz (~C3) dur 80
+  0870  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  0872  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  0874  FD LOOP      
+
+seq 0876  (voices 0)
+  0876  FC INSTR     37
+  0878  F9 VOLUME    63
+  087A  FB GAP       4
+  087C  FF REPEAT1   0
+  087E  F4 PAN       0
+  0880  F3 PANSWEEP  7 7
+  0883  F5 VOLOFS    60(=-4 mod 64)
+  0885  F8 VOLSWEEP  4 -1
+  0888  39 31     note blk4 fnum35D =   653.2 Hz (~E5) dur 49
+  088A  F5 VOLOFS    41(=-23 mod 64)
+  088C  F8 VOLSWEEP  3 1
+  088F  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0891  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0893  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0895  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  0897  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0899  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  089B  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  089D  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  089F  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  08A1  F4 PAN       127
+  08A3  F3 PANSWEEP  7 -7
+  08A6  F5 VOLOFS    60(=-4 mod 64)
+  08A8  F8 VOLSWEEP  4 -1
+  08AB  39 31     note blk4 fnum35D =   653.2 Hz (~E5) dur 49
+  08AD  F5 VOLOFS    41(=-23 mod 64)
+  08AF  F8 VOLSWEEP  3 1
+  08B2  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  08B4  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08B6  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  08B8  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  08BA  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  08BC  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  08BE  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  08C0  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  08C2  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  08C4  FF REPEAT1   1
+  08C6  F4 PAN       0
+  08C8  F3 PANSWEEP  7 7
+  08CB  F5 VOLOFS    60(=-4 mod 64)
+  08CD  F8 VOLSWEEP  4 -1
+  08D0  3C 31     note blk5 fnum200 =   776.8 Hz (~G5) dur 49
+  08D2  F5 VOLOFS    41(=-23 mod 64)
+  08D4  F8 VOLSWEEP  3 1
+  08D7  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08D9  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  08DB  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08DD  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  08DF  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08E1  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  08E3  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08E5  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08E7  3A 07     note blk4 fnum390 =   691.8 Hz (~F5) dur 7
+  08E9  F4 PAN       127
+  08EB  F3 PANSWEEP  7 -7
+  08EE  F5 VOLOFS    60(=-4 mod 64)
+  08F0  F8 VOLSWEEP  4 -1
+  08F3  3C 31     note blk5 fnum200 =   776.8 Hz (~G5) dur 49
+  08F5  F5 VOLOFS    41(=-23 mod 64)
+  08F7  F8 VOLSWEEP  3 1
+  08FA  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  08FC  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  08FE  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0900  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  0902  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0904  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  0906  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0908  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  090A  3A 07     note blk4 fnum390 =   691.8 Hz (~F5) dur 7
+  090C  F4 PAN       0
+  090E  F3 PANSWEEP  7 2
+  0911  F5 VOLOFS    60(=-4 mod 64)
+  0913  F8 VOLSWEEP  4 -1
+  0916  3C 31     note blk5 fnum200 =   776.8 Hz (~G5) dur 49
+  0918  F5 VOLOFS    41(=-23 mod 64)
+  091A  F8 VOLSWEEP  3 1
+  091D  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  091F  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  0921  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0923  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  0925  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0927  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  0929  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  092B  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  092D  3A 07     note blk4 fnum390 =   691.8 Hz (~F5) dur 7
+  092F  F5 VOLOFS    41(=-23 mod 64)
+  0931  F8 VOLSWEEP  12 1
+  0934  FF REPEAT1   0
+  0936  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0938  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  093A  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  093C  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  093E  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0940  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  0942  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0944  FF REPEAT1   1
+  0946  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0948  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  094A  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  094C  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  094E  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0950  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  0952  FF REPEAT1   1
+  0954  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0956  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0958  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  095A  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  095C  43 07     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 7
+  095E  45 07     note blk5 fnum35D =  1306.3 Hz (~E6) dur 7
+  0960  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  0962  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  0964  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  0966  F8 VOLSWEEP  6 -1
+  0969  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  096B  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  096D  3C 07     note blk5 fnum200 =   776.8 Hz (~G5) dur 7
+  096F  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0971  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  0973  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0975  40 07     note blk5 fnum285 =   978.6 Hz (~B5) dur 7
+  0977  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0979  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  097B  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  097D  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  097F  F3 PANSWEEP  0 0
+  0982  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0984  32 07     note blk4 fnum23F =   436.2 Hz (~A4) dur 7
+  0986  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0988  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  098A  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  098C  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  098E  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0990  00 00     END (voice off)
+
+seq 0992  (voices 1)
+  0992  FC INSTR     37
+  0994  00 7E     rest 126
+  0996  FB GAP       4
+  0998  FF REPEAT1   0
+  099A  F4 PAN       127
+  099C  F3 PANSWEEP  7 -7
+  099F  F9 VOLUME    63
+  09A1  F5 VOLOFS    60(=-4 mod 64)
+  09A3  F8 VOLSWEEP  4 -1
+  09A6  37 31     note blk4 fnum2FF =   581.9 Hz (~D5) dur 49
+  09A8  F5 VOLOFS    41(=-23 mod 64)
+  09AA  F8 VOLSWEEP  3 1
+  09AD  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09AF  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  09B1  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09B3  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  09B5  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09B7  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  09B9  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09BB  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09BD  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  09BF  F4 PAN       0
+  09C1  F3 PANSWEEP  7 7
+  09C4  F9 VOLUME    63
+  09C6  F5 VOLOFS    60(=-4 mod 64)
+  09C8  F8 VOLSWEEP  4 -1
+  09CB  37 31     note blk4 fnum2FF =   581.9 Hz (~D5) dur 49
+  09CD  F5 VOLOFS    41(=-23 mod 64)
+  09CF  F8 VOLSWEEP  3 1
+  09D2  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09D4  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  09D6  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09D8  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  09DA  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09DC  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  09DE  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09E0  37 07     note blk4 fnum2FF =   581.9 Hz (~D5) dur 7
+  09E2  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  09E4  FF REPEAT1   1
+  09E6  F4 PAN       127
+  09E8  F3 PANSWEEP  7 -7
+  09EB  F5 VOLOFS    60(=-4 mod 64)
+  09ED  F8 VOLSWEEP  4 -1
+  09F0  34 31     note blk4 fnum285 =   489.3 Hz (~B4) dur 49
+  09F2  F5 VOLOFS    41(=-23 mod 64)
+  09F4  F8 VOLSWEEP  3 1
+  09F7  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  09F9  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  09FB  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  09FD  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  09FF  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A01  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A03  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A05  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A07  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A09  F4 PAN       0
+  0A0B  F3 PANSWEEP  7 7
+  0A0E  F5 VOLOFS    60(=-4 mod 64)
+  0A10  F8 VOLSWEEP  4 -1
+  0A13  34 31     note blk4 fnum285 =   489.3 Hz (~B4) dur 49
+  0A15  F5 VOLOFS    41(=-23 mod 64)
+  0A17  F8 VOLSWEEP  3 1
+  0A1A  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A1C  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A1E  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A20  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0A22  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A24  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A26  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A28  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A2A  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A2C  F4 PAN       127
+  0A2E  F3 PANSWEEP  7 -2
+  0A31  F5 VOLOFS    41(=-23 mod 64)
+  0A33  F8 VOLSWEEP  12 1
+  0A36  FF REPEAT1   0
+  0A38  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A3A  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0A3C  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A3E  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A40  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A42  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A44  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A46  FF REPEAT1   1
+  0A48  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A4A  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0A4C  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A4E  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A50  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A52  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A54  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A56  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0A58  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A5A  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A5C  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A5E  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A60  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A62  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  0A64  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A66  32 07     note blk4 fnum23F =   436.2 Hz (~A4) dur 7
+  0A68  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0A6A  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  0A6C  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A6E  32 07     note blk4 fnum23F =   436.2 Hz (~A4) dur 7
+  0A70  F8 VOLSWEEP  6 -1
+  0A73  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A75  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A77  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A79  32 07     note blk4 fnum23F =   436.2 Hz (~A4) dur 7
+  0A7B  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A7D  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A7F  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A81  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0A83  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A85  30 07     note blk4 fnum200 =   388.4 Hz (~G4) dur 7
+  0A87  F3 PANSWEEP  0 0
+  0A8A  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A8C  32 07     note blk4 fnum23F =   436.2 Hz (~A4) dur 7
+  0A8E  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A90  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  0A92  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0A94  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0A96  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  0A98  00 00     END (voice off)
+
+seq 0A9A  (voices 2)
+  0A9A  FC INSTR     37
+  0A9C  00 FC     rest 252
+  0A9E  FB GAP       4
+  0AA0  FF REPEAT1   0
+  0AA2  F9 VOLUME    63
+  0AA4  F5 VOLOFS    60(=-4 mod 64)
+  0AA6  F8 VOLSWEEP  4 -1
+  0AA9  2E 31     note blk3 fnum390 =   345.9 Hz (~F4) dur 49
+  0AAB  F5 VOLOFS    41(=-23 mod 64)
+  0AAD  F8 VOLSWEEP  3 1
+  0AB0  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0AB2  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  0AB4  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0AB6  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AB8  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0ABA  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0ABC  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0ABE  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0AC0  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0AC2  FF REPEAT1   2
+  0AC4  F5 VOLOFS    60(=-4 mod 64)
+  0AC6  F8 VOLSWEEP  4 -1
+  0AC9  2B 31     note blk3 fnum2FF =   290.9 Hz (~D4) dur 49
+  0ACB  F5 VOLOFS    51(=-13 mod 64)
+  0ACD  F8 VOLSWEEP  5 1
+  0AD0  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AD2  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0AD4  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AD6  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0AD8  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0ADA  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0ADC  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0ADE  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0AE0  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0AE2  FF REPEAT1   1
+  0AE4  F5 VOLOFS    45(=-19 mod 64)
+  0AE6  F8 VOLSWEEP  10 1
+  0AE9  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AEB  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AED  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0AEF  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AF1  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0AF3  FF REPEAT1   1
+  0AF5  F5 VOLOFS    45(=-19 mod 64)
+  0AF7  F8 VOLSWEEP  7 1
+  0AFA  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0AFC  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0AFE  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0B00  2E 07     note blk3 fnum390 =   345.9 Hz (~F4) dur 7
+  0B02  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0B04  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0B06  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B08  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B0A  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0B0C  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B0E  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0B10  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B12  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B14  29 07     note blk3 fnum2AB =   259.1 Hz (~C4) dur 7
+  0B16  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B18  28 07     note blk3 fnum285 =   244.7 Hz (~B3) dur 7
+  0B1A  2B 07     note blk3 fnum2FF =   290.9 Hz (~D4) dur 7
+  0B1C  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0B1E  F8 VOLSWEEP  0 0
+  0B21  F9 VOLUME    59
+  0B23  1D 85     note blk2 fnum2AB =   129.5 Hz (~C3) dur 133
+  0B25  F9 VOLUME    63
+  0B27  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  0B29  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  0B2B  00 00     END (voice off)
+
+seq 0B2E  (voices 3)
+  0B2E  FC INSTR     41
+  0B30  00 E0     rest 224
+  0B32  00 9A     rest 154
+  0B34  F9 VOLUME    48
+  0B36  18 70     note blk2 fnum200 =    97.1 Hz (~G2) dur 112
+  0B38  18 70     note blk2 fnum200 =    97.1 Hz (~G2) dur 112
+  0B3A  18 70     note blk2 fnum200 =    97.1 Hz (~G2) dur 112
+  0B3C  18 46     note blk2 fnum200 =    97.1 Hz (~G2) dur 70
+  0B3E  F9 VOLUME    41
+  0B40  18 31     note blk2 fnum200 =    97.1 Hz (~G2) dur 49
+  0B42  F9 VOLUME    46
+  0B44  18 31     note blk2 fnum200 =    97.1 Hz (~G2) dur 49
+  0B46  F9 VOLUME    52
+  0B48  18 2A     note blk2 fnum200 =    97.1 Hz (~G2) dur 42
+  0B4A  F9 VOLUME    55
+  0B4C  18 31     note blk2 fnum200 =    97.1 Hz (~G2) dur 49
+  0B4E  F9 VOLUME    58
+  0B50  18 1C     note blk2 fnum200 =    97.1 Hz (~G2) dur 28
+  0B52  F9 VOLUME    63
+  0B54  11 8C     note blk1 fnum2AB =    64.8 Hz (~C2) dur 140
+  0B56  FC INSTR     37
+  0B58  18 07     note blk2 fnum200 =    97.1 Hz (~G2) dur 7
+  0B5A  11 07     note blk1 fnum2AB =    64.8 Hz (~C2) dur 7
+  0B5C  00 00     END (voice off)
+
+seq 0B5E  (voices 4,5)
+  0B5E  FC INSTR     37
+  0B60  F9 VOLUME    43
+  0B62  00 03     rest 3
+  0B64  FD LOOP      
+
+seq 0B66  (voices 0)
+  0B66  F9 VOLUME    47
+  0B68  FC INSTR     41
+  0B6A  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0B6C  26 0B     note blk3 fnum23F =   218.1 Hz (~A3) dur 11
+  0B6E  2B B0     note blk3 fnum2FF =   290.9 Hz (~D4) dur 176
+  0B70  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0B72  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0B74  2E 84     note blk3 fnum390 =   345.9 Hz (~F4) dur 132
+  0B76  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0B78  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0B7A  2E 2C     note blk3 fnum390 =   345.9 Hz (~F4) dur 44
+  0B7C  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0B7E  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0B80  2E 2C     note blk3 fnum390 =   345.9 Hz (~F4) dur 44
+  0B82  26 16     note blk3 fnum23F =   218.1 Hz (~A3) dur 22
+  0B84  2B 16     note blk3 fnum2FF =   290.9 Hz (~D4) dur 22
+  0B86  2E B0     note blk3 fnum390 =   345.9 Hz (~F4) dur 176
+  0B88  2B 16     note blk3 fnum2FF =   290.9 Hz (~D4) dur 22
+  0B8A  2E 16     note blk3 fnum390 =   345.9 Hz (~F4) dur 22
+  0B8C  32 58     note blk4 fnum23F =   436.2 Hz (~A4) dur 88
+  0B8E  2F 2C     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 44
+  0B90  2B 0F     note blk3 fnum2FF =   290.9 Hz (~D4) dur 15
+  0B92  2F 0F     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 15
+  0B94  2B 0E     note blk3 fnum2FF =   290.9 Hz (~D4) dur 14
+  0B96  26 B0     note blk3 fnum23F =   218.1 Hz (~A3) dur 176
+  0B98  26 42     note blk3 fnum23F =   218.1 Hz (~A3) dur 66
+  0B9A  26 16     note blk3 fnum23F =   218.1 Hz (~A3) dur 22
+  0B9C  2B FF     note blk3 fnum2FF =   290.9 Hz (~D4) dur 255
+  0B9E  00 00     END (voice off)
+
+seq 0BA0  (voices 1)
+  0BA0  F4 PAN       127
+  0BA2  FC INSTR     41
+  0BA4  F9 VOLUME    44
+  0BA6  00 2C     rest 44
+  0BA8  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0BAA  26 0B     note blk3 fnum23F =   218.1 Hz (~A3) dur 11
+  0BAC  2B B0     note blk3 fnum2FF =   290.9 Hz (~D4) dur 176
+  0BAE  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0BB0  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0BB2  2E 84     note blk3 fnum390 =   345.9 Hz (~F4) dur 132
+  0BB4  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0BB6  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0BB8  2E 2C     note blk3 fnum390 =   345.9 Hz (~F4) dur 44
+  0BBA  26 21     note blk3 fnum23F =   218.1 Hz (~A3) dur 33
+  0BBC  2B 0B     note blk3 fnum2FF =   290.9 Hz (~D4) dur 11
+  0BBE  2E 2C     note blk3 fnum390 =   345.9 Hz (~F4) dur 44
+  0BC0  26 16     note blk3 fnum23F =   218.1 Hz (~A3) dur 22
+  0BC2  2B 16     note blk3 fnum2FF =   290.9 Hz (~D4) dur 22
+  0BC4  2E 9A     note blk3 fnum390 =   345.9 Hz (~F4) dur 154
+  0BC6  2B 16     note blk3 fnum2FF =   290.9 Hz (~D4) dur 22
+  0BC8  2E 16     note blk3 fnum390 =   345.9 Hz (~F4) dur 22
+  0BCA  32 6E     note blk4 fnum23F =   436.2 Hz (~A4) dur 110
+  0BCC  2F 2C     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 44
+  0BCE  23 0F     note blk2 fnum3C7 =   183.4 Hz (~F#3) dur 15
+  0BD0  26 0F     note blk3 fnum23F =   218.1 Hz (~A3) dur 15
+  0BD2  23 0E     note blk2 fnum3C7 =   183.4 Hz (~F#3) dur 14
+  0BD4  26 B0     note blk3 fnum23F =   218.1 Hz (~A3) dur 176
+  0BD6  26 42     note blk3 fnum23F =   218.1 Hz (~A3) dur 66
+  0BD8  26 16     note blk3 fnum23F =   218.1 Hz (~A3) dur 22
+  0BDA  2B D3     note blk3 fnum2FF =   290.9 Hz (~D4) dur 211
+  0BDC  00 00     END (voice off)
+
+seq 0BDE  (voices 2)
+  0BDE  F4 PAN       0
+  0BE0  F9 VOLUME    30
+  0BE2  00 42     rest 66
+  0BE4  FC INSTR     41
+  0BE6  32 21     note blk4 fnum23F =   436.2 Hz (~A4) dur 33
+  0BE8  32 0B     note blk4 fnum23F =   436.2 Hz (~A4) dur 11
+  0BEA  37 B0     note blk4 fnum2FF =   581.9 Hz (~D5) dur 176
+  0BEC  32 21     note blk4 fnum23F =   436.2 Hz (~A4) dur 33
+  0BEE  37 0B     note blk4 fnum2FF =   581.9 Hz (~D5) dur 11
+  0BF0  3A 84     note blk4 fnum390 =   691.8 Hz (~F5) dur 132
+  0BF2  32 21     note blk4 fnum23F =   436.2 Hz (~A4) dur 33
+  0BF4  37 0B     note blk4 fnum2FF =   581.9 Hz (~D5) dur 11
+  0BF6  3A 2C     note blk4 fnum390 =   691.8 Hz (~F5) dur 44
+  0BF8  32 21     note blk4 fnum23F =   436.2 Hz (~A4) dur 33
+  0BFA  37 0B     note blk4 fnum2FF =   581.9 Hz (~D5) dur 11
+  0BFC  3A 2C     note blk4 fnum390 =   691.8 Hz (~F5) dur 44
+  0BFE  32 16     note blk4 fnum23F =   436.2 Hz (~A4) dur 22
+  0C00  37 16     note blk4 fnum2FF =   581.9 Hz (~D5) dur 22
+  0C02  3A 8F     note blk4 fnum390 =   691.8 Hz (~F5) dur 143
+  0C04  37 16     note blk4 fnum2FF =   581.9 Hz (~D5) dur 22
+  0C06  3A 16     note blk4 fnum390 =   691.8 Hz (~F5) dur 22
+  0C08  3E 79     note blk5 fnum23F =   872.4 Hz (~A5) dur 121
+  0C0A  3B 34     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 52
+  0C0C  2B 0E     note blk3 fnum2FF =   290.9 Hz (~D4) dur 14
+  0C0E  2F 0F     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 15
+  0C10  2B 0F     note blk3 fnum2FF =   290.9 Hz (~D4) dur 15
+  0C12  32 A8     note blk4 fnum23F =   436.2 Hz (~A4) dur 168
+  0C14  32 42     note blk4 fnum23F =   436.2 Hz (~A4) dur 66
+  0C16  32 16     note blk4 fnum23F =   436.2 Hz (~A4) dur 22
+  0C18  37 BD     note blk4 fnum2FF =   581.9 Hz (~D5) dur 189
+  0C1A  00 00     END (voice off)
+
+seq 0C1C  (voices 3)
+  0C1C  FC INSTR     33
+  0C1E  F9 VOLUME    26
+  0C20  F5 VOLOFS    20(=+20 mod 64)
+  0C22  F8 VOLSWEEP  8 1
+  0C25  FE REPEAT2   0
+  0C27  19 06     note blk2 fnum21E =   102.8 Hz (~G#2) dur 6
+  0C29  19 05     note blk2 fnum21E =   102.8 Hz (~G#2) dur 5
+  0C2B  FF REPEAT1   11
+  0C2D  F8 VOLSWEEP  8 -1
+  0C30  FE REPEAT2   1
+  0C32  F5 VOLOFS    30(=+30 mod 64)
+  0C34  F8 VOLSWEEP  4 -1
+  0C37  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C39  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C3B  F8 VOLSWEEP  0 0
+  0C3E  00 B0     rest 176
+  0C40  00 DC     rest 220
+  0C42  F5 VOLOFS    20(=+20 mod 64)
+  0C44  F8 VOLSWEEP  8 1
+  0C47  FE REPEAT2   0
+  0C49  19 06     note blk2 fnum21E =   102.8 Hz (~G#2) dur 6
+  0C4B  19 05     note blk2 fnum21E =   102.8 Hz (~G#2) dur 5
+  0C4D  FF REPEAT1   9
+  0C4F  F8 VOLSWEEP  8 -1
+  0C52  FE REPEAT2   1
+  0C54  F5 VOLOFS    30(=+30 mod 64)
+  0C56  F8 VOLSWEEP  4 -1
+  0C59  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C5B  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C5D  F8 VOLSWEEP  0 0
+  0C60  00 DC     rest 220
+  0C62  FF REPEAT1   0
+  0C64  00 58     rest 88
+  0C66  F5 VOLOFS    30(=+30 mod 64)
+  0C68  F8 VOLSWEEP  4 -1
+  0C6B  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C6D  19 16     note blk2 fnum21E =   102.8 Hz (~G#2) dur 22
+  0C6F  F8 VOLSWEEP  0 0
+  0C72  FF REPEAT1   1
+  0C74  00 00     END (voice off)
+
+seq 0C76  (voices 0)
+  0C76  FC INSTR     24
+  0C78  F9 VOLUME    54
+  0C7A  F5 VOLOFS    45(=-19 mod 64)
+  0C7C  F8 VOLSWEEP  5 1
+  0C7F  FF REPEAT1   0
+  0C81  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0C83  FF REPEAT1   3
+  0C85  FE REPEAT2   0
+  0C87  F5 VOLOFS    45(=-19 mod 64)
+  0C89  F8 VOLSWEEP  40 1
+  0C8C  F9 VOLUME    60
+  0C8E  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0C90  F9 VOLUME    47
+  0C92  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0C94  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0C96  F9 VOLUME    60
+  0C98  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0C9A  F9 VOLUME    47
+  0C9C  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0C9E  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CA0  F9 VOLUME    60
+  0CA2  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CA4  F9 VOLUME    47
+  0CA6  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CA8  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CAA  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CAC  FF REPEAT1   1
+  0CAE  F9 VOLUME    45
+  0CB0  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CB2  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CB4  F9 VOLUME    60
+  0CB6  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CB8  FF REPEAT1   1
+  0CBA  F9 VOLUME    46
+  0CBC  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CBE  F9 VOLUME    61
+  0CC0  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CC2  F9 VOLUME    47
+  0CC4  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CC6  FF REPEAT1   0
+  0CC8  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CCA  FF REPEAT1   4
+  0CCC  0C 06     note blk1 fnum200 =    48.6 Hz (~G1) dur 6
+  0CCE  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CD0  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CD2  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CD4  FF REPEAT1   1
+  0CD6  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CD8  FF REPEAT1   1
+  0CDA  0C 08     note blk1 fnum200 =    48.6 Hz (~G1) dur 8
+  0CDC  FF REPEAT1   1
+  0CDE  0C 06     note blk1 fnum200 =    48.6 Hz (~G1) dur 6
+  0CE0  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CE2  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CE4  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CE6  FF REPEAT1   1
+  0CE8  0C 06     note blk1 fnum200 =    48.6 Hz (~G1) dur 6
+  0CEA  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CEC  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CEE  FF REPEAT1   1
+  0CF0  F9 VOLUME    62
+  0CF2  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CF4  F9 VOLUME    47
+  0CF6  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0CF8  FF REPEAT1   0
+  0CFA  0C 06     note blk1 fnum200 =    48.6 Hz (~G1) dur 6
+  0CFC  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0CFE  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0D00  0C 10     note blk1 fnum200 =    48.6 Hz (~G1) dur 16
+  0D02  FF REPEAT1   1
+  0D04  0C 06     note blk1 fnum200 =    48.6 Hz (~G1) dur 6
+  0D06  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0D08  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  0D0A  FF REPEAT1   6
+  0D0C  FE REPEAT2   1
+  0D0E  00 00     END (voice off)
+
+seq 0D10  (voices 1)
+  0D10  FC INSTR     39
+  0D12  F5 VOLOFS    10(=+10 mod 64)
+  0D14  F8 VOLSWEEP  80 1
+  0D17  FE REPEAT2   0
+  0D19  F4 PAN       127
+  0D1B  FF REPEAT1   0
+  0D1D  F9 VOLUME    40
+  0D1F  F3 PANSWEEP  8 -15
+  0D22  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0D24  18 08     note blk2 fnum200 =    97.1 Hz (~G2) dur 8
+  0D26  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0D28  13 08     note blk1 fnum2FF =    72.7 Hz (~D2) dur 8
+  0D2A  FF REPEAT1   1
+  0D2C  F3 PANSWEEP  0 0
+  0D2F  00 10     rest 16
+  0D31  F4 PAN       0
+  0D33  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D35  00 10     rest 16
+  0D37  F4 PAN       127
+  0D39  18 10     note blk2 fnum200 =    97.1 Hz (~G2) dur 16
+  0D3B  00 30     rest 48
+  0D3D  FF REPEAT1   1
+  0D3F  00 10     rest 16
+  0D41  F4 PAN       0
+  0D43  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D45  00 10     rest 16
+  0D47  F4 PAN       127
+  0D49  1B 10     note blk2 fnum261 =   115.5 Hz (~A#2) dur 16
+  0D4B  00 30     rest 48
+  0D4D  F4 PAN       0
+  0D4F  FF REPEAT1   0
+  0D51  F3 PANSWEEP  8 15
+  0D54  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0D56  18 08     note blk2 fnum200 =    97.1 Hz (~G2) dur 8
+  0D58  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0D5A  13 08     note blk1 fnum2FF =    72.7 Hz (~D2) dur 8
+  0D5C  FF REPEAT1   1
+  0D5E  F3 PANSWEEP  0 0
+  0D61  00 10     rest 16
+  0D63  F4 PAN       127
+  0D65  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D67  00 10     rest 16
+  0D69  F4 PAN       0
+  0D6B  1B 10     note blk2 fnum261 =   115.5 Hz (~A#2) dur 16
+  0D6D  00 40     rest 64
+  0D6F  F4 PAN       127
+  0D71  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D73  00 10     rest 16
+  0D75  F4 PAN       0
+  0D77  18 10     note blk2 fnum200 =    97.1 Hz (~G2) dur 16
+  0D79  00 20     rest 32
+  0D7B  F4 PAN       127
+  0D7D  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D7F  00 20     rest 32
+  0D81  F4 PAN       0
+  0D83  1B 10     note blk2 fnum261 =   115.5 Hz (~A#2) dur 16
+  0D85  00 20     rest 32
+  0D87  F4 PAN       127
+  0D89  1A 10     note blk2 fnum23F =   109.0 Hz (~A2) dur 16
+  0D8B  00 10     rest 16
+  0D8D  F4 PAN       0
+  0D8F  18 10     note blk2 fnum200 =    97.1 Hz (~G2) dur 16
+  0D91  F8 VOLSWEEP  80 -1
+  0D94  FE REPEAT2   1
+  0D96  F8 VOLSWEEP  0 0
+  0D99  F5 VOLOFS    20(=+20 mod 64)
+  0D9B  F4 PAN       127
+  0D9D  F3 PANSWEEP  8 -15
+  0DA0  FF REPEAT1   0
+  0DA2  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0DA4  18 08     note blk2 fnum200 =    97.1 Hz (~G2) dur 8
+  0DA6  15 08     note blk1 fnum35D =    81.6 Hz (~E2) dur 8
+  0DA8  13 08     note blk1 fnum2FF =    72.7 Hz (~D2) dur 8
+  0DAA  FF REPEAT1   1
+  0DAC  F3 PANSWEEP  0 0
+  0DAF  00 00     END (voice off)
+
+seq 0DB2  (voices 2)
+  0DB2  F4 PAN       127
+  0DB4  FB GAP       4
+  0DB6  FE REPEAT2   0
+  0DB8  F9 VOLUME    15
+  0DBA  F5 VOLOFS    10(=+10 mod 64)
+  0DBC  F8 VOLSWEEP  3 1
+  0DBF  FF REPEAT1   0
+  0DC1  FC INSTR     40
+  0DC3  21 08     note blk2 fnum35D =   163.3 Hz (~E3) dur 8
+  0DC5  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0DC7  21 08     note blk2 fnum35D =   163.3 Hz (~E3) dur 8
+  0DC9  1F 08     note blk2 fnum2FF =   145.5 Hz (~D3) dur 8
+  0DCB  FF REPEAT1   1
+  0DCD  FC INSTR     28
+  0DCF  F5 VOLOFS    0(=+0 mod 64)
+  0DD1  F8 VOLSWEEP  0 0
+  0DD4  F9 VOLUME    55
+  0DD6  09 F8     note blk0 fnum35D =    40.8 Hz (~E1) dur 248
+  0DD8  00 58     rest 88
+  0DDA  F9 VOLUME    15
+  0DDC  F5 VOLOFS    10(=+10 mod 64)
+  0DDE  F8 VOLSWEEP  3 1
+  0DE1  FC INSTR     40
+  0DE3  FF REPEAT1   0
+  0DE5  21 08     note blk2 fnum35D =   163.3 Hz (~E3) dur 8
+  0DE7  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0DE9  21 08     note blk2 fnum35D =   163.3 Hz (~E3) dur 8
+  0DEB  1F 08     note blk2 fnum2FF =   145.5 Hz (~D3) dur 8
+  0DED  FF REPEAT1   1
+  0DEF  FC INSTR     28
+  0DF1  F5 VOLOFS    0(=+0 mod 64)
+  0DF3  F8 VOLSWEEP  0 0
+  0DF6  F9 VOLUME    55
+  0DF8  15 C0     note blk1 fnum35D =    81.6 Hz (~E2) dur 192
+  0DFA  00 A0     rest 160
+  0DFC  FE REPEAT2   1
+  0DFE  F9 VOLUME    15
+  0E00  F5 VOLOFS    10(=+10 mod 64)
+  0E02  F8 VOLSWEEP  3 1
+  0E05  FC INSTR     40
+  0E07  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E09  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E0B  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E0D  25 08     note blk3 fnum21E =   205.6 Hz (~G#3) dur 8
+  0E0F  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E11  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E13  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E15  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E17  FC INSTR     28
+  0E19  F5 VOLOFS    0(=+0 mod 64)
+  0E1B  F8 VOLSWEEP  0 0
+  0E1E  F9 VOLUME    55
+  0E20  15 F8     note blk1 fnum35D =    81.6 Hz (~E2) dur 248
+  0E22  00 00     END (voice off)
+
+seq 0E24  (voices 3)
+  0E24  FC INSTR     40
+  0E26  FB GAP       4
+  0E28  FE REPEAT2   0
+  0E2A  F9 VOLUME    15
+  0E2C  F5 VOLOFS    10(=+10 mod 64)
+  0E2E  F8 VOLSWEEP  3 1
+  0E31  FF REPEAT1   0
+  0E33  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E35  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E37  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E39  25 08     note blk3 fnum21E =   205.6 Hz (~G#3) dur 8
+  0E3B  FF REPEAT1   1
+  0E3D  FC INSTR     28
+  0E3F  F9 VOLUME    55
+  0E41  F5 VOLOFS    0(=+0 mod 64)
+  0E43  F8 VOLSWEEP  0 0
+  0E46  09 F8     note blk0 fnum35D =    40.8 Hz (~E1) dur 248
+  0E48  00 58     rest 88
+  0E4A  F9 VOLUME    15
+  0E4C  F5 VOLOFS    10(=+10 mod 64)
+  0E4E  F8 VOLSWEEP  3 1
+  0E51  FC INSTR     40
+  0E53  FF REPEAT1   0
+  0E55  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E57  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E59  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E5B  25 08     note blk3 fnum21E =   205.6 Hz (~G#3) dur 8
+  0E5D  FF REPEAT1   1
+  0E5F  F5 VOLOFS    0(=+0 mod 64)
+  0E61  F8 VOLSWEEP  0 0
+  0E64  F9 VOLUME    55
+  0E66  FC INSTR     28
+  0E68  09 C0     note blk0 fnum35D =    40.8 Hz (~E1) dur 192
+  0E6A  00 A0     rest 160
+  0E6C  FE REPEAT2   1
+  0E6E  F9 VOLUME    15
+  0E70  F5 VOLOFS    10(=+10 mod 64)
+  0E72  F8 VOLSWEEP  3 1
+  0E75  FC INSTR     40
+  0E77  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E79  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E7B  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E7D  25 08     note blk3 fnum21E =   205.6 Hz (~G#3) dur 8
+  0E7F  24 08     note blk3 fnum200 =   194.2 Hz (~G3) dur 8
+  0E81  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E83  27 08     note blk3 fnum261 =   231.0 Hz (~A#3) dur 8
+  0E85  26 08     note blk3 fnum23F =   218.1 Hz (~A3) dur 8
+  0E87  F5 VOLOFS    0(=+0 mod 64)
+  0E89  F8 VOLSWEEP  0 0
+  0E8C  F9 VOLUME    55
+  0E8E  FC INSTR     28
+  0E90  09 F8     note blk0 fnum35D =    40.8 Hz (~E1) dur 248
+  0E92  00 00     END (voice off)
+
+seq 0E94  (voices 6)
+  0E94  FC INSTR     9
+  0E96  F9 VOLUME    43
+  0E98  00 03     rest 3
+  0E9A  00 00     END (voice off)
+
+seq 0E9A  (voices 0,1,2,3,4,5)
+  0E9A  00 00     END (voice off)
+
+seq 0E9C  (voices 5)
+  0E9C  FC INSTR     8
+  0E9E  F9 VOLUME    53
+  0EA0  35 02     note blk4 fnum2AB =   518.1 Hz (~C5) dur 2
+  0EA2  00 00     END (voice off)
+
+seq 0EA4  (voices 5)
+  0EA4  FC INSTR     35
+  0EA6  F9 VOLUME    48
+  0EA8  35 03     note blk4 fnum2AB =   518.1 Hz (~C5) dur 3
+  0EAA  00 00     END (voice off)
+
+seq 0EAC  (voices 5)
+  0EAC  FC INSTR     22
+  0EAE  F9 VOLUME    48
+  0EB0  11 0C     note blk1 fnum2AB =    64.8 Hz (~C2) dur 12
+  0EB2  00 00     END (voice off)
+
+seq 0EB4  (voices 0)
+  0EB4  FC INSTR     34
+  0EB6  F9 VOLUME    22
+  0EB8  2D 06     note blk3 fnum35D =   326.6 Hz (~E4) dur 6
+  0EBA  00 01     rest 1
+  0EBC  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  0EBE  00 00     END (voice off)
+
+seq 0EC0  (voices 0)
+  0EC0  FC INSTR     4
+  0EC2  F9 VOLUME    30
+  0EC4  FB GAP       3
+  0EC6  0A 04     note blk0 fnum390 =    43.2 Hz (~F1) dur 4
+  0EC8  00 00     END (voice off)
+
+seq 0ECA  (voices 0)
+  0ECA  FC INSTR     35
+  0ECC  F9 VOLUME    63
+  0ECE  17 3C     note blk1 fnum3C7 =    91.7 Hz (~F#2) dur 60
+  0ED0  00 00     END (voice off)
+
+seq 0ED2  (voices 0)
+  0ED2  FC INSTR     27
+  0ED4  F9 VOLUME    42
+  0ED6  01 1E     note blk0 fnum21E =    25.7 Hz (~G#0) dur 30
+  0ED8  00 00     END (voice off)
+
+seq 0EDA  (voices 0)
+  0EDA  FC INSTR     36
+  0EDC  F9 VOLUME    62
+  0EDE  F5 VOLOFS    50(=-14 mod 64)
+  0EE0  0A 02     note blk0 fnum390 =    43.2 Hz (~F1) dur 2
+  0EE2  00 00     END (voice off)
+
+seq 0EE4  (voices 2)
+  0EE4  FC INSTR     22
+  0EE6  F9 VOLUME    52
+  0EE8  0A 1E     note blk0 fnum390 =    43.2 Hz (~F1) dur 30
+  0EEA  00 00     END (voice off)
+
+seq 0EEC  (voices 2)
+  0EEC  FC INSTR     22
+  0EEE  F9 VOLUME    42
+  0EF0  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  0EF2  00 03     rest 3
+  0EF4  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  0EF6  00 00     END (voice off)
+
+seq 0F00  (voices 0)
+  0F00  FC INSTR     15
+  0F02  F9 VOLUME    62
+  0F04  09 51     note blk0 fnum35D =    40.8 Hz (~E1) dur 81
+  0F06  00 00     END (voice off)
+
+seq 0F28  (voices 4)
+  0F28  FC INSTR     4
+  0F2A  F9 VOLUME    53
+  0F2C  FF REPEAT1   0
+  0F2E  05 02     note blk0 fnum2AB =    32.4 Hz (~C1) dur 2
+  0F30  FF REPEAT1   9
+  0F32  00 00     END (voice off)
+
+seq 0F34  (voices 0)
+  0F34  FC INSTR     5
+  0F36  F9 VOLUME    62
+  0F38  29 5A     note blk3 fnum2AB =   259.1 Hz (~C4) dur 90
+  0F3A  00 00     END (voice off)
+
+seq 0F3C  (voices 3)
+  0F3C  FC INSTR     8
+  0F3E  F9 VOLUME    63
+  0F40  FA SLIDE     10
+  0F42  45 0D     note blk5 fnum35D =  1306.3 Hz (~E6) dur 13
+  0F44  FA SLIDE     0
+  0F46  00 06     rest 6
+  0F48  00 00     END (voice off)
+
+seq 0F4A  (voices 3)
+  0F4A  FC INSTR     8
+  0F4C  F9 VOLUME    63
+  0F4E  36 12     note blk4 fnum2D4 =   549.2 Hz (~C#5) dur 18
+  0F50  00 00     END (voice off)
+
+seq 0F52  (voices 3)
+  0F52  FC INSTR     8
+  0F54  F9 VOLUME    57
+  0F56  27 12     note blk3 fnum261 =   231.0 Hz (~A#3) dur 18
+  0F58  00 00     END (voice off)
+
+seq 0F5A  (voices 5)
+  0F5A  FC INSTR     2
+  0F5C  F9 VOLUME    63
+  0F5E  0C 28     note blk1 fnum200 =    48.6 Hz (~G1) dur 40
+  0F60  FC INSTR     12
+  0F62  F9 VOLUME    63
+  0F64  2D 75     note blk3 fnum35D =   326.6 Hz (~E4) dur 117
+  0F66  00 00     END (voice off)
+
+seq 0F68  (voices 1)
+  0F68  FC INSTR     12
+  0F6A  F9 VOLUME    63
+  0F6C  09 7F     note blk0 fnum35D =    40.8 Hz (~E1) dur 127
+  0F6E  00 00     END (voice off)
+
+seq 0F70  (voices 0)
+  0F70  FC INSTR     10
+  0F72  F9 VOLUME    61
+  0F74  09 7F     note blk0 fnum35D =    40.8 Hz (~E1) dur 127
+  0F76  00 00     END (voice off)
+
+seq 0F78  (voices 0)
+  0F78  FC INSTR     11
+  0F7A  F9 VOLUME    59
+  0F7C  09 91     note blk0 fnum35D =    40.8 Hz (~E1) dur 145
+  0F7E  00 00     END (voice off)
+
+seq 0F80  (voices 5)
+  0F80  FC INSTR     0
+  0F82  F9 VOLUME    63
+  0F84  4F 08     note blk6 fnum2FF =  2327.4 Hz (~D7) dur 8
+  0F86  4A 08     note blk6 fnum23F =  1744.8 Hz (~A6) dur 8
+  0F88  00 00     END (voice off)
+
+seq 0F8A  (voices 5)
+  0F8A  FC INSTR     14
+  0F8C  F9 VOLUME    63
+  0F8E  FB GAP       7
+  0F90  30 0E     note blk4 fnum200 =   388.4 Hz (~G4) dur 14
+  0F92  00 00     END (voice off)
+
+seq 0F94  (voices 5)
+  0F94  FC INSTR     7
+  0F96  F9 VOLUME    62
+  0F98  FA SLIDE     -30
+  0F9A  48 08     note blk6 fnum200 =  1553.6 Hz (~G6) dur 8
+  0F9C  48 0F     note blk6 fnum200 =  1553.6 Hz (~G6) dur 15
+  0F9E  FA SLIDE     0
+  0FA0  00 00     END (voice off)
+
+seq 0FA2  (voices 3)
+  0FA2  FC INSTR     6
+  0FA4  F9 VOLUME    0
+  0FA6  F8 VOLSWEEP  20 1
+  0FA9  FA SLIDE     3
+  0FAB  01 96     note blk0 fnum21E =    25.7 Hz (~G#0) dur 150
+  0FAD  FA SLIDE     0
+  0FAF  F8 VOLSWEEP  0 0
+  0FB2  00 00     END (voice off)
+
+seq 0FB4  (voices 3)
+  0FB4  FC INSTR     6
+  0FB6  F9 VOLUME    18
+  0FB8  F5 VOLOFS    18(=+18 mod 64)
+  0FBA  F8 VOLSWEEP  20 -1
+  0FBD  FA SLIDE     -3
+  0FBF  0B C8     note blk0 fnum3C7 =    45.8 Hz (~F#1) dur 200
+  0FC1  FA SLIDE     0
+  0FC3  F8 VOLSWEEP  0 0
+  0FC6  00 00     END (voice off)
+
+seq 0FC8  (voices 3)
+  0FC8  FC INSTR     22
+  0FCA  F9 VOLUME    45
+  0FCC  04 3C     note blk0 fnum285 =    30.6 Hz (~B0) dur 60
+  0FCE  FC INSTR     27
+  0FD0  00 3C     rest 60
+  0FD2  00 00     END (voice off)
+
+seq 0FD4  (voices 2)
+  0FD4  FC INSTR     21
+  0FD6  F9 VOLUME    30
+  0FD8  21 3C     note blk2 fnum35D =   163.3 Hz (~E3) dur 60
+  0FDA  FC INSTR     27
+  0FDC  01 3C     note blk0 fnum21E =    25.7 Hz (~G#0) dur 60
+  0FDE  00 00     END (voice off)
+
+seq 0FE0  (voices 0)
+  0FE0  F9 VOLUME    60
+  0FE2  00 A0     rest 160
+  0FE4  FE REPEAT2   7
+  0FE6  00 A0     rest 160
+  0FE8  FC INSTR     28
+  0FEA  F5 VOLOFS    45(=-19 mod 64)
+  0FEC  FF REPEAT1   0
+  0FEE  F8 VOLSWEEP  7 1
+  0FF1  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  0FF3  FF REPEAT1   3
+  0FF5  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  0FF7  FF REPEAT1   3
+  0FF9  F8 VOLSWEEP  7 -1
+  0FFC  FF REPEAT1   0
+  0FFE  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1000  FF REPEAT1   7
+  1002  FE REPEAT2   1
+  1004  F8 VOLSWEEP  0 0
+  1007  FC INSTR     31
+  1009  FB GAP       3
+  100B  F9 VOLUME    1
+  100D  F5 VOLOFS    1(=+1 mod 64)
+  100F  FF REPEAT1   0
+  1011  41 05     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 5
+  1013  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  1015  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1017  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  1019  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  101B  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  101D  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  101F  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1021  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  1023  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  1025  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  1027  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1029  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  102B  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  102D  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  102F  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1031  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1033  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  1035  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  1037  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1039  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  103B  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  103D  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  103F  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1041  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  1043  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  1045  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1047  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1049  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  104B  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  104D  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  104F  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1051  FF REPEAT1   3
+  1053  FC INSTR     26
+  1055  F9 VOLUME    63
+  1057  F5 VOLOFS    63(=-1 mod 64)
+  1059  F4 PAN       40
+  105B  2B 1E     note blk3 fnum2FF =   290.9 Hz (~D4) dur 30
+  105D  2E 1E     note blk3 fnum390 =   345.9 Hz (~F4) dur 30
+  105F  2D 52     note blk3 fnum35D =   326.6 Hz (~E4) dur 82
+  1061  35 0C     note blk4 fnum2AB =   518.1 Hz (~C5) dur 12
+  1063  37 28     note blk4 fnum2FF =   581.9 Hz (~D5) dur 40
+  1065  3A 06     note blk4 fnum390 =   691.8 Hz (~F5) dur 6
+  1067  F4 PAN       64
+  1069  FC INSTR     28
+  106B  FB GAP       0
+  106D  00 14     rest 20
+  106F  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  1071  41 07     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 7
+  1073  3C 06     note blk5 fnum200 =   776.8 Hz (~G5) dur 6
+  1075  3E 07     note blk5 fnum23F =   872.4 Hz (~A5) dur 7
+  1077  39 07     note blk4 fnum35D =   653.2 Hz (~E5) dur 7
+  1079  3C 06     note blk5 fnum200 =   776.8 Hz (~G5) dur 6
+  107B  35 07     note blk4 fnum2AB =   518.1 Hz (~C5) dur 7
+  107D  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  107F  30 06     note blk4 fnum200 =   388.4 Hz (~G4) dur 6
+  1081  2D 07     note blk3 fnum35D =   326.6 Hz (~E4) dur 7
+  1083  34 07     note blk4 fnum285 =   489.3 Hz (~B4) dur 7
+  1085  39 06     note blk4 fnum35D =   653.2 Hz (~E5) dur 6
+  1087  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1089  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  108B  43 05     note blk5 fnum2FF =  1163.7 Hz (~D6) dur 5
+  108D  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  108F  FC INSTR     26
+  1091  F4 PAN       40
+  1093  37 1E     note blk4 fnum2FF =   581.9 Hz (~D5) dur 30
+  1095  3A 1E     note blk4 fnum390 =   691.8 Hz (~F5) dur 30
+  1097  39 50     note blk4 fnum35D =   653.2 Hz (~E5) dur 80
+  1099  35 0C     note blk4 fnum2AB =   518.1 Hz (~C5) dur 12
+  109B  37 30     note blk4 fnum2FF =   581.9 Hz (~D5) dur 48
+  109D  00 78     rest 120
+  109F  FF REPEAT1   1
+  10A1  F9 VOLUME    1
+  10A3  F5 VOLOFS    1(=+1 mod 64)
+  10A5  F4 PAN       64
+  10A7  FC INSTR     31
+  10A9  41 05     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 5
+  10AB  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10AD  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10AF  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  10B1  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10B3  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  10B5  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  10B7  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10B9  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  10BB  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  10BD  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  10BF  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10C1  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10C3  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10C5  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10C7  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10C9  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10CB  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  10CD  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  10CF  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10D1  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  10D3  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  10D5  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  10D7  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10D9  FF REPEAT1   0
+  10DB  F4 PAN       48
+  10DD  F3 PANSWEEP  5 2
+  10E0  41 05     note blk5 fnum2AB =  1036.3 Hz (~C6) dur 5
+  10E2  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10E4  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10E6  3E 05     note blk5 fnum23F =   872.4 Hz (~A5) dur 5
+  10E8  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10EA  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  10EC  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  10EE  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10F0  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  10F2  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  10F4  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  10F6  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  10F8  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10FA  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  10FC  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  10FE  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1100  F3 PANSWEEP  5 -2
+  1103  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1105  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  1107  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  1109  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  110B  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  110D  44 05     note blk5 fnum32D =  1233.5 Hz (~D#6) dur 5
+  110F  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  1111  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  1113  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  1115  42 05     note blk5 fnum2D4 =  1098.5 Hz (~C#6) dur 5
+  1117  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1119  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  111B  3F 05     note blk5 fnum261 =   924.0 Hz (~A#5) dur 5
+  111D  45 05     note blk5 fnum35D =  1306.3 Hz (~E6) dur 5
+  111F  3B 05     note blk4 fnum3C7 =   733.6 Hz (~F#5) dur 5
+  1121  3C 05     note blk5 fnum200 =   776.8 Hz (~G5) dur 5
+  1123  FF REPEAT1   6
+  1125  F3 PANSWEEP  0 0
+  1128  F4 PAN       64
+  112A  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  112C  36 05     note blk4 fnum2D4 =   549.2 Hz (~C#5) dur 5
+  112E  30 05     note blk4 fnum200 =   388.4 Hz (~G4) dur 5
+  1130  32 05     note blk4 fnum23F =   436.2 Hz (~A4) dur 5
+  1132  33 05     note blk4 fnum261 =   462.0 Hz (~A#4) dur 5
+  1134  39 05     note blk4 fnum35D =   653.2 Hz (~E5) dur 5
+  1136  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  1138  30 05     note blk4 fnum200 =   388.4 Hz (~G4) dur 5
+  113A  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  113C  38 05     note blk4 fnum32D =   616.7 Hz (~D#5) dur 5
+  113E  2D 05     note blk3 fnum35D =   326.6 Hz (~E4) dur 5
+  1140  33 05     note blk4 fnum261 =   462.0 Hz (~A#4) dur 5
+  1142  31 05     note blk4 fnum21E =   411.2 Hz (~G#4) dur 5
+  1144  32 05     note blk4 fnum23F =   436.2 Hz (~A4) dur 5
+  1146  2C 05     note blk3 fnum32D =   308.4 Hz (~D#4) dur 5
+  1148  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  114A  30 05     note blk4 fnum200 =   388.4 Hz (~G4) dur 5
+  114C  35 05     note blk4 fnum2AB =   518.1 Hz (~C5) dur 5
+  114E  2B 05     note blk3 fnum2FF =   290.9 Hz (~D4) dur 5
+  1150  2C 05     note blk3 fnum32D =   308.4 Hz (~D#4) dur 5
+  1152  25 05     note blk3 fnum21E =   205.6 Hz (~G#3) dur 5
+  1154  34 05     note blk4 fnum285 =   489.3 Hz (~B4) dur 5
+  1156  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  1158  2E 05     note blk3 fnum390 =   345.9 Hz (~F4) dur 5
+  115A  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  115C  30 05     note blk4 fnum200 =   388.4 Hz (~G4) dur 5
+  115E  2A 05     note blk3 fnum2D4 =   274.6 Hz (~C#4) dur 5
+  1160  2C 05     note blk3 fnum32D =   308.4 Hz (~D#4) dur 5
+  1162  2D 05     note blk3 fnum35D =   326.6 Hz (~E4) dur 5
+  1164  33 05     note blk4 fnum261 =   462.0 Hz (~A#4) dur 5
+  1166  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  1168  2A 05     note blk3 fnum2D4 =   274.6 Hz (~C#4) dur 5
+  116A  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  116C  30 05     note blk4 fnum200 =   388.4 Hz (~G4) dur 5
+  116E  2A 05     note blk3 fnum2D4 =   274.6 Hz (~C#4) dur 5
+  1170  2C 05     note blk3 fnum32D =   308.4 Hz (~D#4) dur 5
+  1172  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  1174  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  1176  25 05     note blk3 fnum21E =   205.6 Hz (~G#3) dur 5
+  1178  26 05     note blk3 fnum23F =   218.1 Hz (~A3) dur 5
+  117A  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  117C  2E 05     note blk3 fnum390 =   345.9 Hz (~F4) dur 5
+  117E  2D 05     note blk3 fnum35D =   326.6 Hz (~E4) dur 5
+  1180  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  1182  2B 05     note blk3 fnum2FF =   290.9 Hz (~D4) dur 5
+  1184  2C 05     note blk3 fnum32D =   308.4 Hz (~D#4) dur 5
+  1186  26 05     note blk3 fnum23F =   218.1 Hz (~A3) dur 5
+  1188  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  118A  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  118C  2F 05     note blk3 fnum3C7 =   366.8 Hz (~F#4) dur 5
+  118E  25 05     note blk3 fnum21E =   205.6 Hz (~G#3) dur 5
+  1190  26 05     note blk3 fnum23F =   218.1 Hz (~A3) dur 5
+  1192  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  1194  2E 05     note blk3 fnum390 =   345.9 Hz (~F4) dur 5
+  1196  2D 05     note blk3 fnum35D =   326.6 Hz (~E4) dur 5
+  1198  29 05     note blk3 fnum2AB =   259.1 Hz (~C4) dur 5
+  119A  28 05     note blk3 fnum285 =   244.7 Hz (~B3) dur 5
+  119C  28 05     note blk3 fnum285 =   244.7 Hz (~B3) dur 5
+  119E  22 05     note blk2 fnum390 =   173.0 Hz (~F3) dur 5
+  11A0  25 05     note blk3 fnum21E =   205.6 Hz (~G#3) dur 5
+  11A2  25 05     note blk3 fnum21E =   205.6 Hz (~G#3) dur 5
+  11A4  2B 05     note blk3 fnum2FF =   290.9 Hz (~D4) dur 5
+  11A6  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  11A8  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  11AA  00 00     END (voice off)
+
+seq 11AC  (voices 1)
+  11AC  FC INSTR     28
+  11AE  F9 VOLUME    63
+  11B0  F5 VOLOFS    53(=-11 mod 64)
+  11B2  FB GAP       0
+  11B4  13 BE     note blk1 fnum2FF =    72.7 Hz (~D2) dur 190
+  11B6  15 78     note blk1 fnum35D =    81.6 Hz (~E2) dur 120
+  11B8  13 A0     note blk1 fnum2FF =    72.7 Hz (~D2) dur 160
+  11BA  15 AA     note blk1 fnum35D =    81.6 Hz (~E2) dur 170
+  11BC  FE REPEAT2   0
+  11BE  00 A0     rest 160
+  11C0  FE REPEAT2   3
+  11C2  F5 VOLOFS    35(=-29 mod 64)
+  11C4  F8 VOLSWEEP  8 1
+  11C7  00 14     rest 20
+  11C9  FF REPEAT1   0
+  11CB  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  11CD  FF REPEAT1   5
+  11CF  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  11D1  FF REPEAT1   7
+  11D3  F8 VOLSWEEP  8 -1
+  11D6  1A 0A     note blk2 fnum23F =   109.0 Hz (~A2) dur 10
+  11D8  FF REPEAT1   15
+  11DA  FE REPEAT2   1
+  11DC  F4 PAN       80
+  11DE  FC INSTR     13
+  11E0  F8 VOLSWEEP  61 1
+  11E3  F5 VOLOFS    44(=-20 mod 64)
+  11E5  FF REPEAT1   0
+  11E7  16 50     note blk1 fnum390 =    86.5 Hz (~F2) dur 80
+  11E9  15 50     note blk1 fnum35D =    81.6 Hz (~E2) dur 80
+  11EB  16 50     note blk1 fnum390 =    86.5 Hz (~F2) dur 80
+  11ED  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  11EF  15 50     note blk1 fnum35D =    81.6 Hz (~E2) dur 80
+  11F1  11 50     note blk1 fnum2AB =    64.8 Hz (~C2) dur 80
+  11F3  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  11F5  13 50     note blk1 fnum2FF =    72.7 Hz (~D2) dur 80
+  11F7  F5 VOLOFS    52(=-12 mod 64)
+  11F9  FF REPEAT1   2
+  11FB  00 78     rest 120
+  11FD  F5 VOLOFS    40(=-24 mod 64)
+  11FF  F8 VOLSWEEP  46 1
+  1202  FC INSTR     29
+  1204  FF REPEAT1   0
+  1206  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  1208  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  120A  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  120C  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  120E  FF REPEAT1   26
+  1210  F8 VOLSWEEP  0 0
+  1213  FC INSTR     28
+  1215  15 A0     note blk1 fnum35D =    81.6 Hz (~E2) dur 160
+  1217  00 00     END (voice off)
+
+seq 121A  (voices 2)
+  121A  00 A0     rest 160
+  121C  FF REPEAT1   5
+  121E  FC INSTR     27
+  1220  F9 VOLUME    63
+  1222  F5 VOLOFS    35(=-29 mod 64)
+  1224  FF REPEAT1   0
+  1226  00 64     rest 100
+  1228  F4 PAN       96
+  122A  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  122C  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  122E  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  1230  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  1232  00 3C     rest 60
+  1234  F4 PAN       32
+  1236  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  1238  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  123A  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  123C  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  123E  00 78     rest 120
+  1240  FF REPEAT1   3
+  1242  00 64     rest 100
+  1244  F4 PAN       96
+  1246  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  1248  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  124A  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  124C  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  124E  00 28     rest 40
+  1250  F5 VOLOFS    21(=+21 mod 64)
+  1252  F4 PAN       127
+  1254  F8 VOLSWEEP  4 1
+  1257  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  1259  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  125B  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  125D  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  125F  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1261  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1263  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1265  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1267  F3 PANSWEEP  5 -5
+  126A  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  126C  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  126E  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1270  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1272  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1274  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1276  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1278  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  127A  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  127C  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  127E  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1280  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1282  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1284  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1286  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1288  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  128A  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  128C  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  128E  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1290  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1292  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1294  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  1296  1F 05     note blk2 fnum2FF =   145.5 Hz (~D3) dur 5
+  1298  1A 05     note blk2 fnum23F =   109.0 Hz (~A2) dur 5
+  129A  F8 VOLSWEEP  0 0
+  129D  F3 PANSWEEP  0 0
+  12A0  F5 VOLOFS    35(=-29 mod 64)
+  12A2  FF REPEAT1   0
+  12A4  00 50     rest 80
+  12A6  F4 PAN       96
+  12A8  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12AA  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12AC  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12AE  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  12B0  00 3C     rest 60
+  12B2  F4 PAN       32
+  12B4  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  12B6  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  12B8  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  12BA  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  12BC  00 8C     rest 140
+  12BE  FF REPEAT1   3
+  12C0  00 50     rest 80
+  12C2  F4 PAN       96
+  12C4  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12C6  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12C8  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  12CA  21 05     note blk2 fnum35D =   163.3 Hz (~E3) dur 5
+  12CC  00 14     rest 20
+  12CE  F4 PAN       64
+  12D0  F8 VOLSWEEP  35 1
+  12D3  FF REPEAT1   0
+  12D5  00 AA     rest 170
+  12D7  15 14     note blk1 fnum35D =    81.6 Hz (~E2) dur 20
+  12D9  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  12DB  00 5A     rest 90
+  12DD  15 14     note blk1 fnum35D =    81.6 Hz (~E2) dur 20
+  12DF  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  12E1  FF REPEAT1   1
+  12E3  00 0A     rest 10
+  12E5  15 14     note blk1 fnum35D =    81.6 Hz (~E2) dur 20
+  12E7  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  12E9  00 5A     rest 90
+  12EB  15 14     note blk1 fnum35D =    81.6 Hz (~E2) dur 20
+  12ED  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  12EF  FF REPEAT1   1
+  12F1  F5 VOLOFS    63(=-1 mod 64)
+  12F3  F8 VOLSWEEP  0 0
+  12F6  00 78     rest 120
+  12F8  02 A0     note blk0 fnum23F =    27.3 Hz (~A0) dur 160
+  12FA  00 00     END (voice off)
+
+seq 12FC  (voices 3)
+  12FC  F9 VOLUME    63
+  12FE  FC INSTR     25
+  1300  FE REPEAT2   0
+  1302  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1304  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1306  00 50     rest 80
+  1308  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  130A  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  130C  00 28     rest 40
+  130E  FF REPEAT1   0
+  1310  11 28     note blk1 fnum2AB =    64.8 Hz (~C2) dur 40
+  1312  FF REPEAT1   3
+  1314  FE REPEAT2   3
+  1316  F8 VOLSWEEP  12 -1
+  1319  F5 VOLOFS    60(=-4 mod 64)
+  131B  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  131D  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  131F  00 14     rest 20
+  1321  FC INSTR     24
+  1323  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  1325  F5 VOLOFS    60(=-4 mod 64)
+  1327  00 32     rest 50
+  1329  FC INSTR     25
+  132B  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  132D  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  132F  00 28     rest 40
+  1331  F5 VOLOFS    60(=-4 mod 64)
+  1333  11 28     note blk1 fnum2AB =    64.8 Hz (~C2) dur 40
+  1335  11 28     note blk1 fnum2AB =    64.8 Hz (~C2) dur 40
+  1337  11 28     note blk1 fnum2AB =    64.8 Hz (~C2) dur 40
+  1339  FC INSTR     24
+  133B  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  133D  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  133F  00 1E     rest 30
+  1341  FC INSTR     25
+  1343  F5 VOLOFS    60(=-4 mod 64)
+  1345  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1347  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1349  00 14     rest 20
+  134B  FC INSTR     24
+  134D  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  134F  F5 VOLOFS    60(=-4 mod 64)
+  1351  00 32     rest 50
+  1353  FC INSTR     25
+  1355  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1357  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1359  FC INSTR     24
+  135B  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  135D  00 1E     rest 30
+  135F  FF REPEAT1   0
+  1361  FC INSTR     25
+  1363  F5 VOLOFS    60(=-4 mod 64)
+  1365  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1367  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1369  00 14     rest 20
+  136B  FC INSTR     24
+  136D  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  136F  F5 VOLOFS    60(=-4 mod 64)
+  1371  00 32     rest 50
+  1373  FC INSTR     25
+  1375  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1377  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1379  FC INSTR     24
+  137B  0C 14     note blk1 fnum200 =    48.6 Hz (~G1) dur 20
+  137D  00 14     rest 20
+  137F  FF REPEAT1   7
+  1381  FC INSTR     25
+  1383  F5 VOLOFS    60(=-4 mod 64)
+  1385  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1387  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1389  00 14     rest 20
+  138B  FC INSTR     24
+  138D  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  138F  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  1391  F5 VOLOFS    63(=-1 mod 64)
+  1393  F8 VOLSWEEP  0 0
+  1396  FC INSTR     33
+  1398  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  139A  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  139C  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  139E  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13A0  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13A2  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  13A4  FC INSTR     25
+  13A6  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13A8  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13AA  FC INSTR     33
+  13AC  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  13AE  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13B0  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  13B2  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13B4  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13B6  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  13B8  F5 VOLOFS    60(=-4 mod 64)
+  13BA  F8 VOLSWEEP  12 -1
+  13BD  FF REPEAT1   0
+  13BF  FC INSTR     25
+  13C1  F5 VOLOFS    60(=-4 mod 64)
+  13C3  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13C5  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13C7  00 14     rest 20
+  13C9  FC INSTR     24
+  13CB  0C 14     note blk1 fnum200 =    48.6 Hz (~G1) dur 20
+  13CD  F5 VOLOFS    60(=-4 mod 64)
+  13CF  00 28     rest 40
+  13D1  FC INSTR     25
+  13D3  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13D5  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13D7  FC INSTR     24
+  13D9  0C 14     note blk1 fnum200 =    48.6 Hz (~G1) dur 20
+  13DB  00 14     rest 20
+  13DD  FF REPEAT1   2
+  13DF  FC INSTR     25
+  13E1  F5 VOLOFS    60(=-4 mod 64)
+  13E3  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13E5  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  13E7  00 14     rest 20
+  13E9  FC INSTR     24
+  13EB  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  13ED  0C 0A     note blk1 fnum200 =    48.6 Hz (~G1) dur 10
+  13EF  F5 VOLOFS    63(=-1 mod 64)
+  13F1  F8 VOLSWEEP  0 0
+  13F4  FC INSTR     33
+  13F6  24 07     note blk3 fnum200 =   194.2 Hz (~G3) dur 7
+  13F8  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13FA  24 06     note blk3 fnum200 =   194.2 Hz (~G3) dur 6
+  13FC  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  13FE  1D 07     note blk2 fnum2AB =   129.5 Hz (~C3) dur 7
+  1400  1D 06     note blk2 fnum2AB =   129.5 Hz (~C3) dur 6
+  1402  F5 VOLOFS    60(=-4 mod 64)
+  1404  F8 VOLSWEEP  12 -1
+  1407  FC INSTR     25
+  1409  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  140B  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  140D  FC INSTR     24
+  140F  0C 14     note blk1 fnum200 =    48.6 Hz (~G1) dur 20
+  1411  00 14     rest 20
+  1413  FC INSTR     25
+  1415  F5 VOLOFS    60(=-4 mod 64)
+  1417  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1419  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  141B  00 14     rest 20
+  141D  FC INSTR     24
+  141F  0C 14     note blk1 fnum200 =    48.6 Hz (~G1) dur 20
+  1421  F5 VOLOFS    60(=-4 mod 64)
+  1423  00 28     rest 40
+  1425  FC INSTR     25
+  1427  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1429  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  142B  F5 VOLOFS    50(=-14 mod 64)
+  142D  F8 VOLSWEEP  83 1
+  1430  FF REPEAT1   0
+  1432  11 28     note blk1 fnum2AB =    64.8 Hz (~C2) dur 40
+  1434  FF REPEAT1   26
+  1436  F8 VOLSWEEP  0 0
+  1439  F5 VOLOFS    63(=-1 mod 64)
+  143B  00 F8     rest 248
+  143D  00 00     END (voice off)
+
+seq 1448  (voices 4)
+  1448  00 A0     rest 160
+  144A  00 8C     rest 140
+  144C  FC INSTR     30
+  144E  F9 VOLUME    63
+  1450  F5 VOLOFS    53(=-11 mod 64)
+  1452  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1454  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1456  00 8C     rest 140
+  1458  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  145A  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  145C  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  145E  00 8C     rest 140
+  1460  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1462  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1464  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  1466  00 14     rest 20
+  1468  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  146A  00 14     rest 20
+  146C  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  146E  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  1470  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  1472  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  1474  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  1476  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  1478  00 14     rest 20
+  147A  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  147C  00 64     rest 100
+  147E  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1480  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1482  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  1484  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  1486  22 1E     note blk2 fnum390 =   173.0 Hz (~F3) dur 30
+  1488  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  148A  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  148C  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  148E  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  1490  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  1492  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  1494  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1496  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  1498  00 64     rest 100
+  149A  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  149C  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  149E  FF REPEAT1   0
+  14A0  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  14A2  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  14A4  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  14A6  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  14A8  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  14AA  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  14AC  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  14AE  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  14B0  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  14B2  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  14B4  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  14B6  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  14B8  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  14BA  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  14BC  00 64     rest 100
+  14BE  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  14C0  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  14C2  FF REPEAT1   5
+  14C4  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  14C6  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  14C8  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  14CA  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  14CC  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  14CE  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  14D0  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  14D2  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  14D4  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  14D6  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  14D8  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  14DA  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  14DC  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  14DE  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  14E0  00 28     rest 40
+  14E2  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  14E4  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  14E6  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  14E8  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  14EA  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  14EC  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  14EE  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  14F0  0C 05     note blk1 fnum200 =    48.6 Hz (~G1) dur 5
+  14F2  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  14F4  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  14F6  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  14F8  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  14FA  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  14FC  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  14FE  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  1500  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  1502  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  1504  15 46     note blk1 fnum35D =    81.6 Hz (~E2) dur 70
+  1506  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  1508  07 05     note blk0 fnum2FF =    36.4 Hz (~D1) dur 5
+  150A  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  150C  1F 14     note blk2 fnum2FF =   145.5 Hz (~D3) dur 20
+  150E  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1510  22 0A     note blk2 fnum390 =   173.0 Hz (~F3) dur 10
+  1512  00 64     rest 100
+  1514  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  1516  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  1518  1F 0A     note blk2 fnum2FF =   145.5 Hz (~D3) dur 10
+  151A  1D 05     note blk2 fnum2AB =   129.5 Hz (~C3) dur 5
+  151C  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  151E  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  1520  22 14     note blk2 fnum390 =   173.0 Hz (~F3) dur 20
+  1522  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  1524  0E 0A     note blk1 fnum23F =    54.5 Hz (~A1) dur 10
+  1526  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  1528  11 0A     note blk1 fnum2AB =    64.8 Hz (~C2) dur 10
+  152A  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  152C  00 14     rest 20
+  152E  F5 VOLOFS    35(=-29 mod 64)
+  1530  F8 VOLSWEEP  38 1
+  1533  FF REPEAT1   0
+  1535  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  1537  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  1539  0A 0A     note blk0 fnum390 =    43.2 Hz (~F1) dur 10
+  153B  09 0A     note blk0 fnum35D =    40.8 Hz (~E1) dur 10
+  153D  FF REPEAT1   26
+  153F  F8 VOLSWEEP  0 0
+  1542  FC INSTR     3
+  1544  F5 VOLOFS    63(=-1 mod 64)
+  1546  F9 VOLUME    63
+  1548  09 78     note blk0 fnum35D =    40.8 Hz (~E1) dur 120
+  154A  00 00     END (voice off)
+
+seq 1542  (voices 1)
+  1542  FC INSTR     3
+  1544  F5 VOLOFS    63(=-1 mod 64)
+  1546  F9 VOLUME    63
+  1548  09 78     note blk0 fnum35D =    40.8 Hz (~E1) dur 120
+  154A  00 00     END (voice off)
+
+seq 154C  (voices 5)
+  154C  FC INSTR     28
+  154E  F9 VOLUME    63
+  1550  F5 VOLOFS    50(=-14 mod 64)
+  1552  FB GAP       0
+  1554  07 BE     note blk0 fnum2FF =    36.4 Hz (~D1) dur 190
+  1556  09 78     note blk0 fnum35D =    40.8 Hz (~E1) dur 120
+  1558  07 A0     note blk0 fnum2FF =    36.4 Hz (~D1) dur 160
+  155A  09 AA     note blk0 fnum35D =    40.8 Hz (~E1) dur 170
+  155C  FE REPEAT2   0
+  155E  00 A0     rest 160
+  1560  FE REPEAT2   3
+  1562  F5 VOLOFS    35(=-29 mod 64)
+  1564  F8 VOLSWEEP  8 1
+  1567  00 14     rest 20
+  1569  FF REPEAT1   0
+  156B  16 0A     note blk1 fnum390 =    86.5 Hz (~F2) dur 10
+  156D  FF REPEAT1   5
+  156F  15 0A     note blk1 fnum35D =    81.6 Hz (~E2) dur 10
+  1571  FF REPEAT1   7
+  1573  F8 VOLSWEEP  8 -1
+  1576  FF REPEAT1   0
+  1578  13 0A     note blk1 fnum2FF =    72.7 Hz (~D2) dur 10
+  157A  FF REPEAT1   15
+  157C  FE REPEAT2   1
+  157E  F8 VOLSWEEP  0 0
+  1581  FC INSTR     1
+  1583  F5 VOLOFS    45(=-19 mod 64)
+  1585  F4 PAN       80
+  1587  2E 50     note blk3 fnum390 =   345.9 Hz (~F4) dur 80
+  1589  2D 50     note blk3 fnum35D =   326.6 Hz (~E4) dur 80
+  158B  2E 50     note blk3 fnum390 =   345.9 Hz (~F4) dur 80
+  158D  2B 50     note blk3 fnum2FF =   290.9 Hz (~D4) dur 80
+  158F  2D 50     note blk3 fnum35D =   326.6 Hz (~E4) dur 80
+  1591  29 50     note blk3 fnum2AB =   259.1 Hz (~C4) dur 80
+  1593  F5 VOLOFS    21(=+21 mod 64)
+  1595  F4 PAN       127
+  1597  F8 VOLSWEEP  4 1
+  159A  FC INSTR     27
+  159C  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  159E  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  15A0  13 05     note blk1 fnum2FF =    72.7 Hz (~D2) dur 5
+  15A2  16 05     note blk1 fnum390 =    86.5 Hz (~F2) dur 5
+  15A4  FF REPEAT1   0
+  15A6  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  15A8  FF REPEAT1   3
+  15AA  F3 PANSWEEP  5 -5
+  15AD  FF REPEAT1   0
+  15AF  15 05     note blk1 fnum35D =    81.6 Hz (~E2) dur 5
+  15B1  FF REPEAT1   23
+  15B3  F5 VOLOFS    45(=-19 mod 64)
+  15B5  F8 VOLSWEEP  0 0
+  15B8  FC INSTR     1
+  15BA  F4 PAN       80
+  15BC  22 50     note blk2 fnum390 =   173.0 Hz (~F3) dur 80
+  15BE  21 50     note blk2 fnum35D =   163.3 Hz (~E3) dur 80
+  15C0  22 50     note blk2 fnum390 =   173.0 Hz (~F3) dur 80
+  15C2  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  15C4  21 50     note blk2 fnum35D =   163.3 Hz (~E3) dur 80
+  15C6  1D 50     note blk2 fnum2AB =   129.5 Hz (~C3) dur 80
+  15C8  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  15CA  1F 50     note blk2 fnum2FF =   145.5 Hz (~D3) dur 80
+  15CC  FF REPEAT1   1
+  15CE  00 A0     rest 160
+  15D0  FF REPEAT1   6
+  15D2  00 50     rest 80
+  15D4  F5 VOLOFS    63(=-1 mod 64)
+  15D6  0F A0     note blk1 fnum261 =    57.7 Hz (~A#1) dur 160
+  15D8  00 00     END (voice off)

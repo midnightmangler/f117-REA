@@ -1,0 +1,48 @@
+ASOUND.117 play(id) dispatch: jump table cs:0911 (image 2471), 46 ids
+id  handler  voices <- sequence (image offsets)
+ 0  018F     stop: silence all voices (018F) 
+ 1  0761     set REPEAT1 mark (+12) of every voice to 0E9A (?) -> music ends at next repeat 
+ 2  0839     query: returns OR of the 7 voice-active bytes (0 = nothing playing) 
+ 3  0694     v0<-0FE0, v1<-11AC, v2<-121A, v3<-12FC, v4<-1448, v5<-154C 
+ 4  0876     v1<-1542 ; seq picked from cs:086E[(id*2>>3)&6]
+ 5  085F     v0<-0F00 ; seq picked from cs:0857[(id*2>>2)&6]
+ 6  0887     v4<-0F28 
+ 7  08B7     v3<-0F52 
+ 8  08B0     v3<-0F4A 
+ 9  089C     v3<-0F3C ; not restarted while already playing
+10  0895     v5<-0F94 
+11  08E8     v3<-0FA2 
+12  08FC     v3<-0FB4 
+13  088E     v0<-0F34 
+14  08DA     v5<-0F8A 
+15  08E1     v0<-0F78 
+16  08CC     v0<-0F70 
+17  08C5     v1<-0F68 
+18  08D3     v5<-0F80 
+19  0903     v3<-0FC8, v2<-0FD4 
+20  08BE     v5<-0F5A 
+21  0782     pause: mute carriers of ch0-6, freeze sequencer, suspend noise 
+22  07C7     resume after 21 
+23  03D5     engine throttle = arg2 (0..0x301), fnum word = (arg2&~1)+0x883 
+24  041E     engine sound on 
+25  0424     engine sound off 
+26  0634     v5<-0E9C 
+27  0647     v0<-0EB4 
+28  064D     v0<-0EC0 after byte 0EC6 := 0x21 + (rand & 3) ; calls rand
+29  0662     v0<-0ED2 
+30  0669     v0<-0ECA 
+31  0686     v2<-0EE4 
+32  068D     v2<-0EEC 
+33  0670     v0<-0EDA after byte 0EE0 := 1 + (rand & 3) ; calls rand
+34  063A     v5<-0EAC 
+35  0640     v5<-0EA4 
+36  06E8     v0<-0876, v1<-0992, v2<-0A9A, v3<-0B2E 
+37  0720     v0<-0B66, v1<-0BA0, v2<-0BDE, v3<-0C1C, v4<-0B5E, v5<-0B5E 
+38  0704     v0<-0C76, v1<-0D10, v2<-0DB2, v3<-0E24 
+39  06BE     v0<-0766, v1<-07B4, v2<-07CE, v3<-07EE, v4<-0830, v5<-085C 
+40  0B90     speech: [17E2] = arg2 (paragraph of SPEECH.117 buffer) 
+41  096D     speech phrase 
+42  0976     speech phrase 
+43  097F     speech phrase (alternates by tick parity) 
+44  0998     speech phrase 
+45  09A1     speech phrase 

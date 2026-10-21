@@ -1,13 +1,17 @@
 # F117-REA
 Faithful HTML5/iPad re-creation of F-117A Nighthawk Stealth Fighter 2.0 (MicroProse DOS, 1991). Slug: f117-rea. Dropbox: F117-REA.
-GitHub repo and local clone are spelled `f117-REA`; request.txt for the test watcher must say `f117-REA`.
+GitHub repo and local clone are spelled `f117-REA` (C:\Users\pauli\Games\f117-REA); request.txt for the test watcher must say `f117-REA`.
 
 ## Engine
 None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not used).
 
 ## File map
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py → dist/f117-rea.html → Dropbox builds/
-- tools/run_tests.py: git pull, bundle, tests/*.test.js (Node)
+- tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files → assets/ + tests/golden/
+- assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
+  pan/*.PAN + pan.json (raw, decode at runtime), ss/LABSLOGO.SS + labslogo.json, sound/ASOUND.117 + asound.json,
+  sound/speech/*.wav + speech.json, manifest.json (sha1 of every file; tests/assets.test.js checks it)
+- tests/golden/: Python decoder outputs (pan cels + sample frames, ss final screen, world dumps, sound tables, fonts)
 - re/docs/00-conventions.md: addressing, compiler facts, listing defects — read before any RE work
 - re/docs/01-architecture.md: executables, loader protocol, overlay drivers, data files
 - re/docs/02-build-plan.md: the phased build plan with task cards
@@ -23,23 +27,27 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 ## Conventions
 - Everything from the disassembly; cite SEG:OFF addresses; mark guesses (?)
 - Decompile to re/decomp/*.md before porting; JS carries the original address in a comment
+- Work in the clone; Dropbox re/docs is a frozen copy from 2026-10-21 (GitHub wins). Listings stay in Dropbox re/disasm.
 - Tooling on the RE PC: py -3 (capstone, PIL, numpy), node 24, git via GitHub Desktop's bundled git.exe
   (C:\Users\pauli\AppData\Local\GitHubDesktop\app-*\resources\app\git\cmd\git.exe; not on PATH). No DOSBox.
 - re/tools read the game files from Dropbox by default; override with env F117_REF (game dir) and F117_RE (re/ dir)
 
 ## Current state
-RE phase 1 complete (2026-10-21). Repo laid out per studio standard with bundle.py, run_tests.py and one smoke
-test (passes). No port code yet beyond the canvas placeholder. Asset export (0.2) not started.
+RE phase 1 complete. Tasks 0.1 (repo) and 0.2 (asset export) done 2026-10-21: assets/ holds 83 files, 3.3 MB, all under
+2 MB each; 3 tests pass (bundle, assets manifest). No port code yet beyond the canvas placeholder.
+Not yet done: slug `f117-REA` is in watcher2.py but the clone on the test machines may be stale/absent; tests not yet run via HEARTBEAT.
 
 ## Next up
-1. Task 0.2 asset export (Sonnet): tools/export_assets.py → assets/ + manifest.json + tests/golden/.
-2. Task 0.3 RE gap-fill (Opus): rand(), VGAME asm modules, code islands.
-3. Phase 1 platform layer.
+1. Task 0.3 RE gap-fill (Opus): rand()/srand() constants + seed source, VGAME asm modules re-disassembled, code islands.
+2. Phase 1 platform layer (1.1 framebuffer/palette/scaler, 1.2 MGRAPHIC primitives, ...).
+3. Decide PIC loading in JS: read indexed PNG (needs inflate) vs. shipping raw .PIC + JS LZW decoder (format-pic.md).
 
 ## Tests
 `py -3 tools/run_tests.py` — bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
 
 ## Decisions
 - 2026-10-21: RE text (docs, tools, strings, decomp) lives in the repo under re/; binaries and listings stay in Dropbox re/.
+- 2026-10-21: PAN, SS and ASOUND.117 shipped raw and decoded at runtime (PAN frames would be 4.5 MB vs 361 KB raw).
+- 2026-10-21: 3D data (WLD/3DX/3DG/3DT) shipped as parsed JSON per region, not decoded at runtime.
 - 2026-10-21: AdLib (OPL2) is the reference sound; IBM speaker / Roland not planned.
 - 2026-10-21: Accepted: slug f117-rea, own framebuffer, port an existing OPL2 emulator (dbopl-style) in JS.

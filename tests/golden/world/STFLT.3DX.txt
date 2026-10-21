@@ -1,0 +1,87 @@
+3DX  objects=43  vector-table@BCE9 (0 vectors)  data@0085 size=48363
+# idx off  attr  LODs (maxdepth->block)  | block: radius parts verts planes edges lists  [WLD name(?)]
+  0 0085  83  inf->0089  
+      @0089 r=160 parts=1 verts=53 planes=-23 edges=80 polys=42 end=060C cols=0D 90 91 93 95 97 E0 E1 E3 E5 E6 E7 E9 EA EE
+  1 060C  82  inf->0610  
+      @0610 r=66 parts=1 verts=38 planes=9 edges=44 polys=24 end=08B4 cols=0D DF E0
+  2 08B4  82  inf->08B8  
+      @08B8 r=32 parts=1 verts=13 planes=4 edges=14 polys=6 end=09A8 cols=E0 E6 E8
+  3 09A8  83  inf->09AC  
+      @09AC r=121 parts=1 verts=77 planes=28 edges=108 polys=39 end=0FE6 cols=0D 90 93 95 97 E2 E3 E4 E5 E6 E7 EA EE EF FF
+  4 0FE6  03  inf->0FEA  
+      @0FEA r=136 parts=1 verts=17 planes=1 edges=17 polys=3 end=10B2 cols=EF
+  5 10B2  83  inf->10B6  
+      @10B6 r=161 parts=1 verts=42 planes=-25 edges=90 polys=39 end=1607 cols=0D 90 93 95 97 E0 E1 E3 E4 E6 E7 E8 EA EE
+  6 1607  84  inf->160B  
+      @160B r=245 parts=1 verts=48 planes=-25 edges=75 polys=32 end=1B38 cols=0D 91 93 95 97 E0 E2 E3 E5 E6 E7 EE F7
+  7 1B38  83  inf->1B3C  
+      @1B3C r=160 parts=1 verts=46 planes=-23 edges=74 polys=33 end=2005 cols=0D 90 93 95 97 E0 E1 E3 E5 E6 E7 EE
+  8 2005  83  inf->2009  
+      @2009 r=144 parts=1 verts=50 planes=-33 edges=92 polys=45 end=2633 cols=0D 90 93 95 97 E2 E3 E4 E5 E6 E7 EE
+  9 2633  83  inf->2637  
+      @2637 r=169 parts=2 verts=45 planes=-26 edges=69 polys=34 end=2B46 cols=90 93 95 97 B1 E0 E1 E2 E3 E4 E6 E8 EF FF
+ 10 2B46  82  inf->2B4A  
+      @2B4A r=64 parts=1 verts=21 planes=10 edges=30 polys=18 end=2D3B cols=03 0D 0F
+ 11 2D3B  83  inf->2D3F  
+      @2D3F r=96 parts=1 verts=11 planes=17 edges=26 polys=18 end=2F63 cols=DA E0 E6 FF
+ 12 2F63  81  inf->2F67  
+      @2F67 r=18 parts=1 verts=19 planes=8 edges=25 polys=12 end=3107 cols=E6 ED
+ 13 3107  83  inf->310B  
+      @310B r=101 parts=1 verts=47 planes=-22 edges=80 polys=35 end=35E2 cols=90 93 95 97 E4 E5 E6 E7 EC ED EE
+ 14 35E2  83  inf->35E6  
+      @35E6 r=134 parts=1 verts=29 planes=-14 edges=46 polys=23 end=3904 cols=90 93 95 97 E3 E4 E5 E6 E8
+ 15 3904  83  inf->3908  
+      @3908 r=96 parts=1 verts=41 planes=14 edges=48 polys=24 end=3C2A cols=0D B7 E0 E6 EA
+ 16 3C2A  83  inf->3C2E  
+      @3C2E r=161 parts=1 verts=54 planes=-21 edges=96 polys=45 end=41AE cols=0D 90 93 95 97 E0 E3 E5 E7 E9 EA EE
+ 17 41AE  03  inf->41B2  
+      @41B2 r=120 parts=1 verts=8 planes=1 edges=10 polys=3 end=4228 cols=EF
+ 18 4228  83  inf->422C  
+      @422C r=128 parts=1 verts=50 planes=-37 edges=81 polys=43 end=4887 cols=0D 90 93 95 97 E0 E1 E2 E3 E6 EE
+ 19 4887  83  inf->488B  
+      @488B r=160 parts=1 verts=35 planes=-22 edges=61 polys=30 end=4CC5 cols=00 0D 90 93 95 97 E1 E2 E3 E4 E5 E6 EC
+ 20 4CC5  83  inf->4CC9  
+      @4CC9 r=160 parts=1 verts=41 planes=-24 edges=66 polys=35 end=5189 cols=0D 90 93 95 97 E3 E5 E7 E8 EE FF
+ 21 5189  83  inf->518D  
+      @518D r=160 parts=1 verts=58 planes=-25 edges=112 polys=49 end=57B4 cols=0D 90 93 95 97 E1 E3 E5 E6 E7 E9 EB EE EF
+ 22 57B4  83  inf->57B8  
+      @57B8 r=161 parts=1 verts=47 planes=-27 edges=88 polys=41 end=5D5D cols=0D 90 93 95 97 E3 E5 E6 E7 E9 EA EE
+ 23 5D5D  83  inf->5D61  
+      @5D61 r=160 parts=1 verts=53 planes=-31 edges=94 polys=48 end=6396 cols=0D 90 93 95 97 E1 E2 E3 E4 E5 E7 E8 EE EF
+ 24 8C01  84  inf->8C05  
+      @8C05 r=136 parts=1 verts=125 planes=-86 edges=252 polys=128 end=9B79 cols=0D 90 91 93 97 98 99 9A 9B 9C 9D 9E 9F E0 E1 E2
+ 25 6396  83  inf->639A  
+      @639A r=118 parts=2 verts=77 planes=-37 edges=116 polys=52 end=6B72 cols=90 91 93 95 97 A4 A5 A6 A7 ED EF FF
+ 26 6B72  83  inf->6B76  
+      @6B76 r=160 parts=1 verts=58 planes=-31 edges=93 polys=44 end=71E3 cols=0D 90 93 95 97 E3 E4 E5 E6 E7 E8 EA EB EE EF
+ 27 71E3  83  inf->71E7  
+      @71E7 r=120 parts=1 verts=50 planes=-33 edges=88 polys=43 end=780E cols=0D 90 93 95 97 E3 E4 E5 E6 E8 EE
+ 28 780E  83  inf->7812  
+      @7812 r=160 parts=1 verts=52 planes=-40 edges=87 polys=44 end=7ECA cols=0D 90 93 95 97 E2 E3 E4 E5 E6 E7 E8 EF
+ 29 7ECA  84  inf->7ECE  
+      @7ECE r=224 parts=1 verts=55 planes=-39 edges=103 polys=52 end=85F4 cols=0D 90 93 95 97 E3 E5 E6 E8 E9 EC ED EE EF
+ 30 85F4  84  inf->85F8  
+      @85F8 r=200 parts=1 verts=49 planes=-34 edges=84 polys=43 end=8C01 cols=90 93 95 97 E0 E1 E2 E3 E4 E7 EF
+ 31 8C01  83  inf->8C05  
+ 32 9B79  83  inf->9B7D  
+      @9B7D r=149 parts=1 verts=48 planes=-30 edges=94 polys=42 end=A193 cols=0D 91 93 95 97 AA AB AC AD AE AF EF
+ 33 A193  83  inf->A197  
+      @A197 r=136 parts=1 verts=118 planes=-80 edges=243 polys=128 end=B05D cols=0D 90 91 93 97 98 99 9A 9B 9C 9D 9E 9F E0 EF FF
+ 34 B05D  82  inf->B061  
+      @B061 r=88 parts=1 verts=128 planes=-27 edges=142 polys=68 end=B984 cols=9A 9B 9C 9F E0 E1 E2 E4 E5 FF
+ 35 B984  84  inf->B988  
+      @B988 r=215 parts=1 verts=8 planes=-18 edges=18 polys=18 end=BBF7 cols=EB ED EF FF
+ 36 BBF7  84  inf->BBFB  
+      @BBFB r=256 parts=1 verts=5 planes=0 edges=5 polys=0 end=BC47 cols=0D
+ 37 BC47  80  inf->BC4B  
+      @BC4B r=0 parts=1 verts=1 planes=0 edges=1 polys=0 end=BC62 cols=0D
+ 38 BC62  83  inf->BC66  
+      @BC66 r=64 parts=1 verts=1 planes=0 edges=1 polys=0 end=BC7D cols=0D
+ 39 BC7D  83  inf->BC81  
+      @BC81 r=96 parts=1 verts=1 planes=0 edges=1 polys=0 end=BC98 cols=0D
+ 40 BC98  83  inf->BC9C  
+      @BC9C r=128 parts=1 verts=1 planes=0 edges=1 polys=0 end=BCB3 cols=0D
+ 41 BCB3  84  inf->BCB7  
+      @BCB7 r=160 parts=1 verts=1 planes=0 edges=1 polys=0 end=BCCE cols=0D
+ 42 BCCE  84  inf->BCD2  
+      @BCD2 r=192 parts=1 verts=1 planes=0 edges=1 polys=0 end=BCE9 cols=0D

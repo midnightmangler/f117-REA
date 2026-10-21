@@ -1,0 +1,13 @@
+SPEECH.117 26408 bytes; segment tables (end, start, segoff) in ASOUND code segment
+id 41 table cs:09AA: [0000..2422)
+   -> speech_41.wav (9250 samples, 1.16 s)
+id 42 table cs:09B2: [1078..2422)
+   -> speech_42.wav (5034 samples, 0.63 s)
+id 43 table cs:09BA: [2423..294B) + [321D..3D25)
+   -> speech_43a.wav (4144 samples, 0.52 s)
+id 43 table cs:09C8: [294C..321C) + [321D..3D25)
+   -> speech_43b.wav (5080 samples, 0.64 s)
+id 44 table cs:09D6: [3D26..47A6) + [47A7..5666)
+   -> speech_44.wav (6463 samples, 0.81 s)
+id 45 table cs:09E4: [3D26..47A6) + [5667..6727)
+   -> speech_45.wav (6976 samples, 0.87 s)

@@ -1,0 +1,139 @@
+WLD  side shapes 0x42 0x4E  h2=19 h3=36  objects=46 units=13  stringpool=529 bytes
+
+# world objects (16 bytes): idx name | x y (WLD units; world = x<<5, z = (0x8000-y)<<5) | w6 w8 wA wC | shape (bank:obj) type-name
+  0 -                  0     0  0000 0000 0000 0000  0:00 
+  1 -                  0     0  0000 0000 0000 0000  0:00 
+  2 -                  0     0  0000 0000 0000 0000  0:00 
+  3 Pechenga       15552 13504  0004 0000 0000 0000  1:24 SAM Radar
+  4 Polyarnyy      13504 15552  0002 0000 0000 0000  1:24 SAM Radar
+  5 Kilpyaur       17600 15552  0002 0000 0000 0000  1:24 SAM Radar
+  6 Kildenstroy    19648 15552  0002 0000 0000 0000  1:24 SAM Radar
+  7 Olenegorsk     19648 17600  0002 0000 0000 0000  1:24 SAM Radar
+  8 Monchegorsk    19648 19648  0002 0000 0000 0000  1:24 SAM Radar
+  9 Kem            19648 29888  0002 0000 0000 0000  1:24 SAM Radar
+ 10 Severodvinsk   25792 29888  0004 0000 0000 0000  1:24 SAM Radar
+ 11 Kushkushara    29888 25792  0004 0000 0000 0000  1:24 SAM Radar
+ 12 Alakurtii      17088 21696  0002 0000 0000 0000  1:24 SAM Radar
+ 13 Ristikent      15040 15552  0002 0000 0000 0000  1:24 SAM Radar
+ 14 Nikel          12992 13504  0002 0000 0000 0000  1:24 SAM Radar
+ 15 Murmansk       18624 14016  0002 0000 0000 0000  1:24 SAM Radar
+ 16 Arkhangel'sk   28864 30400  0002 0000 0000 0000  1:24 SAM Radar
+ 17 Loukhi         17600 25792  0002 0000 0000 0000  1:24 SAM Radar
+ 18 Kirovsk        21696 17600  0015 0000 0000 0000  1:2B LPAR Radar
+ 19 Pechenga       15680 13504  0000 0001 0000 0000  1:13 Airbase
+ 20 Polyarnyy      13632 15552  0000 0001 0000 0000  1:13 Airbase
+ 21 Kilpyaur       17728 15552  0000 0001 0000 0000  1:13 Airbase
+ 22 Kildenstroy    19776 15552  0000 0001 0000 0000  1:13 Airbase
+ 23 Olenegorsk     19776 17600  0000 0001 0000 0000  1:13 Airbase
+ 24 Monchegorsk    19776 19648  0000 0001 0000 0000  1:13 Airbase
+ 25 Kem            19776 29888  0000 0001 0000 0000  1:13 Airbase
+ 26 Severodvinsk   25920 29888  0000 0001 0000 0000  1:13 Airbase
+ 27 Kushkushara    30016 25792  0000 0001 0000 0000  1:13 Airbase
+ 28 Loukhi         17728 25792  0000 0001 0000 0000  1:13 Airbase
+ 29 Severomorsk    21760 13568  0000 0000 0000 0000  1:46 Sub Pen
+ 30 -              24832 21248  0000 0801 0000 0000  1:49 Airstrip
+ 31 -              20736 15104  0000 0801 0000 0000  1:49 Airstrip
+ 32 Kandalaksha    19520 21824  0000 0000 0000 0000  1:1A Depot
+ 33 Murmansk       19008 14144  0000 0000 0000 0000  1:1A Depot
+ 34 Arkhangel'sk   29248 30528  0000 0000 0000 0000  1:1A Depot
+ 35 Kem            19520 27968  0000 0000 0000 0000  1:1A Depot
+ 36 Sodanklya       9280 19776  0000 0100 0000 0000  1:1A Depot
+ 37 Kiruna          3136 17728  0000 0100 0000 0000  1:1A Depot
+ 38 Gallivare       3136 23872  0000 0100 0000 0000  1:1A Depot
+ 39 Lulea           2624 27456  0000 0100 0000 0000  1:1A Depot
+ 40 Lakselv         6464  9408  0000 0401 0000 0000  1:13 Airbase
+ 41 Kautokeino      2368 13504  0000 0401 0000 0000  1:13 Airbase
+ 42 Gallivare       3392 21696  0000 0401 0000 0000  1:13 Airbase
+ 43 Lulea           2368 26816  0000 0101 0000 0000  1:13 Airbase
+ 44 Kiruna          3392 19648  0000 0101 0000 0000  1:13 Airbase
+ 45 USS Kennedy    11008  3328  0000 0601 0000 0000  1:48 
+
+# mobile units (36 bytes; +2 x, +4 y)
+ 0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0e 00 01 00 00 00 00 00 11 00 00 00 00 00
+ 2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 81 00 00 00 00 00 25 00 00 00 00 00
+ 3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 81 00 00 00 00 00 15 00 00 00 00 00
+ 4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 05 00 c1 00 00 00 00 00 15 00 00 00 00 00
+ 5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 81 00 00 00 00 00 14 00 00 00 00 00
+ 6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0e 00 01 00 00 00 00 00 11 00 00 00 00 00
+ 7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 04 00 01 01 00 00 00 00 25 00 00 00 00 00
+ 8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 01 01 00 00 00 00 22 00 00 00 00 00
+ 9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0a 00 01 00 00 00 00 00 00 00 00 00 00 00
+11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 08 00 01 00 00 00 00 00 00 00 00 00 00 00
+12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+
+# typeflags (128 bytes, indexed by shape & 0x7F)
+13:81 1A:86 1B:05 1C:8A 1F:07 24:08 25:83 26:80 2B:08 3A:8C 3D:4D 40:4D 46:0B 48:4D 4B:0D 4D:0C 4E:0C 50:02 51:0D 52:03 5D:07
+
+# tab2 (128 bytes, indexed by shape & 0x7F)
+
+
+# tab3 (128 bytes, indexed by shape & 0x7F)
+13:15 1B:09 1C:07 1F:0D 24:02 2B:04 3A:11 46:10 4B:12 4D:0B 50:16 51:0A 52:17 5D:25
+
+# 16x16 sector grid (cell = WLD coord >> 11), row = y
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0F 0F 0F 0F 0F 0F 0F 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0B 0B 03 07 03 07 0B 0E 0E 0E 0E 0E 0E 0E 0E 0E
+07 03 07 0B 05 0B 0B 18 08 0E 0E 0E 0A 0E 0E 0E
+03 07 0B 0B 09 09 18 18 08 08 08 08 0A 0A 0A 0A
+03 09 09 09 09 09 18 08 08 08 00 08 08 08 02 0A
+0B 0B 09 09 09 09 18 18 08 08 08 08 08 08 08 0A
+0B 0B 09 09 09 09 18 08 08 08 04 08 08 08 04 0A
+0B 0B 09 09 09 09 08 08 08 08 08 08 08 08 08 08
+0B 0B 09 09 09 09 08 18 08 08 08 08 08 08 08 08
+0B 0B 09 09 09 09 08 08 08 08 08 08 08 08 08 08
+0B 0B 09 09 09 09 18 08 08 08 08 0A 0A 08 08 08
+0E 0E 09 09 09 09 08 08 08 08 08 08 08 08 08 08
+0E 0B 09 09 09 09 18 08 08 08 08 08 08 08 08 08
+
+# string pool (index = name index; also object-type name for shape index)
+  1 0x01 Pechenga
+  2 0x02 Polyarnyy
+  3 0x03 Kilpyaur
+  4 0x04 Kildenstroy
+  5 0x05 Olenegorsk
+  6 0x06 Monchegorsk
+  7 0x07 Kem
+  8 0x08 Severodvinsk
+  9 0x09 Kushkushara
+ 10 0x0A Lakselv
+ 11 0x0B Kautokeino
+ 12 0x0C Gallivare
+ 13 0x0D Lulea
+ 14 0x0E Murmansk
+ 15 0x0F Arkhangel'sk
+ 16 0x10 Loukhi
+ 17 0x11 Severomorsk
+ 18 0x12 USS Kennedy
+ 19 0x13 Airbase
+ 20 0x14 Kandalaksha
+ 21 0x15 Sodanklya
+ 22 0x16 Kiruna
+ 26 0x1A Depot
+ 27 0x1B Headquarters
+ 28 0x1C Tank Farm
+ 31 0x1F SA Missile
+ 36 0x24 SAM Radar
+ 37 0x25 Tower
+ 38 0x26 Hangar
+ 43 0x2B LPAR Radar
+ 45 0x2D Alakurtii
+ 46 0x2E Ristikent
+ 47 0x2F Nikel
+ 48 0x30 Kirovsk
+ 58 0x3A Cargo Ship
+ 64 0x40 Destroyer
+ 70 0x46 Sub Pen
+ 73 0x49 Airstrip
+ 75 0x4B Typhoon
+ 77 0x4D Krivak
+ 80 0x50 Airplane
+ 81 0x51 CV Kremlin
+ 82 0x52 Camp
+ 83 0x53 Special Object 1
+ 84 0x54 Special Object 2
+ 93 0x5D SS Missile

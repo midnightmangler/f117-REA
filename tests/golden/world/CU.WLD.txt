@@ -1,0 +1,130 @@
+WLD  side shapes 0x49 0x5B  h2=29 h3=42  objects=45 units=12  stringpool=476 bytes
+
+# world objects (16 bytes): idx name | x y (WLD units; world = x<<5, z = (0x8000-y)<<5) | w6 w8 wA wC | shape (bank:obj) type-name
+  0 -                  0     0  0000 0000 0000 0000  0:00 
+  1 -                  0     0  0000 0000 0000 0000  0:00 
+  2 -                  0     0  0000 0000 0000 0000  0:00 
+  3 San Julian      4672  5312  0002 0000 0000 0000  1:26 SAM Radar
+  4 Guira           4672  6848  0001 0000 0000 0000  1:26 SAM Radar
+  5 Guines         11456  6976  0001 0000 0000 0000  1:26 SAM Radar
+  6 Matanzas       13504  6976  0002 0000 0000 0000  1:26 SAM Radar
+  7 Cienfuegos      9792  9408  0001 0000 0000 0000  1:26 SAM Radar
+  8 Santa Clara    14912 11456  0001 0000 0000 0000  1:26 SAM Radar
+  9 Chambas        19008 13504  0002 0000 0000 0000  1:26 SAM Radar
+ 10 Ciego de Avila 15936 15552  0001 0000 0000 0000  1:26 SAM Radar
+ 11 Cunapua        19648 15168  0001 0000 0000 0000  1:26 SAM Radar
+ 12 Camaguey       19008 19648  0002 0000 0000 0000  1:26 SAM Radar
+ 13 Nuevitas       21056 19648  0001 0000 0000 0000  1:26 SAM Radar
+ 14 Holguin        23744 23360  0001 0000 0000 0000  1:26 SAM Radar
+ 15 Antonio Maceo  22080 27840  0001 0000 0000 0000  1:26 SAM Radar
+ 16 Baracoa        28736 28864  0002 0000 0000 0000  1:26 SAM Radar
+ 17 Managua         8768  7360  0001 0000 0000 0000  1:26 SAM Radar
+ 18 Nueva Gerona    8384 11584  0001 0000 0000 0000  1:26 SAM Radar
+ 19 -               6848  3264  0009 0008 0000 0000  1:35 Missile Boat
+ 20 -              15040  5312  0008 0008 0000 0000  1:35 Missile Boat
+ 21 -               6848  9408  0009 0008 0000 0000  1:35 Missile Boat
+ 22 -              21184 11456  0008 0008 0000 0000  1:35 Missile Boat
+ 23 -               8896 15552  0009 0008 0000 0000  1:35 Missile Boat
+ 24 -              12992 17600  0008 0008 0000 0000  1:35 Missile Boat
+ 25 -              23232 17600  0009 0008 0000 0000  1:35 Missile Boat
+ 26 -              25280 23744  0008 0008 0000 0000  1:35 Missile Boat
+ 27 -              17088 25792  0009 0008 0000 0000  1:35 Missile Boat
+ 28 -              23232 29888  0008 0008 0000 0000  1:35 Missile Boat
+ 29 Havana         10048  4416  0000 0001 0000 0000  1:15 Airbase
+ 30 San Julian      4928  5312  0000 0001 0000 0000  1:15 Airbase
+ 31 Guira           4928  6848  0000 0001 0000 0000  1:15 Airbase
+ 32 Cienfuegos     10048  9408  0000 0001 0000 0000  1:15 Airbase
+ 33 Santa Clara    15168 11456  0000 0001 0000 0000  1:15 Airbase
+ 34 Chambas        19264 13504  0000 0001 0000 0000  1:15 Airbase
+ 35 Ciego de Avila 16192 15552  0000 0001 0000 0000  1:15 Airbase
+ 36 Camaguey       19264 19648  0000 0001 0000 0000  1:15 Airbase
+ 37 Nuevitas       21312 19648  0000 0001 0000 0000  1:15 Airbase
+ 38 Santiago de Cuba 22336 22848  0000 0001 0000 0000  1:15 Airbase
+ 39 Antonio Maceo  22336 27840  0000 0001 0000 0000  1:15 Airbase
+ 40 Baracoa        28992 28864  0000 0001 0000 0000  1:15 Airbase
+ 41 Managua         9024  7360  0000 0001 0000 0000  1:15 Airbase
+ 42 Guantanamo     25920 28352  0000 0101 0000 0000  1:15 Airbase
+ 43 Key West       19264  3392  0000 0401 0000 0000  1:15 Airbase
+ 44 USS America     7424 23808  0000 0601 0000 0000  1:4B 
+
+# mobile units (36 bytes; +2 x, +4 y)
+ 0 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 1 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 13 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 2 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19 00 01 00 00 00 00 00 10 00 00 00 00 00
+ 3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 19 00 01 01 00 00 00 00 10 00 00 00 00 00
+ 4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 81 00 00 00 00 00 10 00 00 00 00 00
+ 5 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 10 00 00 00 00 00
+ 6 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 00 00 00 00 00 25 00 00 00 00 00
+ 7 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 01 00 00 00 00 25 00 00 00 00 00
+ 8 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+ 9 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+10 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+11 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0d 00 01 00 00 00 00 00 00 00 00 00 00 00
+
+# typeflags (128 bytes, indexed by shape & 0x7F)
+12:4D 15:01 1A:83 1C:86 1D:05 1E:0A 21:07 26:08 28:80 31:8D 35:0C 3E:03 46:4C 48:07 4B:4D 4C:8C 4F:03 5B:0C 5D:06
+
+# tab2 (128 bytes, indexed by shape & 0x7F)
+
+
+# tab3 (128 bytes, indexed by shape & 0x7F)
+15:15 1D:09 1E:07 21:0D 26:02 28:08 35:0C 46:11 48:25 4C:23 4F:17 5D:24
+
+# 16x16 sector grid (cell = WLD coord >> 11), row = y
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0B 0B 0E 0E 0E 0E
+0E 0E 0E 0C 0C 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E
+0E 08 04 18 18 08 08 0C 0E 0E 0E 0E 0E 0E 0E 0E
+0E 08 08 08 08 04 08 08 0E 0C 0E 0E 0E 0E 0E 0E
+0E 0C 0E 0C 08 08 04 04 08 0E 0E 0E 0E 0E 0E 0E
+0E 0E 0E 0E 10 0C 08 04 04 08 0C 0E 0E 0E 0E 0E
+0E 0E 0E 0E 08 0E 08 08 04 08 0E 0E 0C 0E 0C 0E
+0E 0E 0E 0E 0C 0E 0E 08 08 08 08 0E 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0C 0E 08 08 08 0E 0E 0E 0C 0E
+0E 0E 0E 0E 0E 0E 0E 0E 18 04 08 08 0E 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 08 08 08 08 0E 0E 0E 0E
+0E 0E 0E 0F 0E 0E 0E 0E 0E 0E 08 08 0C 0E 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0C 0E 08 04 08 08 0E 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0C 0E 08 04 08 08 08 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0C 0E 08 08 0E
+0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0E 0C 0E 0E 0E 0E
+
+# string pool (index = name index; also object-type name for shape index)
+  1 0x01 Havana
+  2 0x02 San Julian
+  3 0x03 Guira
+  4 0x04 Guines
+  5 0x05 Matanzas
+  6 0x06 Cienfuegos
+  7 0x07 Santa Clara
+  8 0x08 Chambas
+  9 0x09 Ciego de Avila
+ 10 0x0A Cunapua
+ 11 0x0B Camaguey
+ 12 0x0C Nuevitas
+ 13 0x0D Santiago de Cuba
+ 14 0x0E Holguin
+ 15 0x0F Antonio Maceo
+ 16 0x10 Baracoa
+ 17 0x11 Guantanamo
+ 18 0x12 Destroyer
+ 19 0x13 Key West
+ 20 0x14 Managua
+ 21 0x15 Airbase
+ 22 0x16 Nueva Gerona
+ 25 0x19 USS America
+ 26 0x1A Town
+ 28 0x1C Depot
+ 29 0x1D Headquarters
+ 30 0x1E Tank Farm
+ 33 0x21 SA Missile
+ 38 0x26 SAM Radar
+ 39 0x27 Tower
+ 40 0x28 Hangar
+ 49 0x31 Tanker
+ 53 0x35 Missile Boat
+ 62 0x3E Buildings
+ 70 0x46 Merchant Ship
+ 72 0x48 SS Missile
+ 76 0x4C Trawler
+ 79 0x4F Terrorist Camp
+ 93 0x5D Supply Dump
