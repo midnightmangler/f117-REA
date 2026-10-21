@@ -26,9 +26,28 @@
 
   loadPic('ADV', 'ADV.PAL').catch(testCard).then(function () { display.present(); });
 
-  // Frame tick at 70 Hz; the sound tick (60 Hz) has no consumer yet. Pauses when the tab is hidden.
-  var ticker = F.timer.createTicker({ frame: function () {}, sound: function () { return 0; } });
+  // Frame tick at 70 Hz, sound tick 60 Hz + noise 280 Hz into the ASOUND port. Pauses when the tab is hidden.
+  var cb = { frame: function () {} };
+  var ticker = F.timer.createTicker(cb);
+  var h = F.sound.hooks(ticker);
+  cb.sound = h.sound; cb.noise = h.noise;
   F.timer.startLoop(ticker);
+
+  // Task 1.4 demo: each tap plays the next sound (songs, effects, speech).
+  var bin = function (p) { return fetch('assets/sound/' + p).then(function (r) { return r.arrayBuffer(); }).then(function (b) { return new Uint8Array(b); }); };
+  var keys = ['41', '42', '43a', '43b', '44', '45'];
+  Promise.all([bin('ASOUND.117')].concat(keys.map(function (k) { return bin('speech/speech_' + k + '.wav'); }))).then(function (r) {
+    var wavs = {};
+    keys.forEach(function (k, i) { wavs[k] = r[i + 1]; });
+    F.sound.init(r[0], wavs);
+  }).catch(function (e) { console.warn('sound assets', e); });
+  var demoIds = [39, 36, 37, 38, 5, 4, 15, 41, 43, 44, 45, 7, 9, 32], demoNext = 0;
+  document.addEventListener('pointerdown', function () {
+    F.sound.unlock();
+    F.sound.play(0);
+    F.sound.play(demoIds[demoNext++ % demoIds.length]);
+  });
+
   // First user gesture: go fullscreen / lock landscape where the browser allows it.
   document.addEventListener('pointerdown', function once() {
     document.removeEventListener('pointerdown', once);

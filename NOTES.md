@@ -8,6 +8,7 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 ## File map
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
+- src/platform/opl2.js, music.js, sound.js (task 1.4): OPL2 emulator, ASOUND driver port, WebAudio front end (F117.sound)
 - tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files â†’ assets/ + tests/golden/
 - assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
   pan/*.PAN + pan.json (raw, decode at runtime), ss/LABSLOGO.SS + labslogo.json, sound/ASOUND.117 + asound.json,
@@ -45,13 +46,22 @@ pause when hidden); src/main.js demo draws ADV.png (needs assets/ served next to
 PNGs equal pic.py output via tests/golden/pic/pic_sha1.json). 4 tests pass locally; demo checked in the browser pane.
 Task 1.2 done (2026-10-21): src/platform/gfx*.js = every MGRAPHIC entry with a call site (pages/draw seg/origin, text #1-10 with clip rules, char_width, sprite grab/draw with scale+mirror+clip, line, spans incl. shade, blits, recolor, present, flicker/shake, tick tape, dissolve, blank); tests/gfx.test.js (glyphs of all 7 fonts vs golden, clip = masked picture, spans, lines, sprites). 5 tests pass locally; no pixel golden from the original (no DOSBox), derived from the listing. API: gfx.textDraw/textDrawClip/..(vp,str), spriteDraw(vp,x,y,w,h,data,off), fillSpans(ytop,ybot,left[],right[],mode), blit(...), blitTranspClip(bs).
 Task 1.3 done (2026-10-21): src/platform/pan.js (lzUnpack = PLAYER 0BE2, runSkipDump = 1006, createPanPlayer(bytes).step() applies one cel to a 64 KB screen, exposes rate/ticksPerFrame/palette(6-bit)/table), ss.js (parseSs, drawSprite(series,i,screen64000), dac[] with base+i palette), world.js (loadWorld(code, readJson), JSON loader only); tests/decoders.test.js: every PAN cel screen = golden sha1 (all 6 files, 1666 cels), cel sizes = table, SS 82 cumulative screens + final, world JSON keys. 6 test files pass (run individually; run_tests.py needs git on PATH).
-HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed).
+Task 1.4 done (2026-10-21): src/platform/music.js = ASOUND.117 port (decomp re/decomp/asound/sequencer.md): driver DS kept as a
+byte copy of the image, play(id,a2) all 46 ids, tick() (60 Hz, returns +1/-1/0 for noise mode), noise() (280 Hz), engine voice 6,
+speech 41-45 the AdLib way (OPL carrier TL at 7954.5 Hz, returns duration: the original blocks the game), dumpSequence = sound.py text.
+opl2.js = OPL2 emulator (Nuked-OPL3 algorithm, OPL2 subset) + timed write queue/resampler (writes >= 2 OPL samples apart = ISA delay,
+DC blocker = AC-coupled output). sound.js = AudioWorklet (ScriptProcessor fallback), game-time stamped writes + 60 ms latency,
+unlock() on first touch, sfx(id,prio) = VGAME D3F9/D41F with sound.state {level, c09a, throttlePct}, hooks(ticker) for timer.js.
+tests/sound.test.js: all 55 golden streams dump identically and the live interpreter visits them in the same order; engine/noise/
+speech pinned; 440 Hz tone check; song renders. main.js demo: each tap plays the next id. Checked in the browser pane (worklet runs).
+HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. 1.4 sound (Opus), 1.5 input, Phase 2.
+1. 1.5 input (Sonnet), then Phase 2 (2.1 flow, Opus). Sound not yet heard on the iPad: listen to the demo (tap cycles ids).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
-3. Decided: assets reach the iPad either inline in the single HTML (size is no concern; user has an 8 MB inline-data HTML elsewhere) or as a folder, since the iPad HTML viewer supports multiple HTML files in folders. Pick one in bundle.py and test it.
-4. HEARTBEAT 14900ks: user wants it tested; NOTES says it already PASSED (4/0) - re-run to confirm.
+3. Decided (user, 2026-10-21): assets are delivered INLINE in the single HTML (size is no concern). Implement in bundle.py and test.
+4. HEARTBEAT 14900ks re-run 2026-10-21T20:49Z: PASS (4 passed, 0 failed). Note: 4 tests, while the repo has 6 test files - check the test machines' clones are pulled.
+5. Open: speech on AdLib freezes the game ~0.5-1.2 s (IRQ0 masked). sound.speechSec gives the time; the flow task decides whether to freeze the ticker.
 
 ## Tests
 `py -3 tools/run_tests.py` â€” bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
@@ -68,6 +78,7 @@ HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher 
   noise mode = 1 noise call after the entry tick, then 3 before + 1 after each tick; none after the exit tick (offsets passed in ms).
 - 2026-10-21: request.txt names are lowercased by watcher2.py: the slug is `f117-rea` (earlier note saying `f117-REA` was wrong).
 - 2026-10-21: VGAME asm listings are committed (re/disasm/vgame-asm, 350 KB); regenerate with the command in vgame-asm.md.
+- 2026-10-21: OPL2 emulator follows Nuked-OPL3 (more exact than dbopl); speech uses the AdLib OPL-TL path, not separate PCM.
 
 
 
