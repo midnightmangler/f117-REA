@@ -1,4 +1,4 @@
-# F117-REA
+﻿# F117-REA
 Faithful HTML5/iPad re-creation of F-117A Nighthawk Stealth Fighter 2.0 (MicroProse DOS, 1991). Slug: f117-rea. Dropbox: F117-REA.
 GitHub repo and local clone are spelled `f117-REA` (C:\Users\pauli\Games\f117-REA); request.txt for the test watcher says `f117-rea` (lowercase).
 
@@ -6,14 +6,14 @@ GitHub repo and local clone are spelled `f117-REA` (C:\Users\pauli\Games\f117-RE
 None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not used).
 
 ## File map
-- index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py → dist/f117-rea.html → Dropbox builds/
+- index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1; window.F117.{png,fb,timer}, also module.exports for Node tests)
-- tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files → assets/ + tests/golden/
+- tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files â†’ assets/ + tests/golden/
 - assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
   pan/*.PAN + pan.json (raw, decode at runtime), ss/LABSLOGO.SS + labslogo.json, sound/ASOUND.117 + asound.json,
   sound/speech/*.wav + speech.json, manifest.json (sha1 of every file; tests/assets.test.js checks it)
 - tests/golden/: Python decoder outputs (pan cels + sample frames, ss final screen, world dumps, sound tables, fonts)
-- re/docs/00-conventions.md: addressing, compiler facts, listing defects — read before any RE work
+- re/docs/00-conventions.md: addressing, compiler facts, listing defects â€” read before any RE work
 - re/docs/01-architecture.md: executables, loader protocol, overlay drivers, data files
 - re/docs/02-build-plan.md: the phased build plan with task cards
 - re/docs/vgame-map.md: flight sim map (main loop, 213 functions, globals, tables, key mapping)
@@ -43,18 +43,15 @@ Task 1.1 done (2026-10-21): src/platform/png.js (indexed-PNG reader), fb.js (5 p
 integer scaler in device px, fullscreen/landscape), timer.js (70 Hz frame tick, 60 Hz sound tick 6-of-7, 280 Hz noise mode,
 pause when hidden); src/main.js demo draws ADV.png (needs assets/ served next to the page); tests/platform.test.js (all 52 PIC
 PNGs equal pic.py output via tests/golden/pic/pic_sha1.json). 4 tests pass locally; demo checked in the browser pane.
-HEARTBEAT: razer watcher is alive but its running copy of watcher2.py predates the fix (request name is lowercased, so the
-allowlist key must be `f117-rea`; fixed in Dropbox watcher2.py 2026-10-21, **razer must restart it**). Until then a request
-`f117-rea` returns "unknown project". The razer clone `~/Games/f117-REA` is still unconfirmed, and 14900ks is offline.
+HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks offline, untested.
 
 ## Next up
-1. Restart watcher2.py on razer, drop request.txt `f117-rea`, confirm PASS (this also proves the razer clone).
-2. 1.2 MGRAPHIC primitives (Opus, src/platform/gfx.js), 1.3 (drop native PIC decoder, see Decisions), 1.4 (Opus), 1.5, Phase 2.
-3. Open: ds:263F vsync-measure path in resync 1D01 (measures the real retrace period; the port uses a fixed 70 Hz).
-4. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
+1. 1.2 MGRAPHIC primitives (Opus, src/platform/gfx.js), 1.3 (drop native PIC decoder, see Decisions), 1.4 (Opus), 1.5, Phase 2.
+2. Open: ds:263F vsync-measure path in resync 1D01 (measures the real retrace period; the port uses a fixed 70 Hz).
+3. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
 
 ## Tests
-`py -3 tools/run_tests.py` — bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
+`py -3 tools/run_tests.py` â€” bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
 
 ## Decisions
 - 2026-10-21: RE text (docs, tools, strings, decomp) lives in the repo under re/; binaries and listings stay in Dropbox re/.
@@ -68,3 +65,4 @@ allowlist key must be `f117-rea`; fixed in Dropbox watcher2.py 2026-10-21, **raz
   noise mode = 1 noise call after the entry tick, then 3 before + 1 after each tick; none after the exit tick (offsets passed in ms).
 - 2026-10-21: request.txt names are lowercased by watcher2.py: the slug is `f117-rea` (earlier note saying `f117-REA` was wrong).
 - 2026-10-21: VGAME asm listings are committed (re/disasm/vgame-asm, 350 KB); regenerate with the command in vgame-asm.md.
+
