@@ -8,6 +8,7 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 ## File map
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
+- src/platform/input.js (task 1.5): key buffer + keypad virtual stick + buttons
 - src/platform/opl2.js, music.js, sound.js (task 1.4): OPL2 emulator, ASOUND driver port, WebAudio front end (F117.sound)
 - tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files â†’ assets/ + tests/golden/
 - assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
@@ -54,10 +55,18 @@ DC blocker = AC-coupled output). sound.js = AudioWorklet (ScriptProcessor fallba
 unlock() on first touch, sfx(id,prio) = VGAME D3F9/D41F with sound.state {level, c09a, throttlePct}, hooks(ticker) for timer.js.
 tests/sound.test.js: all 55 golden streams dump identically and the live interpreter visits them in the same order; engine/noise/
 speech pinned; 440 Hz tone check; song renders. main.js demo: each tap plays the next id. Checked in the browser pane (worklet runs).
+Task 1.5 done (2026-10-21): src/platform/input.js = BIOS key buffer (15 words, typematic head-run collapse as ISR 1132:0149) +
+INT 9 virtual stick (table DS:2CDE verified from VGAME.EXE: 13 entries; 0x5A / 0x7F within <5 BIOS ticks of the last accepted press
+of the same mask; one key held at a time; release of the held mask recentres; Shift ignores keypad keys but not grey cursor keys,
+also on key-up (original quirk)). API: createInput({ticks, joystick}) -> keyDown/keyUp(ev)/attach(win), pushKey (touch injection),
+frameKey() (1EB0:1F08 drain: first key, rest discarded), keyReady/getKey (misc driver, assumed same buffer (?)), stickX/stickY
+(virtual or joystick bytes), setStick, button(n)/setPseudoButton/setJoyButton. wordOf(ev) maps DOM keys to INT 16h words (NumLock
+forced off: keypad = 4800-style unless Shift). Bytes only: Up arrow = Y low (0x26); pitch sign is decided by the 1EB0:2189 port.
+tests/input.test.js (21). Not yet used by main.js; no touch overlay yet.
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. 1.5 input (Sonnet), then Phase 2 (2.1 flow, Opus). Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
+1. Phase 2 (2.1 flow, Opus); 1.5 input is done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
    needs touchend/click unlock; may run the ScriptProcessor fallback).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
 3. Done 2026-10-21: assets inline. bundle.py puts every assets/ file as base64 in window.F117_ASSETS (build 4.5 MB);
