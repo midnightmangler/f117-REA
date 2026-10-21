@@ -11,11 +11,12 @@ Not decompiled yet — this is the map for the function-by-function sessions.
   and ds:00F7 (`speech.117`) are mostly coincidental immediates (pixel coordinates 0x6E, 0x59, 0x60, ...). The only real use is the
   theatre-name table ds:0090 (see §6).
 - `VGAME.asm` resolves near calls/jumps inside segments != 0000 to wrong targets; funcs.txt entries 0FB2_003F/0075/01C6,
-  1058_04CA/0596, 114A_0038/008C, 120A_0910, 1377_04E5/0660/06DE and all 14D1_*/1872_* are artefacts. Use capstone on the raw
-  segment (scratch tool `vd.py`, see §9).
+  1058_04CA/0596, 114A_0038/008C, 120A_0910, 1377_04E5/0660/06DE and all 14D1_*/1872_* are artefacts. **For segments
+  0FAE..14C2 use the per-module listings in `re/disasm/vgame-asm/` (made by `re/tools/vgame_asm.py`, conventions in
+  `vgame-asm.md`); the tables in §4 below predate them and are corrected in vgame-asm.md §5.**
 - Real code shown as data in the listing: 0000:1BB3 (INT 1Bh handler), 1C6D..1D87 (timer ISR + helpers), 1E79..1EAE (frame tick),
-  2031..2041 (part of '0' key handler), 5737..5850 (complete function, never called), 6B0B..6BDD (inside 683E: missile steering),
-  CE8D (jump table, keys '1'..'8'; listing claims 52 entries/spurious `case:` labels), E447..E449 and E4B6..E512 (inside E3BF).
+  5737..5850 (complete function, never called), CE8D (jump table, keys '1'..'8'; listing claims 52 entries/spurious `case:` labels).
+  The islands 0CDD tail, 2031..2041, 6B0B..6BDD and E447/E4B6 are decoded in vgame-asm.md §4 (`vgame_asm.py --range`).
 - funcs.txt size of 683E is wrong: real extent 683E..7242 (2565 bytes).
 
 ## 1. Program flow
@@ -278,7 +279,7 @@ Angles: 16-bit binary, 0x4000 = 90°, degrees = angle/0xB6.
 | 0000:DC46 | 867 | `objlist_draw()` | draw object list back-to-front: per 22-byte rec {+0 depth32,+4 colour,+6 flags,+8 shape(id, 0x400=sprite via 1AE9, 0x8000 no-sort),+A/+C/+E cam xyz,+10/12/14 angles}; shape 0x18 = player F-117 (gear [c09e], hook bit [9b34]&8, bay [9908] animation, parts 0x21/0x22/0x23 ordered by facing); 1452:03AB object matrix, 120A:00CF draw shape; ids>=0x25 also get label sprite via 1B2E (table ds:4ed2) | high | DC54..DFA4 |
 | 0000:E2B6 | 127 | `draw_object_now(shape, ya,pi,ro, x,y,z)` | immediate (unsorted) shape draw: shape flags from ds:0a60[hi][lo] (&7 -> size class [49aa]); E3BF cull; if flag 0x80 -> DB3C queue else 1039:011A colour, 1452:03AB, transpose, 120A:00CF | high | E2E9 [bx+0xa60] |
 | 0000:E3AC | 19 | `cull_point(x,y,z)` | wrapper: E3BF with bp,bx,cx = x,y,z | high |  |
-| 0000:E3BF | 236 | `transform_and_cull()` | rotate point by camera matrix 49be (3x3) -> 32-bit cam coords [4988],[498c],[4990]; cull vs far [48e6], near [48f6+2*[49aa]], x/y frustum via tables ds:4966/4976 (and 0x4906.. via [e56a]/[e570], disassembly broken at E447/E4B6); [49a8] = approx distance; returns AX=1 (ZF=0) if culled | high | code E3BF..E52F; bytes E447..E449 and E4B6..E512 are code mis-decoded as data |
+| 0000:E3BF | 236 | `transform_and_cull()` | rotate point by camera matrix 49be (3x3) -> 32-bit cam coords [4988],[498c],[4990]; cull vs far [48e6], near [48f6+2*[49aa]], x/y frustum via tables ds:4966/4976 when [438e] else [e56a]/[e570] (formulas in vgame-asm.md §4); [49a8] = approx distance; returns AX=1 (ZF=0) if culled | high | code E3BF..E52F (capstone, vgame-asm.md §4) |
 | 0000:E530 | 86 | `palette_step(far cur, far target, n)` | move n RGB triples of cur one step toward target, return number changed (palette fade, e.g. day/night/flash) | high | loop E541; callers 4973, 4E5F then 14C2:0000 |
 
 ### cockpit/HUD/MFD (61)
@@ -351,7 +352,7 @@ Angles: 16-bit binary, 0x4000 = 90°, degrees = angle/0xB6.
 
 | addr | size | alias | role | conf | evidence |
 |---|---|---|---|---|---|
-| 0000:0CDD | 22 | `load_error(msg)` | shows msg via 895E(msg,0,0x60,0x0F) then (bytes 0CEC.. mis-disassembled) `mov sp,bp; call ...; leave; ret` (?) | med | callers 09A0, BAA2 |
+| 0000:0CDD | 22 | `load_error(msg)` | shows msg via 895E(msg,0,0x60,0x0F) then `mov sp,bp; call 0000:EBEA` = runtime exit (never returns; the `leave; ret` is dead) | high | callers 09A0, BAA2; vgame-asm.md §4 |
 | 0000:4B03 | 140 | site_name(site) | build "<B2DC name> at <B2CE name>" in msg buffer 98a6 from string ptr table df08; truncate to 25 chars | high | 4B1D, " at " |
 | 0000:4B8F | 93 | site_name_short(site) | name of site (B2CE or B2DC) into 98a6, max 18 chars | high | callers 9515 @963F/@96FC (missed by xref) |
 | 0000:895E | 49 | text_draw(str,x,y,colour) | Draw string on current back page (4010 if [40B6]==0 else 4028) via 89C0 | high | code |
@@ -511,7 +512,7 @@ Angles: 16-bit binary, 0x4000 = 90°, degrees = angle/0xB6.
 - 70BA (mslot<8, enemy missile): 7243 vs player (alt [2df4]); ECM: radar jammer (9b34&0x10, class>0) or IR jammer (9b34&0x20, class<=0): beyond burn-through ((3686<<8)+0x180) lose lock; classes 1 and -1 always lose; **if alert [3d90] < threshold [9f94] and weapon != SA-14 (0x21) the missile does not guide (stealth)**. Decoys 39D8[1..3] (stride 0xC): type 1 (flare) seduces class<=0; type 2 (chaff) seduces class 1,2, and class 3 only if aspect test (\|bearing-playerheading\| vs 0x40-12*diff) passes. Launcher lost: SAM site radar off (B2D6&0x10==0) or launching aircraft lost visual (flag 8) at dist>0x200 -> no guidance. Speed ramps to weapon.+0xA>>6.
 - 68AF (mslot>=8, player missile): class 7 (AIM-9/AIM-120): choose nearest airborne aircraft with lock (7243), set +0x14; dist<0x180 marks aircraft flag 0x10 (?). Classes 4/5/6 with target obj (+0x14): HARM/ASM homing on ground obj; obj 0 aimpoint moved -> B850 + clear. Weapon 0x1C (LGBOMB): homes on designated [3d94].
 - 6A32: warnings for enemy missiles: lamp 1/0x29 for IR (class<=0), lamp 0/0x11 radar; missile-close tone D3F9(9,1).
-- 6AB6..6BDD (hole): heading/pitch steering clamped by difficulty (enemy) and weapon.+0xE turn rate (heading <<7, pitch <<8), roll = 2*turn.
+- 6AB6..6BDD: heading/pitch steering clamped by difficulty (enemy) and weapon.+0xE turn rate (heading <<7, pitch <<8), roll = 2*turn; 6B0B..6BDD decoded as pseudo-C in vgame-asm.md §4.
 - 6BDE: gravity/pitch decay (C863), FFBOMB/altitude-1 bombs pitch down to floor (+0x16); motion: x+=v*sin(h), y-=v*cos(h), alt+=v*sin(p); life--; every 4th frame terrain test 78FD.
 - 6CE1 impact (alt<0 or terrain): explosion at missile pos, [9d3c]=-6, life 0, 8342 (direction text); bombs 1C/1D/1E: Equip (0x26) -> delivery check vs goals type 3 in E304 (dist<0x100, time [9912]<[deb4]) "Equipment Delivered" (7594) / "Bad Drop"; else nearest ground obj B850, blast radius 8A67(store,obj)<<6/(diff+2) -> 73C8 " destroyed by <store>"; player blast check -> 761A "Blast damage". Player non-bomb: " ground impact".
 - 6ED3 hit test: dist + \|dalt\|>>5 < speed*8/[368e] and locked: enemy missile -> explosion, life=2*[368e], "Hit by <weapon>" + 761A + log 5 (unless decoy active); player class 7 -> snap to aircraft, 72D8(kill); player vs ground -> 8A67 damage vs random(4): 73C8 or "Ineffective"; then raise alert [3d90]=[b2b2] and set last-known player pos b2cc/b786=impact, b79a=3000; msg "<obj> hit by <weapon>".
@@ -691,10 +692,10 @@ Page descriptors: words at DS:4010, 4028, 4040, 0344, 4070 are pointers to struc
 | 120A:00CF | 229 | draw_object(id, x, y, z, a, b) | object db in segment [8590]: es:[0]=count, es:[2+2*id]=LOD list (dist,ptr pairs); transform by view (1452:0330), LOD by distance [7CDC], cull 02B2, transform verts 0317, draw faces 06B5/0A33/0C76 (with INT0 hook 027D/029E); sets [C6B2]|=0x80 if drawn | high | 7 calls (13F1, DC46, E2B6) |
 | 120A:01B4 | 200 | test_object(id,x,y,z,a) | same transform/LOD/cull without drawing (visibility/hit test) | high | caller 1007 |
 | 120A:0F97 | 166 | prerotate_grid() | rotates vertex list of object #count (last object) by view matrix into 32-bit cache DS:4EE6 (12 bytes/vertex) | med | caller D826 (per-frame 3D setup) |
-| 130D:000E | 60 | line3d(x0,y0,x1,y1) | 32-bit points → DS:5EEA, clip 033F, add 004A | med | internal |
-| 130D:004A/0116/033F | — | face edge add / polygon emit(colour) / clip | 004A adds edge (1377:072B), 0116 calls rasteriser slots 004C/005E | med | only from 120A |
+| 130D:01BD | 72 | line3d(x0,y0,x1,y1,colour) | 16-bit points → 32-bit segment DS:5EEA, clip 033F, draw 0205 | high | no callers (130D:000E in the old listing was the tail of 120A:0F97) |
+| 130D:004A/0116/033F/0205 | — | add_edge(SI) / polygon_emit(colour) / clip_segment(SI) / draw_if_visible(SI) | see vgame-asm.md §2 (130D) for registers and globals 85DC..8600 | high | only from 120A |
 | 1377:000C | 26 | raster_init(modeChar) | 'E' EGA, 'M' MCGA (stride 320), 'C' CGA, 'T' Tandy: builds row-offset table DS:861C, vtable ptr [85F2] = cs:0070/007C/0088/0094 | high | main 008F `push 0x4D` ('M') |
-| 1377:0043/004C/0055/005E/0067 | 9 each | raster slot 1..5 | via vtable: M = 0287 put pixel (x,y,c), 01E0 set colour (colours ≥0xA0 with hi=FF fogged by [48C4]), 046F Bresenham line, 0B09 fill polygon spans (colour hi FB..FF = dither/pattern), 0B09 | high | 1377:0070 vtable words |
+| 1377:0043/004C/0055/005E/0067 | 9 each | raster slot +2/+4/+6/+8/+A wrappers (0043, 0067 dead) | via vtable [85F2] (M = cs:007C): 0287 put_pixel(x,y,c), 01E0 set_colour(AX) (colours ≥0xA0 with hi=FF fogged by [48C4]), 046F Bresenham line(SI), 0B09 fill_spans (colour hi FB discard, FC stipple, FD OR, FE AND, else dither pattern) | high | 1377:0070 vtable words; vgame-asm.md §2 |
 | 1377:00A0 | 34 | dos_alloc_max(min) | INT21/48 | high | |
 | 1377:072B | 136 | edge_to_spans() | polygon edge into span tables, clip [85FC]/[8600] | high | 130D:0067 |
 | 1377:07E8 | 94 | hspan(x0,x1,y?) | clipped span update ([9160]) | med | far call from 130D:019E region |
@@ -1049,10 +1050,10 @@ write the stick bytes directly without touching the dispatchers.
 6. Keypad virtual-stick sign (which direction is nose up) and T:01F6 present size.
 7. Field meanings in 2EB2/2FF4/3394 beyond name/index/shape are from use only.
 8. 79BE vs 1058:000A split of HUD drawing (C text items vs asm symbology) — verify no duplicate drawing.
-9. 0CDD tail, 2031 region, 6B0B..6BDD, E447/E4B6 islands need capstone before decompiling.
+9. (resolved 2026-10-21, task 0.3) 0CDD tail, 2031 region, 6B0B..6BDD, E447/E4B6 islands: see vgame-asm.md §4.
 
 ## 9. Tools used (scratch, not in repo)
 
 `vd.py SEG OFF LEN [x|w|s]` — capstone 16-bit disassembly / hex / word dump of the unpacked VGAME image (python 3.13 has
-capstone; header 2352). `drv.py` — prints driver headers (slot base, count, entry table) of MGRAPHIC/MISC/xSOUND.
+capstone; header 2352). Superseded in the repo by `re/tools/vgame_asm.py` (`--segs` per-module listings, `--range SEG:OFF LEN`). `drv.py` — prints driver headers (slot base, count, entry table) of MGRAPHIC/MISC/xSOUND.
 `an.py` — per-function callees, string refs, DGROUP reads/writes, shared-block field use from VGAME.asm.

@@ -1,0 +1,207 @@
+# VGAME asm-module entry points (vgame_asm.py). addr size frame callers(C seg 0000 / other asm) seed kinds
+
+## 0FAE  (27 insns, 61/64 bytes code)
+0FAE:0002    61  bp-frame     C=3   asm=0   far
+
+## 0FB2  (855 insns, 2148/2160 bytes code)
+0FB2:0000     2  bp-frame     C=1   asm=0   far
+0FB2:0002    16  reg          C=0   asm=0   farptr
+0FB2:0012    33  reg          C=0   asm=0   call
+0FB2:01E6    96  bp-frame     C=6   asm=0   far
+0FB2:0246   110  bp-frame     C=9   asm=5   far
+0FB2:02B4   108  bp-frame     C=0   asm=0   sweep
+0FB2:0320     4  jump/call stub C=0   asm=1   far
+0FB2:0324    12  reg          C=1   asm=3   far
+0FB2:0330    33  reg          C=0   asm=0   call
+0FB2:04BC    33  reg          C=0   asm=0   call
+0FB2:04DD    33  bp-frame     C=0   asm=0   isr
+0FB2:04FE    27  bp-frame     C=1   asm=0   far
+0FB2:0519     6  reg(saves)   C=2   asm=0   far
+0FB2:051F    54  reg          C=0   asm=0   call
+0FB2:0555   217  reg          C=0   asm=0   call
+0FB2:069A    12  reg(saves)   C=2   asm=0   far
+0FB2:06A6    33  reg          C=0   asm=0   call
+0FB2:084E    33  bp-frame     C=0   asm=0   isr
+
+## 1039  (143 insns, 336/336 bytes code)
+1039:0000   157  reg          C=2   asm=0   far
+1039:009D    26  reg          C=2   asm=1   far
+1039:00B7    26  reg          C=1   asm=0   far
+1039:00D1    23  reg          C=1   asm=0   far
+1039:00E8    25  reg          C=1   asm=0   far
+1039:0101    25  reg          C=1   asm=0   far
+1039:011A    54  reg          C=2   asm=0   far
+
+## 104E  (71 insns, 165/169 bytes code)
+104E:0000    22  reg          C=60  asm=27  far
+104E:0016    15  reg          C=0   asm=0   seed
+104E:0025    50  reg          C=0   asm=0   seed
+104E:0057    15  reg          C=0   asm=0   seed
+104E:0066    16  reg          C=11  asm=0   far
+104E:0076    12  reg          C=12  asm=0   far
+104E:0082     4  jump/call stub C=0   asm=2   far
+104E:008A    31  reg          C=0   asm=0   call
+
+## 1058  (1165 insns, 3417/3490 bytes code)
+1058:000A     4  jump/call stub C=1   asm=0   far
+1058:000E     4  jump/call stub C=1   asm=0   far
+1058:0012     4  jump/call stub C=1   asm=0   far
+1058:0016   271  reg          C=0   asm=0   call
+1058:09D8    84  reg          C=0   asm=0   call
+1058:0A2C   564  reg          C=0   asm=0   call
+1058:0C91    14  jump/call stub C=1   asm=0   far
+1058:0C9F    19  reg(saves)   C=0   asm=0   call
+1058:0CB2    15  jump/call stub C=1   asm=0   far
+1058:0CC1    25  reg(saves)   C=0   asm=0   call
+1058:0D09    21  reg(saves)   C=0   asm=0   call
+1058:0D7A    18  bp-frame     C=1   asm=0   far
+1058:0D8C    22  bp-frame     C=1   asm=0   far
+
+## 1132  (143 insns, 387/389 bytes code)
+1132:0002    80  reg(saves)   C=1   asm=0   far
+1132:0052    26  reg(saves)   C=1   asm=0   far
+1132:006C   281  reg          C=0   asm=0   isr
+
+## 114A  (686 insns, 1761/1767 bytes code)
+114A:0006   106  bp-frame     C=19  asm=0   far
+114A:0070   223  bp-frame     C=6   asm=0   call,far
+114A:014F   140  bp-frame     C=3   asm=0   far
+114A:01DB   165  bp-frame     C=4   asm=0   far
+114A:0280    78  bp-frame     C=8   asm=0   far
+114A:02CE    49  bp-frame     C=3   asm=0   far
+114A:02FF    61  bp-frame     C=4   asm=0   far
+114A:033C   113  bp-frame     C=4   asm=0   far
+114A:03AD    80  bp-frame     C=4   asm=0   far
+114A:03FD   100  bp-frame     C=11  asm=0   far
+114A:0461    83  bp-frame     C=2   asm=0   far
+114A:04B4   563  bp-frame     C=1   asm=0   far
+
+## 11B8  (258 insns, 511/521 bytes code)
+11B8:0008    94  bp-frame     C=1   asm=0   far
+11B8:0066    94  bp-frame     C=0   asm=0   sweep
+11B8:00C4    40  bp-frame     C=1   asm=0   far
+11B8:00EC    50  bp-frame     C=0   asm=0   sweep
+11B8:011E    53  bp-frame     C=0   asm=0   sweep
+11B8:0153    30  reg(saves)   C=0   asm=3   far
+11B8:0174    33  bp-frame     C=0   asm=0   sweep
+11B8:0195    46  bp-frame     C=0   asm=0   sweep
+
+## 11D8  (121 insns, 341/342 bytes code)
+11D8:0000     9  reg          C=0   asm=0   exit
+11D8:000A   117  bp-frame     C=1   asm=0   far
+11D8:007F   107  bp-frame     C=0   asm=0   sweep
+11D8:00EA   107  bp-frame     C=0   asm=0   sweep
+11D8:0155     1  reg          C=0   asm=0   call
+
+## 11ED  (176 insns, 462/471 bytes code)
+11ED:0006    42  reg(saves)   C=0   asm=3   far
+11ED:0030    72  reg          C=0   asm=0   call
+11ED:0078    54  reg          C=0   asm=0   call
+11ED:00AE    43  reg          C=0   asm=0   call
+11ED:0127   176  reg          C=0   asm=0   call
+
+## 120A  (1627 insns, 4054/4157 bytes code)
+120A:0008   145  bp-frame     C=1   asm=0   far
+120A:00CF   152  bp-frame     C=7   asm=0   far
+120A:01B4   139  bp-frame     C=1   asm=0   far
+120A:027D    33  reg(saves)   C=0   asm=0   call
+120A:029E    20  reg(saves)   C=0   asm=0   call
+120A:02B2   101  reg          C=0   asm=0   call
+120A:0317    61  reg          C=0   asm=0   call
+120A:043C   141  reg          C=0   asm=0   call
+120A:04C9    44  reg(saves)   C=0   asm=0   call
+120A:04F5    74  reg(saves)   C=0   asm=0   call
+120A:0561   196  reg          C=0   asm=0   call
+120A:0654    32  reg          C=0   asm=0   call
+120A:0674    65  reg(saves)   C=0   asm=0   call
+120A:06B5   116  reg          C=0   asm=0   call
+120A:0815   237  reg(saves)   C=0   asm=0   call
+120A:0902   111  reg          C=0   asm=0   call
+120A:0971    27  bp-frame     C=0   asm=0   isr
+120A:098C   128  bp-frame     C=0   asm=2   far
+120A:0A33   264  reg          C=0   asm=0   call
+120A:0B3B   315  reg          C=0   asm=0   call
+120A:0C76    50  reg          C=0   asm=0   call
+120A:0CA8    65  reg          C=0   asm=0   call
+120A:0CE9   194  reg          C=0   asm=0   call
+120A:0E5B    59  reg          C=0   asm=0   call
+120A:0EEE   169  bp-frame     C=0   asm=0   sweep
+120A:0F97   166  reg(saves)   C=1   asm=0   far
+
+## 130D  (661 insns, 1624/1708 bytes code)
+130D:004A    56  reg          C=0   asm=3   far
+130D:00B6    27  reg          C=0   asm=0   call
+130D:00D1    27  reg          C=0   asm=0   call
+130D:00EC    42  reg          C=0   asm=0   call
+130D:0116   123  bp-frame     C=0   asm=2   far
+130D:0191    22  reg          C=0   asm=0   call
+130D:01A7    22  reg          C=0   asm=0   call
+130D:01BD    72  bp-frame     C=0   asm=0   sweep
+130D:0205    15  reg          C=0   asm=1   far
+130D:0214     3  jump/call stub C=0   asm=0   jmp
+130D:0217    90  reg(saves)   C=0   asm=0   call
+130D:0271   108  reg          C=0   asm=0   call
+130D:02DD    97  reg          C=0   asm=0   call
+130D:033F   401  reg          C=0   asm=6   far
+130D:04FB   111  reg          C=0   asm=0   call
+130D:0577   110  reg          C=0   asm=0   call
+130D:05E5    17  reg          C=0   asm=0   call
+130D:064A    39  reg          C=0   asm=0   call
+130D:0671    59  reg          C=0   asm=0   call
+
+## 1377  (1350 insns, 3326/3510 bytes code)
+1377:000C    55  bp-frame     C=1   asm=0   far
+1377:004C     9  reg          C=0   asm=4   far
+1377:0055     9  reg          C=0   asm=3   far
+1377:005E     9  reg          C=0   asm=1   far
+1377:00F3    35  reg          C=0   asm=0   call,vtab
+1377:0116    28  reg          C=0   asm=0   call,vtab
+1377:0132    35  reg          C=0   asm=0   call,vtab
+1377:0155    43  reg          C=0   asm=0   call,vtab
+1377:01BD    35  reg          C=0   asm=0   call,vtab
+1377:01E0    36  reg          C=0   asm=0   vtab
+1377:0204    37  reg          C=0   asm=0   call,vtab
+1377:0229    29  reg          C=0   asm=0   call,vtab
+1377:0246    65  bp-frame     C=0   asm=0   vtab
+1377:0287    61  bp-frame     C=0   asm=0   vtab
+1377:02C4    77  bp-frame     C=0   asm=0   vtab
+1377:0311    69  bp-frame     C=0   asm=0   vtab
+1377:0356    37  reg          C=0   asm=0   call
+1377:037B   244  reg(saves)   C=0   asm=0   vtab
+1377:046F    94  reg(saves)   C=0   asm=0   vtab
+1377:0517   129  reg(saves)   C=0   asm=0   vtab
+1377:0619   137  reg(saves)   C=0   asm=0   vtab
+1377:072B    88  reg(saves)   C=0   asm=1   far
+1377:07E8    94  bp-frame     C=0   asm=2   far
+1377:0846    63  reg          C=0   asm=0   vtab
+1377:0886    21  reg          C=0   asm=0   call,vtab
+1377:0B09    17  reg          C=0   asm=0   vtab
+1377:0BC5    14  reg          C=0   asm=0   vtab
+1377:0CB3    14  reg          C=0   asm=0   vtab
+
+## 1452  (781 insns, 1785/1792 bytes code)
+1452:0006    45  bp-frame     C=0   asm=6   far
+1452:0033    48  bp-frame     C=0   asm=6   far
+1452:0063   120  bp-frame     C=0   asm=3   far
+1452:00DB    65  bp-frame     C=0   asm=0   sweep
+1452:011C    68  bp-frame     C=0   asm=0   sweep
+1452:0160    48  bp-frame     C=0   asm=1   far
+1452:0190    82  bp-frame     C=0   asm=2   far
+1452:01E2    57  bp-frame     C=0   asm=0   sweep
+1452:021B   109  bp-frame     C=0   asm=4   far
+1452:0288    36  bp-frame     C=0   asm=1   far
+1452:02AC    56  reg          C=0   asm=0   call
+1452:02E4    50  bp-frame     C=0   asm=2   far
+1452:0316    26  bp-frame     C=0   asm=1   far
+1452:0330   123  bp-frame     C=0   asm=4   far
+1452:03AB   302  bp-frame     C=5   asm=1   far
+1452:04D9   107  bp-frame     C=0   asm=0   sweep
+1452:0544    18  bp-frame     C=0   asm=0   sweep
+1452:0556    59  bp-frame     C=0   asm=0   sweep
+1452:0591    55  bp-frame     C=0   asm=0   sweep
+1452:05C8    11  bp-frame     C=0   asm=0   sweep
+1452:05D3   300  bp-frame     C=0   asm=0   sweep
+
+## 14C2  (126 insns, 217/224 bytes code)
+14C2:0000    40  bp-frame     C=2   asm=5   far
+14C2:00B7    36  bp-frame     C=0   asm=1   far

@@ -16,10 +16,12 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - re/docs/01-architecture.md: executables, loader protocol, overlay drivers, data files
 - re/docs/02-build-plan.md: the phased build plan with task cards
 - re/docs/vgame-map.md: flight sim map (main loop, 213 functions, globals, tables, key mapping)
+- re/docs/vgame-asm.md: calling conventions of the VGAME asm modules + decoded code islands; re/docs/rand.md: rand()/srand()
+- re/disasm/vgame-asm/*.asm + index.txt: per-module capstone listings of segments 0FAE..14C2 (re/tools/vgame_asm.py; committed)
 - re/docs/start-map.md, end-map.md, setup-dswap-map.md: front end / debrief maps, shared block layout, roster, scoring
 - re/docs/mgraphic-api.md: 84-entry graphics driver API + fonts; sound.md: OPL2 driver, 46 sound IDs, speech
 - re/docs/format-pic.md, format-pan.md, format-ss.md, format-3d.md: data formats (all verified by decoders)
-- re/tools/: unlzexe.py, disasm.py, strings.py, pic.py, pan.py, ss.py, world.py, sound.py, mgraphic_*.py
+- re/tools/: unlzexe.py, disasm.py, vgame_asm.py, strings.py, pic.py, pan.py, ss.py, world.py, sound.py, mgraphic_*.py
 - re/decomp/: pseudo-C per function, written before porting (empty so far)
 - re/docs/HANDOVER.md: prompt for the next chat
 - Dropbox only (not committed): re/unpacked, re/disasm (listings), re/out (decoded assets), reference/ (game files)
@@ -33,14 +35,15 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - re/tools read the game files from Dropbox by default; override with env F117_REF (game dir) and F117_RE (re/ dir)
 
 ## Current state
-RE phase 1 complete. Tasks 0.1 (repo) and 0.2 (asset export) done 2026-10-21: assets/ holds 83 files, 3.3 MB, all under
-2 MB each; 3 tests pass (bundle, assets manifest). No port code yet beyond the canvas placeholder.
+Phase 0 complete (2026-10-21): 0.1 repo, 0.2 asset export (83 files, 3.3 MB; 3 tests pass), 0.3 RE gap-fill: rand.md
+(MS C LCG verified in START/VGAME/END, seeded once from the BIOS tick), vgame-asm.md + re/disasm/vgame-asm (all 15 asm
+segments, 97-100 % coverage, register conventions), four code islands decoded. No port code yet beyond the canvas placeholder.
 Not yet done: slug `f117-REA` is in watcher2.py but the clone on the test machines may be stale/absent; tests not yet run via HEARTBEAT.
 
 ## Next up
-1. Task 0.3 RE gap-fill (Opus): rand()/srand() constants + seed source, VGAME asm modules re-disassembled, code islands.
-2. Phase 1 platform layer (1.1 framebuffer/palette/scaler, 1.2 MGRAPHIC primitives, ...).
-3. Decide PIC loading in JS: read indexed PNG (needs inflate) vs. shipping raw .PIC + JS LZW decoder (format-pic.md).
+1. Task 1.1 (Sonnet): framebuffer/palette/scaler platform layer; decide PIC loading (indexed PNG + inflate vs raw .PIC + JS LZW, see vgame-asm.md 11ED).
+2. 1.2 MGRAPHIC primitives (Opus), 1.3, 1.4 (Opus), 1.5, then Phase 2 front end.
+3. Run the tests once through HEARTBEAT to confirm the test-machine clone.
 
 ## Tests
 `py -3 tools/run_tests.py` — bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
@@ -51,3 +54,4 @@ Not yet done: slug `f117-REA` is in watcher2.py but the clone on the test machin
 - 2026-10-21: 3D data (WLD/3DX/3DG/3DT) shipped as parsed JSON per region, not decoded at runtime.
 - 2026-10-21: AdLib (OPL2) is the reference sound; IBM speaker / Roland not planned.
 - 2026-10-21: Accepted: slug f117-rea, own framebuffer, port an existing OPL2 emulator (dbopl-style) in JS.
+- 2026-10-21: VGAME asm listings are committed (re/disasm/vgame-asm, 350 KB); regenerate with the command in vgame-asm.md.
