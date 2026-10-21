@@ -50,7 +50,8 @@ allowlist key must be `f117-rea`; fixed in Dropbox watcher2.py 2026-10-21, **raz
 ## Next up
 1. Restart watcher2.py on razer, drop request.txt `f117-rea`, confirm PASS (this also proves the razer clone).
 2. 1.2 MGRAPHIC primitives (Opus, src/platform/gfx.js), 1.3 (drop native PIC decoder, see Decisions), 1.4 (Opus), 1.5, Phase 2.
-3. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
+3. Open: ds:263F vsync-measure path in resync 1D01 (measures the real retrace period; the port uses a fixed 70 Hz).
+4. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
 
 ## Tests
 `py -3 tools/run_tests.py` — bundle + tests/*.test.js. Expected run time: under 1 min. Needs Node.
@@ -63,6 +64,7 @@ allowlist key must be `f117-rea`; fixed in Dropbox watcher2.py 2026-10-21, **raz
 - 2026-10-21: Accepted: slug f117-rea, own framebuffer, port an existing OPL2 emulator (dbopl-style) in JS.
 - 2026-10-21: PICs load as the indexed PNGs in assets/pic (own chunk parser; inflate = DecompressionStream in browsers, zlib in Node
   tests). No raw .PIC / JS LZW port needed, so card 1.3's PIC decoder is dropped (PAN/SS decoders stay). Palettes come from palettes.json.
-- 2026-10-21: Ticker skips sound phase 6 of 7 (SOUND_SKIP_PHASE in timer.js); the original phase (VGAME 0000:1E8A..1E9D) is unread (?).
+- 2026-10-21: timer.js verified against VGAME 0000:1E79..1EAE, ISR 1C9B, 1C6D/1C85: sound runs on ticks 1-6 of each 7, the 7th is skipped;
+  noise mode = 1 noise call after the entry tick, then 3 before + 1 after each tick; none after the exit tick (offsets passed in ms).
 - 2026-10-21: request.txt names are lowercased by watcher2.py: the slug is `f117-rea` (earlier note saying `f117-REA` was wrong).
 - 2026-10-21: VGAME asm listings are committed (re/disasm/vgame-asm, 350 KB); regenerate with the command in vgame-asm.md.

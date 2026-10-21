@@ -64,11 +64,17 @@ const sha1 = (b) => crypto.createHash('sha1').update(b).digest('hex');
   check(frames <= 5, 'catch-up cap, ran ' + frames);
   t.pause(); frames = 0; t.advance(200000); check(frames === 0, 'no ticks while paused');
   t.resume(300000); t.advance(300000 + 1000 / 70 + 0.001); check(frames === 1, 'resume without burst: ' + frames);
-  let noise = 0;
-  t = T.createTicker({ frame() {}, sound: () => 1, noise: () => noise++ });
-  t.advance(0); t.advance(1000 / 70 + 0.001);   // sound() returns +1 -> fast mode on
-  t.advance(2 * 1000 / 70 + 0.002);
-  check(t.fast && noise === 4, 'noise mode runs 4 IRQs per game tick, got ' + noise);
+  // Sound skip: ticks 1..6 call snd_tick, the 7th does not (VGAME 0000:1E8A..1E9D).
+  const calls = []; let n7 = 0;
+  t = T.createTicker({ frame: () => n7++, sound: () => { calls.push(n7); return 0; } });
+  t.advance(0); for (let i = 1; i <= 14; i++) t.advance(i * 1000 / 70 + 0.001);
+  check(calls.join() === '1,2,3,4,5,6,8,9,10,11,12,13', 'sound ticks skip every 7th: ' + calls);
+  // Noise mode: snd_tick -> +1 on tick 1, -1 on tick 6. Entry tick and the next get 1 noise call after the frame tick,
+  // then 3 before + 1 after each tick; the exit tick gets none.
+  const log = []; let tick = 0, ret = { 1: 1, 6: -1 };
+  t = T.createTicker({ frame: () => { tick++; log.push('F'); }, sound: () => ret[tick] || 0, noise: () => log.push('n') });
+  t.advance(0); for (let i = 1; i <= 7; i++) t.advance(i * 1000 / 70 + 0.001);
+  check(log.join('') === 'Fn' + 'Fn' + 'nnnFn' + 'nnnFn' + 'nnnFn' + 'nnnF' + 'F', 'noise sequence ' + log.join(''));
 
   if (!fail) console.log('platform ok (' + n + ' PICs)');
   process.exit(fail ? 1 : 0);
