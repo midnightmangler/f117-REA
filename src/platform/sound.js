@@ -47,27 +47,44 @@
       '}\nregisterProcessor("opl2", Opl2Proc);\n';
   }
 
+  // Embedded iOS web views may lack AudioWorklet, refuse blob: modules or never settle addModule: fall back to
+  // a ScriptProcessor after an error or 1 s.
+  var path = 'none', lastError = '';
   function startAudio() {
     var AC = root.AudioContext || root.webkitAudioContext;
-    if (!AC || ctx) return Promise.resolve();
-    ctx = new AC();
+    if (!AC) { path = 'no WebAudio'; return Promise.resolve(); }
+    if (ctx) return Promise.resolve();
+    try { ctx = new AC(); } catch (e) { path = 'no context'; lastError = String(e); return Promise.resolve(); }
     var opl = root.F117.opl2;
-    if (ctx.audioWorklet && root.Blob && root.URL) {
-      var url = URL.createObjectURL(new Blob([workletSource(opl)], { type: 'application/javascript' }));
-      return ctx.audioWorklet.addModule(url).then(function () {
-        node = new AudioWorkletNode(ctx, 'opl2', { numberOfInputs: 0, outputChannelCount: [1] });
-        node.connect(ctx.destination);
-      }, function () { fallback(opl); });
+    if (ctx.audioWorklet && root.Blob && root.URL && root.AudioWorkletNode) {
+      path = 'worklet loading';
+      return new Promise(function (done) {
+        var settled = false;
+        function fb(e) { if (settled) return; settled = true; if (e) lastError = String(e); fallback(opl); done(); }
+        setTimeout(function () { fb('worklet timeout'); }, 1000);
+        try {
+          var url = URL.createObjectURL(new Blob([workletSource(opl)], { type: 'application/javascript' }));
+          ctx.audioWorklet.addModule(url).then(function () {
+            if (settled) return;
+            try {
+              node = new AudioWorkletNode(ctx, 'opl2', { numberOfInputs: 0, outputChannelCount: [1] });
+              node.connect(ctx.destination);
+              settled = true; path = 'worklet'; done();
+            } catch (e) { fb(e); }
+          }, fb);
+        } catch (e) { fb(e); }
+      });
     }
     fallback(opl);
     return Promise.resolve();
   }
   function fallback(opl) {
+    path = 'script';
     renderer = opl.createRenderer(ctx.sampleRate, opl.createOpl2);
     sp = ctx.createScriptProcessor(2048, 0, 1);
     sp.onaudioprocess = function (e) {
       var o = e.outputBuffer.getChannelData(0);
-      renderer.render(o, o.length, e.playbackTime !== undefined ? e.playbackTime : ctx.currentTime);
+      renderer.render(o, o.length, e.playbackTime > 0 ? e.playbackTime : ctx.currentTime);
     };
     sp.connect(ctx.destination);
   }
@@ -102,7 +119,20 @@
         flush();
       });
     }
-    if (ctx && ctx.state === 'suspended') ctx.resume();
+    if (!ctx) return;
+    if (ctx.state !== 'running' && ctx.resume) ctx.resume();
+    try {                                      // classic iOS unlock: start a 1-sample silent buffer inside the gesture
+      var b = ctx.createBufferSource();
+      b.buffer = ctx.createBuffer(1, 1, 22050);
+      b.connect(ctx.destination);
+      b.start(0);
+    } catch (e) { lastError = String(e); }
+  }
+
+  // One line for an on-screen diagnostic: audio path, context state, driver ready, last error.
+  function status() {
+    return 'audio: ' + path + ' / ' + (ctx ? ctx.state : 'no ctx') + (ready ? ' / drv ok' : ' / drv not loaded') +
+      (lastError ? ' / ' + lastError : '');
   }
 
   function play(id, a2) {
@@ -141,7 +171,7 @@
   }
 
   var api = {
-    init: init, unlock: unlock, play: play, sfx: sfx, hooks: hooks, state: state,
+    init: init, unlock: unlock, play: play, sfx: sfx, hooks: hooks, state: state, status: status,
     get speechSec() { return drv && drv.lastSpeech ? drv.lastSpeech.sec : 0; },   // AdLib speech blocks the game
     get driver() { return drv; },
     get context() { return ctx; }, get output() { return node || sp; },

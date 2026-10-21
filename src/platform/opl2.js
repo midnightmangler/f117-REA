@@ -222,11 +222,12 @@
       pos++;
       prev = cur; cur = opl.sample();
     }
-    // Fill out (Float32Array) starting at renderer time t0 (seconds); the first call sets the clock.
+    // Fill out (Float32Array) starting at renderer time t0 (seconds); the clock follows t0 when it is off by > 50 ms
+    // (first call, or a ScriptProcessor whose early playbackTime values are wrong).
     // The card's output is AC-coupled: a one-pole DC blocker (~5 Hz) removes the speech DC level.
     var dcX = 0, dcY = 0, dcR = 1 - 2 * Math.PI * 5 / outRate;
     function render(out, n, t0) {
-      if (pos === 0 && t0 !== undefined) { pos = Math.floor(t0 * RATE); nextOk = pos; }
+      if (t0 !== undefined && Math.abs(pos - t0 * RATE) > 0.05 * RATE) { pos = Math.floor(t0 * RATE); nextOk = pos; }
       for (var i = 0; i < n; i++) {
         frac += step;
         while (frac >= 1) { frac -= 1; oplStep(); }

@@ -37,13 +37,27 @@
     var wavs = {};
     keys.forEach(function (k, i) { wavs[k] = r[i + 1]; });
     F.sound.init(r[0], wavs);
-  }).catch(function (e) { console.warn('sound assets', e); });
-  var demoIds = [39, 36, 37, 38, 5, 4, 15, 41, 43, 44, 45, 7, 9, 32], demoNext = 0;
-  document.addEventListener('pointerdown', function () {
+  }).catch(function (e) { assetError = String(e); });
+  var demoIds = [39, 36, 37, 38, 5, 4, 15, 41, 43, 44, 45, 7, 9, 32], demoNext = 0, lastTouch = 0, assetError = '';
+  // WebKit only starts audio from touchend/click (not pointerdown); the click after a touch is ignored.
+  function tap(e) {
+    if (e.type === 'touchend') lastTouch = Date.now();
+    else if (Date.now() - lastTouch < 800) return;
     F.sound.unlock();
     F.sound.play(0);
     F.sound.play(demoIds[demoNext++ % demoIds.length]);
-  });
+  }
+  document.addEventListener('touchend', tap);
+  document.addEventListener('click', tap);
+
+  // Demo diagnostic line (bottom left): audio path / context state / driver / errors, and the id last played.
+  var info = document.createElement('div');
+  info.style.cssText = 'position:fixed;left:4px;bottom:4px;color:#8f8;font:12px monospace;z-index:9;pointer-events:none';
+  document.body.appendChild(info);
+  setInterval(function () {
+    info.textContent = F.sound.status() + (assetError ? ' / assets: ' + assetError : '') +
+      ' / tap ' + demoNext + (demoNext ? ' (id ' + demoIds[(demoNext - 1) % demoIds.length] + ')' : '');
+  }, 500);
 
   // First user gesture: go fullscreen / lock landscape where the browser allows it.
   document.addEventListener('pointerdown', function once() {
