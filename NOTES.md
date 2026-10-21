@@ -9,6 +9,8 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
 - src/platform/input.js (task 1.5): key buffer + keypad virtual stick + buttons
+- src/flow.js (F117.COM loop over async "programs"), src/block.js (shared block, named fields), src/roster.js (ROSTER.FIL in
+  localStorage + START 6D07 sync + pilot record fields) (task 2.1; decomp re/decomp/flow/flow.md); assets/roster/ROSTER.FIL = default seed
 - src/platform/opl2.js, music.js, sound.js (task 1.4): OPL2 emulator, ASOUND driver port, WebAudio front end (F117.sound)
 - tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files â†’ assets/ + tests/golden/
 - assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
@@ -63,10 +65,18 @@ frameKey() (1EB0:1F08 drain: first key, rest discarded), keyReady/getKey (misc d
 (virtual or joystick bytes), setStick, button(n)/setPseudoButton/setJoyButton. wordOf(ev) maps DOM keys to INT 16h words (NumLock
 forced off: keypad = 4800-style unless Shift). Bytes only: Up arrow = Y low (0x26); pitch sign is decided by the 1EB0:2189 port.
 tests/input.test.js (21). Not yet used by main.js; no touch overlay yet.
+Task 2.1 done (2026-10-21): runFlow(programs, block, {maxLoops}) = F117.COM 0000:0100..03C9 verified in the listing (SETUP must exit 0x24;
+LOGO exit 2 quits, exit 0 plays the intro; START exit 0 quits, 0x0C plays PLAYER " title-2", 0x0D goes straight to VGAME; VGAME exit 0 quits;
+END exit 0x23 loops WITHOUT replaying the intro, anything else quits; logo arg = upper-cased first letter of block sound driver name;
+DSWAP optional, default "disk present"). bios = {firstEntry (0:04F2)=1, soundInit (0:04F4)=0}; START's roster screen clears firstEntry.
+Block: 5120 bytes, FIELDS table = start-map 1.3, pilot view at +0x1272, world view +0x7A. Roster: 802-byte file as base64 in localStorage
+'f117-rea.ROSTER.FIL', missing -> seed = shipped file; sync() = START 6D07 incl. quirks (record 0 plane &= 1 every loop; plane!=0 bumps type
+0/2 -> 1/3; clearance 0 -> theatre 0 + training bit); save header low byte = PR.slot. The START port (2.4+) calls roster.sync(block, bios).
+tests/flow.test.js (16). WARNING: tools/export_assets.py deletes tests/golden/pic/pic_sha1.json (not regenerated): `git checkout` it after a run.
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. Phase 2 (2.1 flow, Opus); 1.5 input is done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
+1. Phase 2: 2.2 intro (Sonnet), 2.3 setup, then START screens 2.4+ (Opus). 1.5 and 2.1 are done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
    needs touchend/click unlock; may run the ScriptProcessor fallback).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
 3. Done 2026-10-21: assets inline. bundle.py puts every assets/ file as base64 in window.F117_ASSETS (build 4.5 MB);

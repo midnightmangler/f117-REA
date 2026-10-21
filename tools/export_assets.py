@@ -323,6 +323,13 @@ def export_fonts():
     return len(fonts)
 
 
+# ---------------------------------------------------------------- roster seed
+def export_roster():
+    d = ASSETS / "roster"; d.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(ref("ROSTER.FIL"), d / "ROSTER.FIL")   # default content when nothing is saved yet (src/roster.js)
+    return 1
+
+
 # ---------------------------------------------------------------- golden copies
 def export_golden():
     for sub in ("world", "mgraphic"):
@@ -366,6 +373,7 @@ def main():
     print(f"pan: {export_pan()}")
     print(f"ss frames: {export_ss()}")
     nid, nsp = export_sound();       print(f"sound ids: {nid}, speech: {nsp}")
+    print(f"roster seed: {export_roster()}")
     export_golden()
     n, total = manifest(pics)
     print(f"manifest: {n} files, {total // 1024} KB")
