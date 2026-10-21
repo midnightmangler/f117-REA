@@ -7,7 +7,7 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 
 ## File map
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
-- src/platform/: png.js, fb.js, timer.js (task 1.1; window.F117.{png,fb,timer}, also module.exports for Node tests)
+- src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
 - tools/run_tests.py: git pull, bundle, tests/*.test.js (Node). tools/export_assets.py: game files â†’ assets/ + tests/golden/
 - assets/: pic/*.png (52, indexed), palettes.json (21), fonts.json (7), world/*.json (9 regions + PHOTO, STFLT),
   pan/*.PAN + pan.json (raw, decode at runtime), ss/LABSLOGO.SS + labslogo.json, sound/ASOUND.117 + asound.json,
@@ -23,7 +23,7 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - re/docs/mgraphic-api.md: 84-entry graphics driver API + fonts; sound.md: OPL2 driver, 46 sound IDs, speech
 - re/docs/format-pic.md, format-pan.md, format-ss.md, format-3d.md: data formats (all verified by decoders)
 - re/tools/: unlzexe.py, disasm.py, vgame_asm.py, strings.py, pic.py, pan.py, ss.py, world.py, sound.py, mgraphic_*.py
-- re/decomp/: pseudo-C per function, written before porting (empty so far)
+- re/decomp/mgraphic/gfx-notes.md: quirks of the MGRAPHIC code found while porting (text clip, sprite DDA, spans)
 - re/docs/HANDOVER.md: prompt for the next chat
 - Dropbox only (not committed): re/unpacked, re/disasm (listings), re/out (decoded assets), reference/ (game files)
 
@@ -43,10 +43,11 @@ Task 1.1 done (2026-10-21): src/platform/png.js (indexed-PNG reader), fb.js (5 p
 integer scaler in device px, fullscreen/landscape), timer.js (70 Hz frame tick, 60 Hz sound tick 6-of-7, 280 Hz noise mode,
 pause when hidden); src/main.js demo draws ADV.png (needs assets/ served next to the page); tests/platform.test.js (all 52 PIC
 PNGs equal pic.py output via tests/golden/pic/pic_sha1.json). 4 tests pass locally; demo checked in the browser pane.
+Task 1.2 done (2026-10-21): src/platform/gfx*.js = every MGRAPHIC entry with a call site (pages/draw seg/origin, text #1-10 with clip rules, char_width, sprite grab/draw with scale+mirror+clip, line, spans incl. shade, blits, recolor, present, flicker/shake, tick tape, dissolve, blank); tests/gfx.test.js (glyphs of all 7 fonts vs golden, clip = masked picture, spans, lines, sprites). 5 tests pass locally; no pixel golden from the original (no DOSBox), derived from the listing. API: gfx.textDraw/textDrawClip/..(vp,str), spriteDraw(vp,x,y,w,h,data,off), fillSpans(ytop,ybot,left[],right[],mode), blit(...), blitTranspClip(bs).
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed).
 
 ## Next up
-1. 1.2 MGRAPHIC primitives (Opus, src/platform/gfx.js), 1.3 (drop native PIC decoder, see Decisions), 1.4 (Opus), 1.5, Phase 2.
+1. 1.3 decoders (PAN/SS/world in JS; PIC decoder dropped, see Decisions), 1.4 sound (Opus), 1.5 input, Phase 2.
 2. Open: ds:263F vsync-measure path in resync 1D01 (measures the real retrace period; the port uses a fixed 70 Hz).
 3. Open: how the single-file build gets assets/ onto the iPad (bundle.py copies only the HTML to Dropbox builds/).
 
@@ -65,5 +66,6 @@ HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher 
   noise mode = 1 noise call after the entry tick, then 3 before + 1 after each tick; none after the exit tick (offsets passed in ms).
 - 2026-10-21: request.txt names are lowercased by watcher2.py: the slug is `f117-rea` (earlier note saying `f117-REA` was wrong).
 - 2026-10-21: VGAME asm listings are committed (re/disasm/vgame-asm, 350 KB); regenerate with the command in vgame-asm.md.
+
 
 

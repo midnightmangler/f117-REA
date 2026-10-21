@@ -40,6 +40,7 @@
       },
       // Convert page 0 through the DAC LUT into a Uint32Array(64000) (the ImageData pixel buffer).
       toRGBA: function (out32, page) {
+        if (fb.blank) { out32.fill(pack(0, 0, 0)); return; }    // MGRAPHIC #69 screen_off (SR1 bit 5)
         var src = pages[page || 0];
         for (var p = 0; p < PAGE_BYTES; p++) out32[p] = lut[src[p]];
       },

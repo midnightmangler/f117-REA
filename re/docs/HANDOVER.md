@@ -1,26 +1,21 @@
-# Handover prompt — next chat
+﻿# Handover prompt - next chat
 
-Paste this as the first message of the next session (after the hobby-game-studio skill). Use **Opus** (task 1.2 reads
-MGRAPHIC assembly).
+Paste this as the first message of the next session (after the hobby-game-studio skill). Sonnet is enough for 1.3.
 
 ---
 Project F117-REA: faithful HTML5/iPad port of F-117A Nighthawk Stealth Fighter 2.0 (DOS, 1991).
 Repo clone: `C:\Users\pauli\Games\f117-REA` (GitHub midnightmangler/f117-REA; git = GitHub Desktop's bundled git.exe, see NOTES).
-Read `NOTES.md` in the clone, then `re/docs/02-build-plan.md` §0 rules and task card 1.2, then `re/docs/mgraphic-api.md`
-and `re/docs/vgame-asm.md` §3 (register protocols of the thunks). MGRAPHIC code: `re/out/mgraphic/MGRAPHIC_code.asm`.
+Read `NOTES.md` in the clone, then `re/docs/02-build-plan.md` section 0 rules and task card 1.3, then `re/docs/format-pan.md`, `format-ss.md`.
 
-Status: Phase 0 and task 1.1 done and committed. 4 tests pass. Platform layer so far (`src/platform/`): `png.js` (indexed PNG
-reader), `fb.js` (`createFramebuffer()`: `pages[0..4]` Uint8Array(64000), 6-bit `dac`, `lut`, `setDacEntry`, `setPalette`,
-`presentWords(n)` = MGRAPHIC #44, `copyPage`; `computeLayout`, `createDisplay`), `timer.js` (`createTicker`: 70 Hz frame, 60 Hz sound,
-pause when hidden). gfx.js must draw into `fb.pages[...]` and use `fb.setDacEntry/setPalette` for DAC calls.
+Status: Phase 0, tasks 1.1 and 1.2 done and committed. 5 tests pass. Platform layer (`src/platform/`): png.js, fb.js, timer.js,
+gfx.js (+ gfx-text.js, gfx-sprite.js = whole MGRAPHIC API; `createGfx(fb, fonts)`, see re/decomp/mgraphic/gfx-notes.md).
 
-Task for this chat: **1.2 MGRAPHIC API port** as `src/platform/gfx.js` (card 1.2: every entry with at least one call site,
-pixel-exact; tests for span fill and text metrics against the font goldens in `tests/golden/mgraphic/fonts.json`).
-Decompile first (`re/decomp/mgraphic/*.md`), then port, JS carries the original address in a comment. Keep files under ~600 lines
-(split gfx-text.js / gfx-blit.js if needed), tests in `tests/*.test.js`, run `py -3 tools/run_tests.py`.
-Finish by updating NOTES.md (Current state / Next up), rewriting this HANDOVER.md for task 1.3, committing and pushing.
-Keep replies short.
+Task for this chat: **1.3 decoders in JS** - `src/platform/pan.js` (PAN: LZ tokens + RunSkipDump cels + palette header) and `ss.js`;
+world data is already shipped as JSON (NOTES Decisions) so `world.js` is only a loader; the PIC decoder is dropped (PNGs).
+Golden tests: tests/golden/pan, tests/golden/ss (Python decoder outputs). Keep files under ~600 lines, tests in `tests/*.test.js`,
+run `py -3 tools/run_tests.py`. Decompile first (re/tools/pan.py, ss.py are the reference), JS carries the original address in a comment.
+Finish by updating NOTES.md (Current state / Next up), rewriting this HANDOVER.md for task 1.4 (Opus), committing and pushing. Keep replies short.
 ---
 
-Task cards after that, in order: 1.3 (PIC decoder dropped, see NOTES Decisions) → 1.4 (Opus) → 1.5 → 2.1 (Opus) → 2.2 … as in
-02-build-plan.md. Open items: razer watcher restart + HEARTBEAT run `f117-rea` (NOTES Next up 1), asset delivery to the iPad build.
+Task cards after that: 1.4 (Opus) -> 1.5 -> 2.1 (Opus) -> 2.2 ... as in 02-build-plan.md. Open items: asset delivery to the iPad build,
+ds:263F vsync-measure path (NOTES Next up 2-3), 14900ks HEARTBEAT untested.
