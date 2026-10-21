@@ -9,6 +9,8 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
 - src/platform/input.js (task 1.5): key buffer + keypad virtual stick + buttons
+- src/frontend/intro.js (task 2.2): createLogoRun / createPanRun steppers + createIntroPrograms(host) = flow programs `logo`, `player`
+  (decomp re/decomp/player/player-timing.md)
 - src/flow.js (F117.COM loop over async "programs"), src/block.js (shared block, named fields), src/roster.js (ROSTER.FIL in
   localStorage + START 6D07 sync + pilot record fields) (task 2.1; decomp re/decomp/flow/flow.md); assets/roster/ROSTER.FIL = default seed
 - src/platform/opl2.js, music.js, sound.js (task 1.4): OPL2 emulator, ASOUND driver port, WebAudio front end (F117.sound)
@@ -73,10 +75,18 @@ Block: 5120 bytes, FIELDS table = start-map 1.3, pilot view at +0x1272, world vi
 'f117-rea.ROSTER.FIL', missing -> seed = shipped file; sync() = START 6D07 incl. quirks (record 0 plane &= 1 every loop; plane!=0 bumps type
 0/2 -> 1/3; clearance 0 -> theatre 0 + training bit); save header low byte = PR.slot. The START port (2.4+) calls roster.sync(block, bios).
 tests/flow.test.js (16). WARNING: tools/export_assets.py deletes tests/golden/pic/pic_sha1.json (not regenerated): `git checkout` it after a run.
+Task 2.2 done (2026-10-21): logo = SS sprites at BIOS ticks 18.2065 Hz (t += delay, draw when reached, accumulate; 146 ticks; key/tap draws the
+rest at once; result none 0 / Esc 1 / Alt-Q 2 / other 3, so a key SKIPS the PAN intro and Alt-Q quits). Player = 60 Hz tick callback 0738 verified
+on the unpacked image: cel 0 on tick 1, then the FADE (300 ticks = 5 s, whole palette per tick, step k scale 219k, step 1 black) FREEZES the
+animation, then 3 ticks per cel (6 for TITLE-2); last cel drawn = done (no hold); VRAM shared across files; later files set the DAC directly;
+every launch (also " title-2") fades. The fade step width is hardware-measured in the original (ds:13D2); JS fixes 0x100 (?). Missing "-.PAN" skipped.
+Key quits with the key code, tap 0x1B. OPEN: nobody in PLAYER starts the intro music (snd_play(3) only in poll under a guard, (2) in finish waits for
+it) - find the starter (timer module 026B?) before wiring music; Opus job if it needs the listing. Host contract for intro.js: {fb, present, assets,
+now, raf, pollKey, tapped}; not yet wired into main.js. tests/intro.test.js (9).
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. Phase 2: 2.2 intro (Sonnet), 2.3 setup, then START screens 2.4+ (Opus). 1.5 and 2.1 are done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
+1. Phase 2: 2.3 setup (Sonnet), then START screens 2.4+ (Opus). 1.5, 2.1 and 2.2 are done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
    needs touchend/click unlock; may run the ScriptProcessor fallback).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
 3. Done 2026-10-21: assets inline. bundle.py puts every assets/ file as base64 in window.F117_ASSETS (build 4.5 MB);
