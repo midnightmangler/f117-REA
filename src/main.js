@@ -1,23 +1,38 @@
-// F117-REA entry point. Phase 0 placeholder: sizes the canvas and clears it.
-// The real framebuffer, palette and scaler arrive with Phase 1 (src/platform/*).
+// F117-REA entry point. Task 1.1 demo: framebuffer + DAC + scaler + tick model, draws one PIC.
+// Needs assets/ next to the page (served over http or opened from the clone); without them a test card is drawn.
 (function () {
   'use strict';
-  var W = 320, H = 200;
-  var canvas = document.getElementById('screen');
-  var ctx = canvas.getContext('2d');
+  var F = window.F117;
+  var fb = F.fb.createFramebuffer();
+  var display = F.fb.createDisplay(document.getElementById('screen'), fb);
 
-  function fit() {
-    var sx = window.innerWidth / W, sy = window.innerHeight / H;
-    var s = Math.max(1, Math.floor(Math.min(sx, sy)));   // integer scale, letterboxed
-    canvas.style.width = (W * s) + 'px';
-    canvas.style.height = (H * s) + 'px';
+  function testCard() {
+    for (var c = 0; c < 256; c++) fb.setDacEntry(c, c >> 2, (c * 3 >> 2) & 63, 63 - (c >> 2));
+    var p = fb.pages[0];
+    for (var y = 0; y < 200; y++) for (var x = 0; x < 320; x++) p[y * 320 + x] = (x * 256 / 320 + (y & 8 ? 16 : 0)) & 255;
   }
-  window.addEventListener('resize', fit);
-  fit();
 
-  ctx.fillStyle = '#000';
-  ctx.fillRect(0, 0, W, H);
-  ctx.fillStyle = '#aaa';
-  ctx.font = '8px monospace';
-  ctx.fillText('F117-REA phase 0', 8, 12);
+  function loadPic(name, palName) {
+    return Promise.all([
+      fetch('assets/pic/' + name + '.png').then(function (r) { if (!r.ok) throw new Error(r.status); return r.arrayBuffer(); }),
+      fetch('assets/palettes.json').then(function (r) { return r.json(); })
+    ]).then(function (res) {
+      return F.png.decodeIndexedPng(new Uint8Array(res[0])).then(function (img) {
+        fb.setPalette(res[1].palettes[palName]);
+        fb.putImage(0, img);
+      });
+    });
+  }
+
+  loadPic('ADV', 'ADV.PAL').catch(testCard).then(function () { display.present(); });
+
+  // Frame tick at 70 Hz; the sound tick (60 Hz) has no consumer yet. Pauses when the tab is hidden.
+  var ticker = F.timer.createTicker({ frame: function () {}, sound: function () { return 0; } });
+  F.timer.startLoop(ticker);
+  // First user gesture: go fullscreen / lock landscape where the browser allows it.
+  document.addEventListener('pointerdown', function once() {
+    document.removeEventListener('pointerdown', once);
+    display.enterFullscreen();
+  });
+  window.F117.demo = { fb: fb, display: display, ticker: ticker };
 })();

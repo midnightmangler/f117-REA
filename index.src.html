@@ -8,13 +8,15 @@
 <title>F-117A Nighthawk Stealth Fighter 2.0</title>
 <style>
   html, body { margin: 0; height: 100%; background: #000; overflow: hidden; touch-action: none; }
-  #screen { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
-            image-rendering: pixelated; image-rendering: crisp-edges; }
+  #screen { position: absolute; left: 0; top: 0; image-rendering: pixelated; image-rendering: crisp-edges; }
 </style>
 </head>
 <body>
 <canvas id="screen" width="320" height="200"></canvas>
 <!-- bundle.py inlines every <script src> below, in order, into dist/f117-rea.html -->
+<script src="src/platform/png.js"></script>
+<script src="src/platform/fb.js"></script>
+<script src="src/platform/timer.js"></script>
 <script src="src/main.js"></script>
 </body>
 </html>
