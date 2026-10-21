@@ -57,7 +57,8 @@ speech pinned; 440 Hz tone check; song renders. main.js demo: each tap plays the
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. 1.5 input (Sonnet), then Phase 2 (2.1 flow, Opus). Sound not yet heard on the iPad: listen to the demo (tap cycles ids).
+1. 1.5 input (Sonnet), then Phase 2 (2.1 flow, Opus). Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
+   needs touchend/click unlock; may run the ScriptProcessor fallback).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
 3. Done 2026-10-21: assets inline. bundle.py puts every assets/ file as base64 in window.F117_ASSETS (build 4.5 MB);
    src/platform/assets.js (F117.assets.bytes/json) reads it, falls back to fetch('assets/..') unbundled. run_tests.py does NOT
