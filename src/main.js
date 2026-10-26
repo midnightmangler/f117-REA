@@ -65,14 +65,50 @@
       .catch(function () { /* sound stays off */ });
   }
 
+  // Pointer (mouse / touch) -> framebuffer coordinates; a press is latched until the next read so a quick tap is never missed.
+  var ptr = { present: true, x: 160, y: 100, down: false, latch: false, right: false };
+  var canvas = document.getElementById('screen');
+  function ptrMove(e) { var p = display.toScreen(e.clientX, e.clientY); if (p) { ptr.x = p.x; ptr.y = p.y; } }
+  canvas.addEventListener('pointerdown', function (e) { ptrMove(e); if (e.button === 2) ptr.right = true; else { ptr.down = true; ptr.latch = true; } });
+  canvas.addEventListener('pointermove', ptrMove);
+  window.addEventListener('pointerup', function (e) { if (e.button === 2) ptr.right = false; else ptr.down = false; });
+  canvas.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+  host.pointer = {
+    present: true,
+    set: function (x, y) { ptr.x = x; ptr.y = y; },
+    get x() { return ptr.x; }, get y() { return ptr.y; },
+    get b0() { var v = ptr.down || ptr.latch; ptr.latch = false; return v; },
+    get b1() { return ptr.right; }
+  };
+  var lastFrame = 0;
+  host.frame = function () {                       // the 70 Hz tick of the front end (ds:ADFC); timer based so a throttled rAF cannot slow the menus
+    return new Promise(function (resolve) {
+      var wait = Math.max(0, lastFrame + 1000 / 70 - performance.now());
+      setTimeout(function () { lastFrame = performance.now(); resolve(); }, wait);
+    });
+  };
+  host.ticksMs = function () { return performance.now(); };
+  host.keyReady = function () { return input.keyReady(); };
+  host.pollKey = function () { return input.getKey(); };
+  host.png = F.png; host.storage = window.localStorage;
+  host.sound = function (id) { try { F.sound.play(id); } catch (e) { /* sound off */ } };
+  host.random = function (n) { return Math.floor(Math.random() * n); };
+  host.pollKey = function () { return input.getKey(); };
+
   var intro = F.intro.createIntroPrograms(host);
+  var startProg = F.start.createStartProgram(host);
   var quit = function () { return 0; };
   var setup = F.setup.createSetupProgram(host);
   var programs = {
     setup: function (ctx) { return setup(ctx).then(function (code) { return startSound(ctx.block.getString('sndName')).then(function () { return code; }); }); },
-    logo: function (ctx) { tap = false; input.flush(); return intro.logo(ctx); },
+    logo: function (ctx) { tap = false; input.flush(); return /[?&]skipintro/.test(location.search) ? 1 : intro.logo(ctx); },   // ?skipintro: dev shortcut
     player: function (ctx) { tap = false; input.flush(); return intro.player(ctx); },
-    start: quit, vgame: quit, end: quit,       // START / VGAME / END are not ported yet
+    start: async function (ctx) {
+      host.gfx = F.gfx.createGfx(fb, await F.assets.json('fonts.json'));
+      input.flush(); tap = false;
+      return startProg(ctx);
+    },
+    vgame: quit, end: quit,                    // VGAME / END are not ported yet
     shutdown: function () { F.sound.play && F.sound.play(0); }
   };
 

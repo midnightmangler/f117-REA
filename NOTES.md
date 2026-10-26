@@ -9,6 +9,8 @@ None: own 320x200 palettised framebuffer (decided 2026-10-21; render-engine not 
 - index.src.html, src/main.js: shell + phase-0 placeholder; tools/bundle.py â†’ dist/f117-rea.html â†’ Dropbox builds/
 - src/platform/: png.js, fb.js, timer.js (task 1.1), gfx.js + gfx-text.js + gfx-sprite.js (task 1.2: createGfx(fb, fonts) = MGRAPHIC API); window.F117.*, also module.exports for Node
 - src/platform/input.js (task 1.5): key buffer + keypad virtual stick + buttons
+- src/frontend/menu.js (START machinery: pages, colour queue, fade, cursor, menu_wait, requester, text wrap, quit screen), roster-screen.js
+  (roster + pilot options + new pilot), start.js (START program shell: roster state + stub home screen) (task 2.4; decomp re/decomp/start/roster.md)
 - src/frontend/setup.js (task 2.3): SETUP port (sound question, block values); src/main.js now runs runFlow (setup, logo, player real; start/vgame/end quit stubs)
 - src/frontend/intro.js (task 2.2): createLogoRun / createPanRun steppers + createIntroPrograms(host) = flow programs `logo`, `player`
   (decomp re/decomp/player/player-timing.md)
@@ -85,10 +87,16 @@ Key quits with the key code, tap 0x1B. OPEN: nobody in PLAYER starts the intro m
 it) - find the starter (timer module 026B?) before wiring music; Opus job if it needs the listing. Host contract for intro.js: {fb, present, assets,
 now, raf, pollKey, tapped}; not yet wired into main.js. tests/intro.test.js (9).
 Task 2.3 done (2026-10-26): setup.js = setup-dswap-map steps 6-12 (clearance 1, sndArg/unk2A/unk70 0, +0x32 word FFFF then 3 for 'M' graphics name, gfxName Mgraphic.exe, endState 1, inputFlags 0; sndName Asound.117 or Nsound.117 from an on-screen question whose click is the first gesture: audio unlock + fullscreen). Joystick/mouse questions dropped (touch stick later; calibration format +0x48 not needed yet). main.js: host {fb, present, assets, now, raf, pollKey, tapped, choose}, sound init after SETUP when AdLib, START/VGAME/END are quit stubs that show 'Front end not ported yet'. Verified in the browser pane (bundled build over http): SETUP -> MPS logo -> TITLE-1 intro. Found + fixed: pan.js/ss.js were missing from index.src.html. tests/setup.test.js (5). Not tested on the iPad yet.
+Task 2.4 done (2026-10-26): START roster/pilot screens + menu machinery from the listing (see decomp). main.js runs the real START program (pointer
+= mouse/touch; Enter/Esc/arrows/Delete keys; ?skipintro dev shortcut). Verified in the browser pane: roster with hover details + medals, options form,
+requesters, new pilot, quit screen; tests/start.test.js (11, scripted pointer/keys). Unverified/(?): row 1 shows red until hovered (PALETTES.PAL:7 entry 0xFF is red);
+misc get_key normalisation (ASCII byte else scan<<8) inferred from the compares; fade length ~0.22 s; rand() is Math.random (typing delay only). Home screen is
+only the picture + hotspots (008D info panel, orders/briefing/armament/launch = tasks 2.5-2.8, 0E23 weapon shortages not run). TODO for touch: no Esc/Delete
+buttons yet (right-click / keyboard only): the touch overlay must offer them.
 HEARTBEAT: razer run of f117-rea PASSED 2026-10-21 (4 passed, 0 failed; watcher allowlist fix applied, razer clone confirmed). 14900ks run also PASSED (4 passed, 0 failed); re-run confirmed 2026-10-21T20:49Z.
 
 ## Next up
-1. Phase 2: START screens 2.4+ (Opus). 1.5, 2.1, 2.2 and 2.3 are done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
+1. Phase 2: START screens 2.5+ (Opus). 1.5 and 2.1-2.4 are done. Sound confirmed on the iPad 2026-10-21 in both HTML viewers (incl. Sitecase:
    needs touchend/click unlock; may run the ScriptProcessor fallback).
 2. Decided: reproduce the ds:263F vsync-measure path in resync 1D01 exactly (measures the real retrace period; port currently uses a fixed 70 Hz). Needs a task card.
 3. Done 2026-10-21: assets inline. bundle.py puts every assets/ file as base64 in window.F117_ASSETS (build 4.5 MB);
